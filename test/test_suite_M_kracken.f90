@@ -1,9 +1,20 @@
-subroutine test_suite_M_kracken()
+!===================================================================================================================================
+!()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
+!===================================================================================================================================
+program test_suite_M_kracken
+use, intrinsic :: iso_fortran_env, only : ERROR_UNIT
 use,intrinsic :: IEEE_ARITHMETIC, only : IEEE_IS_NAN       ! Determine if value is IEEE Not-a-Number.
 !!use,intrinsic :: iso_fortran_env, only : int8, int16, int32, int64, real32, real64, real128
-use M_verify, only : unit_check_start,unit_check,unit_check_done,unit_check_good,unit_check_bad,unit_check_msg
-use M_verify, only : unit_check_level
-
+use :: M_verify,   only : unit_check, unit_check_good, unit_check_bad, unit_check_done, unit_check_start, unit_check_level
+use :: M_verify,   only : unit_check_command, unit_check_keep_going, unit_check_level
+use :: M_verify,   only : almost
+use :: M_kracken
+implicit none
+integer,parameter :: HT=9
+unit_check_command=''
+unit_check_keep_going=.true.
+unit_check_level=0
+call unit_check_start('M_kracken')
 !! setup
 call test_dget()
 call test_dgets()
@@ -26,7 +37,6 @@ call test_dissect()
 contains
 !TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 subroutine test_dget()
-use M_verify,  only : almost
 integer         :: ier
 doubleprecision :: dd=huge(0.0d0)*0.999999999999d0
    call unit_check_start('dget',msg=' direct tests of dget(3f)')
@@ -285,4 +295,10 @@ integer :: ier
 
  call unit_check_done('store',msg='')
 end subroutine test_store
-end subroutine test_suite_M_kracken
+!===================================================================================================================================
+!()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
+!===================================================================================================================================
+end program test_suite_M_kracken
+!===================================================================================================================================
+!()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
+!===================================================================================================================================

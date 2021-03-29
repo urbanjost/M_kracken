@@ -9,8 +9,4 @@ digraph "ifnull"
   Node2 [label="m_kracken::cmd_args\l_to_dictionary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a31e7eb1bb39384b327e71693b263e2d4",tooltip=" "];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node3 [label="m_kracken::kracken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#aeac4c029c0649fc5cebc0545881ac759",tooltip=" "];
-  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node4 [label="test_retrev",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a12fa31d512643b8fe4ece79378d4b0dc",tooltip=" "];
-  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node5 [label="m_kracken::test_suite\l_m_kracken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a59f94cea5ef39553cb4765959f981e00",tooltip=" "];
 }

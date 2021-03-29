@@ -7,16 +7,6 @@ digraph "m_kracken::dgets"
   Node1 [label="m_kracken::dgets",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="m_kracken::igets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a3bf372282fcf75e6db26c8523676713e",tooltip=" "];
-  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="test_igets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#af9d32524891d18cc375f42cf27b7068c",tooltip=" "];
-  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="m_kracken::test_suite\l_m_kracken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a59f94cea5ef39553cb4765959f981e00",tooltip=" "];
-  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="m_kracken::rgets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a2fd4c07856f16d7886f034746e38d49a",tooltip=" "];
-  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="test_rgets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#ab753d15fffa4766915873cfdcf437e69",tooltip=" "];
-  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="test_dgets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a50840e636315cd6416a5d66600898468",tooltip=" "];
-  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="m_kracken::rgets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a2fd4c07856f16d7886f034746e38d49a",tooltip=" "];
 }
