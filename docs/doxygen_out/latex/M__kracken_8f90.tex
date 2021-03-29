@@ -1,0 +1,139 @@
+\hypertarget{M__kracken_8f90}{}\doxysection{/home/urbanjs/venus/\+V600/github/\+M\+\_\+kracken/src/\+M\+\_\+kracken.f90 File Reference}
+\label{M__kracken_8f90}\index{/home/urbanjs/venus/V600/github/M\_kracken/src/M\_kracken.f90@{/home/urbanjs/venus/V600/github/M\_kracken/src/M\_kracken.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacem__kracken}{m\+\_\+kracken}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_ad4f3d7c793c90789b175097b433035da}{m\+\_\+kracken\+::retrev}} (name, val, len, ier)
+\item 
+real(kind=dp) function, public \mbox{\hyperlink{namespacem__kracken_ae7b6ad046d637f03148efb56336a7ff4}{m\+\_\+kracken\+::dget}} (keyword)
+\item 
+real function, public \mbox{\hyperlink{namespacem__kracken_a21e0e40932af79430832a53bdb4de300}{m\+\_\+kracken\+::rget}} (keyword)
+\item 
+integer function, public \mbox{\hyperlink{namespacem__kracken_a420718890eac378e5cd047dd0b477424}{m\+\_\+kracken\+::iget}} (keyword)
+\item 
+logical function, public \mbox{\hyperlink{namespacem__kracken_a7141acd7a00c1a5aa5f90612a0414b63}{m\+\_\+kracken\+::lget}} (keyword)
+\item 
+character(len=\+:) function, allocatable, public \mbox{\hyperlink{namespacem__kracken_a9a64192326816b0b9badcc11506628ee}{m\+\_\+kracken\+::sget}} (name, ilen)
+\item 
+real(kind=dp) function, dimension(\+:), allocatable, public \mbox{\hyperlink{namespacem__kracken_a5820c8cc5b9614c52bb967ec82fb0dc3}{m\+\_\+kracken\+::dgets}} (keyword, ier)
+\item 
+integer function, dimension(\+:), allocatable, public \mbox{\hyperlink{namespacem__kracken_a3bf372282fcf75e6db26c8523676713e}{m\+\_\+kracken\+::igets}} (keyword, ier)
+\item 
+real function, dimension(\+:), allocatable, public \mbox{\hyperlink{namespacem__kracken_a2fd4c07856f16d7886f034746e38d49a}{m\+\_\+kracken\+::rgets}} (keyword, ier)
+\item 
+logical function, dimension(\+:), allocatable, public \mbox{\hyperlink{namespacem__kracken_afb3f3b45b78625758818ea9bef463fd9}{m\+\_\+kracken\+::lgets}} (keyword)
+\item 
+character(len=\+:) function, dimension(\+:), allocatable, public \mbox{\hyperlink{namespacem__kracken_ab5aa1c09e0fcb02a1a2604c865d27d25}{m\+\_\+kracken\+::sgets}} (name, delim)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_aeac4c029c0649fc5cebc0545881ac759}{m\+\_\+kracken\+::kracken}} (verb, string, error\+\_\+return, style)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_aab831b470a3107ca69833e717e95eaec}{m\+\_\+kracken\+::setprompts}} (verb, init)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_a2cb376f8a8e26e489a45cafcda66ea3e}{m\+\_\+kracken\+::dissect}} (verb, init, pars, error\+\_\+return)
+\item 
+recursive subroutine, public \mbox{\hyperlink{namespacem__kracken_ada09fc7e2374abf2aba534642d8b747f}{m\+\_\+kracken\+::parse}} (verb, string, allow, error\+\_\+return)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_a6eb597e3ca7d161933f595788d511fd7}{m\+\_\+kracken\+::store}} (name1, value1, allow1, ier)
+\item 
+integer function, private \mbox{\hyperlink{namespacem__kracken_a3c87f6cd9c414d903b41ea81befa0343}{m\+\_\+kracken\+::subscript\+\_\+}} (chars0)
+\item 
+subroutine, private \mbox{\hyperlink{namespacem__kracken_ad0cfac1dcc02e0a67841f546cb57f823}{m\+\_\+kracken\+::menu}} (verb)
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_a6f1676e21cb021e177d62e990085dbc3}{m\+\_\+kracken\+::show}} (V\+E\+R\+B\+\_\+\+N\+A\+M\+E0, V\+E\+R\+B\+S\+\_\+\+O\+N\+LY, I\+W\+I\+DE)
+\item 
+subroutine \mbox{\hyperlink{namespacem__kracken_a72ce8ce4280e366c854256431816049f}{m\+\_\+kracken\+::initd}} ()
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_a59f94cea5ef39553cb4765959f981e00}{m\+\_\+kracken\+::test\+\_\+suite\+\_\+m\+\_\+kracken}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a00ade06c021ec8176c965816e501e8a2}{test\+\_\+dget}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a50840e636315cd6416a5d66600898468}{test\+\_\+dgets}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a11a7205a4312de1b7569905779d3d8bd}{test\+\_\+dissect}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_abd47121392dc51796ba65d130b3c9c2f}{test\+\_\+iget}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_af9d32524891d18cc375f42cf27b7068c}{test\+\_\+igets}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a54c1e45f24d7954ca629d4107e5d20c3}{test\+\_\+kracken}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a1c4bf69a10d5d5bb731df66960f94dae}{test\+\_\+lget}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a040c3dab7b15fe4573817ad7292ec2f5}{test\+\_\+lgets}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a42d41b204969ea6ee0ef1fa78285511f}{test\+\_\+parse}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a12fa31d512643b8fe4ece79378d4b0dc}{test\+\_\+retrev}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a88a52f5f434f576ff98a79268314d6c4}{test\+\_\+rget}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_ab753d15fffa4766915873cfdcf437e69}{test\+\_\+rgets}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_aa55d56415cf6d62c5c018dca0f16bceb}{test\+\_\+setprompts}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a3a1001aea4af1e83b73ab1aa9f81bce4}{test\+\_\+sget}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a693aa370db8714307a447154691f9736}{test\+\_\+sgets}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_ad1c3f64ab994385649e8d24a02716000}{test\+\_\+show}} ()
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_a4c6c4bc7f33a76a13337578dfa15861c}{test\+\_\+store}} ()
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_a31e7eb1bb39384b327e71693b263e2d4}{m\+\_\+kracken\+::cmd\+\_\+args\+\_\+to\+\_\+dictionary}} (verb)
+\item 
+subroutine \mbox{\hyperlink{M__kracken_8f90_aa26f90016621d1ee43d3b5b66316532b}{ifnull}} ()
+\item 
+subroutine, public \mbox{\hyperlink{namespacem__kracken_ac7fe8ee4b3d9a05dcd3d33fbad347f22}{m\+\_\+kracken\+::print\+\_\+kracken\+\_\+dictionary}} (header)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical, public \mbox{\hyperlink{namespacem__kracken_a89f0eab0a97826df5108b9318a7bb345}{m\+\_\+kracken\+::stop\+\_\+command}} =.false.
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacem__kracken_a9e71724677cede703e1fb186e446349f}{m\+\_\+kracken\+::ipvalue}} =4096$\ast$16
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacem__kracken_adda44fb0845c3cec44bc5a5bb258b395}{m\+\_\+kracken\+::ipverb}} =20
+\item 
+integer, parameter \mbox{\hyperlink{namespacem__kracken_a1de91e5ca55bf4fab118936bf4fad36a}{m\+\_\+kracken\+::dp}} = kind(0.d0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacem__kracken_ae51c6f835203dd09fc3be239fc9d0ce1}{m\+\_\+kracken\+::k\+\_\+int}} = S\+E\+L\+E\+C\+T\+E\+D\+\_\+\+I\+N\+T\+\_\+\+K\+I\+ND(9)
+\item 
+integer, parameter \mbox{\hyperlink{namespacem__kracken_a002abf985e8365e06a05ebde2f2b9b52}{m\+\_\+kracken\+::k\+\_\+dbl}} = S\+E\+L\+E\+C\+T\+E\+D\+\_\+\+R\+E\+A\+L\+\_\+\+K\+I\+ND(15, 300)
+\item 
+character(len=\+:), dimension(\+:), allocatable \mbox{\hyperlink{namespacem__kracken_a5292e711f2d4ee404402447025c9633f}{m\+\_\+kracken\+::dict\+\_\+vals}}
+\item 
+character(len=\+:), dimension(\+:), allocatable \mbox{\hyperlink{namespacem__kracken_a0c65bab57a8036135c17834c1b3b8a7e}{m\+\_\+kracken\+::dict\+\_\+verbs}}
+\item 
+integer(kind=k\+\_\+int), dimension(\+:), allocatable \mbox{\hyperlink{namespacem__kracken_a3a34e9a6c36e60bbe3d0c82f6d2e5d2e}{m\+\_\+kracken\+::dict\+\_\+lens}}
+\item 
+integer(kind=k\+\_\+int), dimension(\+:), allocatable \mbox{\hyperlink{namespacem__kracken_aa54cbaf20ecc568db94f43fba9cbd238}{m\+\_\+kracken\+::dict\+\_\+calls}}
+\item 
+character(len=1), save, public \mbox{\hyperlink{namespacem__kracken_ac26b840ca27114f5efb8fcbf48e184b4}{m\+\_\+kracken\+::kracken\+\_\+comment}} =\textquotesingle{}\#\textquotesingle{}
+\item 
+character(len=\+:), allocatable, save, public \mbox{\hyperlink{namespacem__kracken_ad6987940e6ea8cba5e1c9d5108d6de99}{m\+\_\+kracken\+::leftover}}
+\item 
+integer, save, public \mbox{\hyperlink{namespacem__kracken_ab43d490209ce4f08f9a2c563b1a80d9a}{m\+\_\+kracken\+::current\+\_\+command\+\_\+length}} =0
+\item 
+character(len=\+:), dimension(\+:), allocatable, save, public \mbox{\hyperlink{namespacem__kracken_a49e47efb6da2c9d4a62ec630f2f3a953}{m\+\_\+kracken\+::unnamed}}
+\item 
+character(len=10), save, public \mbox{\hyperlink{namespacem__kracken_a92168aa1110a2375383b12b90fb677ad}{m\+\_\+kracken\+::kracken\+\_\+method}} =\textquotesingle{}kracken\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{M__kracken_8f90_aa26f90016621d1ee43d3b5b66316532b}\label{M__kracken_8f90_aa26f90016621d1ee43d3b5b66316532b}} 
+\index{M\_kracken.f90@{M\_kracken.f90}!ifnull@{ifnull}}
+\index{ifnull@{ifnull}!M\_kracken.f90@{M\_kracken.f90}}
+\doxysubsubsection{\texorpdfstring{ifnull()}{ifnull()}}
+{\footnotesize\ttfamily subroutine cmd\+\_\+args\+\_\+to\+\_\+dictionary\+::ifnull\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References m\+\_\+kracken\+::sget(), and m\+\_\+kracken\+::store().
+
+Here is the call graph for this function\+:

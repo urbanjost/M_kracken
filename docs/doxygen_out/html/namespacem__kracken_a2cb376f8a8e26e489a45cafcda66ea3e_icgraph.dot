@@ -1,0 +1,17 @@
+digraph "m_kracken::dissect"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="m_kracken::dissect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="m_kracken::kracken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#aeac4c029c0649fc5cebc0545881ac759",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="test_retrev",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a12fa31d512643b8fe4ece79378d4b0dc",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="m_kracken::test_suite\l_m_kracken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a59f94cea5ef39553cb4765959f981e00",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="test_dissect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a11a7205a4312de1b7569905779d3d8bd",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,36 @@
+digraph "m_kracken::dget"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="m_kracken::dget",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="m_kracken::iget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a420718890eac378e5cd047dd0b477424",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="test_dissect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a11a7205a4312de1b7569905779d3d8bd",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="m_kracken::test_suite\l_m_kracken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a59f94cea5ef39553cb4765959f981e00",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="test_iget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#abd47121392dc51796ba65d130b3c9c2f",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="test_parse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a42d41b204969ea6ee0ef1fa78285511f",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="test_store",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a4c6c4bc7f33a76a13337578dfa15861c",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="m_kracken::rget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacem__kracken.html#a21e0e40932af79430832a53bdb4de300",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="test_rget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a88a52f5f434f576ff98a79268314d6c4",tooltip=" "];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="test_dget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$M__kracken_8f90.html#a00ade06c021ec8176c965816e501e8a2",tooltip=" "];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

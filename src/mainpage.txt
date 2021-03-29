@@ -1,0 +1,10 @@
+'mainpage.txt
+/**
+         @mainpage M_kracken Fortran Library
+
+         @section Introduction
+
+     M_kracken - Fortran module for command line arguments
+
+         @image html html/images/yarnball.gif
+*/'
