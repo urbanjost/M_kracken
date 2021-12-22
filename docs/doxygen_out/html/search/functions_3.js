@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['kracken_52',['kracken',['../namespacem__kracken.html#aeac4c029c0649fc5cebc0545881ac759',1,'m_kracken']]]
+  ['d2j_343',['d2j',['../namespacem__time.html#a3fccc53c2650104eff084c7998d18f54',1,'m_time']]],
+  ['d2o_344',['d2o',['../namespacem__time.html#a727dd77bbd4a5d0e3947c5d303845947',1,'m_time']]],
+  ['d2s_345',['d2s',['../interfacem__strings_1_1v2s.html#a1df17f4d21b592e9c4a933dcf86a8a91',1,'m_strings::v2s::d2s()'],['../namespacem__strings.html#a14715e071aea9030b4c68c22fa5a455d',1,'m_strings::d2s()']]],
+  ['d2u_346',['d2u',['../namespacem__time.html#a1506e2889a156387df4481ed0534be81',1,'m_time']]],
+  ['d2w_347',['d2w',['../namespacem__time.html#ad4ff99ad6f6d5282c4b65ad636a2a627',1,'m_time']]],
+  ['date_5fto_5fjulian_348',['date_to_julian',['../namespacem__time.html#acfdc970b4154b0c15bd33727636e3992',1,'m_time']]],
+  ['date_5fto_5funix_349',['date_to_unix',['../namespacem__time.html#aed245c691853279ebf0ce899dec9caa9',1,'m_time']]],
+  ['days2sec_350',['days2sec',['../namespacem__time.html#a99393c7906f1989f90ece03969224938',1,'m_time']]],
+  ['dble_5fs2v_351',['dble_s2v',['../interfacem__strings_1_1dble.html#aadfd361a017d8523b04431a6947c194d',1,'m_strings::dble::dble_s2v()'],['../namespacem__strings.html#a970d99e3a2ab426bb90d6ea90bcc588a',1,'m_strings::dble_s2v()']]],
+  ['dbles_5fs2v_352',['dbles_s2v',['../interfacem__strings_1_1dble.html#afaec5e6f72e484baa351d2183c5fe220',1,'m_strings::dble::dbles_s2v()'],['../namespacem__strings.html#ab463f9b431dd817b7b509608ec823b0f',1,'m_strings::dbles_s2v()']]],
+  ['decodebase_353',['decodebase',['../namespacem__strings.html#a3883dae1b85c2d4a09d2d7e46ff422ab',1,'m_strings']]],
+  ['del_354',['del',['../structm__list_1_1dictionary.html#a3cc348de7c9fa5e86d8075e42d830520',1,'m_list::dictionary']]],
+  ['delim_355',['delim',['../namespacem__strings.html#a9890da826d63d6f04367887007611cb5',1,'m_strings']]],
+  ['describe_356',['describe',['../namespacem__strings.html#a8d7007f0c34d7db4c004dac56e609b3f',1,'m_strings']]],
+  ['dget_357',['dget',['../namespacem__kracken.html#ae7b6ad046d637f03148efb56336a7ff4',1,'m_kracken']]],
+  ['dgets_358',['dgets',['../namespacem__kracken.html#a5820c8cc5b9614c52bb967ec82fb0dc3',1,'m_kracken']]],
+  ['dict_5fadd_359',['dict_add',['../namespacem__list.html#aca66691fd75ea79859a1b4505d2125bb',1,'m_list']]],
+  ['dict_5fdelete_360',['dict_delete',['../namespacem__list.html#aa562d18ce6890a8a1a96d77ff1d39948',1,'m_list']]],
+  ['dict_5fget_361',['dict_get',['../namespacem__list.html#a7b9bb0b8fa4b0eeef45d7fcdc21f8bf3',1,'m_list']]],
+  ['dilate_362',['dilate',['../namespacem__strings.html#a47ea6ce8fe852b8a621c6e404988eb00',1,'m_strings']]],
+  ['dissect_363',['dissect',['../namespacem__kracken.html#ae221b2900191d7a0f854253176706916',1,'m_kracken']]],
+  ['dow_364',['dow',['../namespacem__time.html#adfda8a89820b8d0ad4581a14896e4ce5',1,'m_time']]],
+  ['dp_5faccdig_365',['dp_accdig',['../namespacem__verify.html#a7408df33e6934a8959fdeda8cc3fb5ff',1,'m_verify']]]
 ];

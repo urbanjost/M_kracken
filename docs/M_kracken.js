@@ -1,2 +1,20 @@
 function loadthem(){
+append("M_kracken.3m_kracken.html");
+append("dget.3m_kracken.html");
+append("dgets.3m_kracken.html");
+append("dissect.3m_kracken.html");
+append("iget.3m_kracken.html");
+append("igets.3m_kracken.html");
+append("kracken.3m_kracken.html");
+append("lget.3m_kracken.html");
+append("lgets.3m_kracken.html");
+append("parse.3m_kracken.html");
+append("retrev.3m_kracken.html");
+append("rget.3m_kracken.html");
+append("rgets.3m_kracken.html");
+append("setprompts.3m_kracken.html");
+append("sget.3m_kracken.html");
+append("sgets.3m_kracken.html");
+append("show.3m_kracken.html");
+append("store.3m_kracken.html");
 }

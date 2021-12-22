@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['k_5fdbl_75',['k_dbl',['../namespacem__kracken.html#a002abf985e8365e06a05ebde2f2b9b52',1,'m_kracken']]],
-  ['k_5fint_76',['k_int',['../namespacem__kracken.html#ae51c6f835203dd09fc3be239fc9d0ce1',1,'m_kracken']]],
-  ['kracken_5fcomment_77',['kracken_comment',['../namespacem__kracken.html#ac26b840ca27114f5efb8fcbf48e184b4',1,'m_kracken']]],
-  ['kracken_5fmethod_78',['kracken_method',['../namespacem__kracken.html#a92168aa1110a2375383b12b90fb677ad',1,'m_kracken']]]
+  ['exit_5ffailure_549',['exit_failure',['../namespacem__verify.html#a458c47b6b47738f8ebadddb4a944d0e0',1,'m_verify']]],
+  ['exit_5fsuccess_550',['exit_success',['../namespacem__verify.html#a278d7a36f55fac875e4f94bc893447fe',1,'m_verify']]]
 ];

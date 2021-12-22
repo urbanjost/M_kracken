@@ -5,6 +5,7 @@
 <meta name="keywords" content="General Purpose Fortran, Fortran modules, Fortran examples                                       " />
 <meta name="keywords" content="Fortran Repository" />
 <meta name="keywords" content="Fortran Collection" />
+<link  rel="stylesheet"            href="StyleSheets/man.css"          type="text/css"  title="man"          />
 <style>
 body { background-color:#FFF; color:#333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:1em; line-height:1.3em; }
 
@@ -19,6 +20,9 @@ h2 { font-size:173%; }
 h3 { font-size:144%; }
 h4 { font-size:120%; }
 h5,h6 { font-size:100% }
+
+dt { font-size:108%; color:#00F;line-height: 2em;font-width:boldest;}
+
 table { border:double #000; border-collapse:collapse; }
 td { border:thin solid #888; margin: auto; padding: auto; border: auto;}
 td { padding-left: 1em; padding-right: 1em;}
@@ -42,26 +46,34 @@ a.existingWikiWord[title]{ //border: 1px dashed #BBB; }
 <div id="Container">
 <div id="Content">
 <h1>M_kracken man(3) pages</h1>
+<font size=-1>
+<script language="JavaScript">
+<!---//hide script from old browsers; automatically update modification date
+   document.write( "<i>Date last updated: " + document.lastModified + "</i>");
+//end hiding contents --->
+</script>
+</font>
 <table border="1">
 <tr> <th>grouping</th> <th>page</th> <th>description</th> </tr>
-<tr><td style="background:#fae4d6;">ARGUMENTS::INTRO</td><td><a href="ARGUMENTS.3.html">ARGUMENTS</a></td><td> collection of command line argument parsers</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="M_kracken(3fm).3m_kracken.html">M_kracken(3fm)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="dget(3f).3m_kracken.html">dget(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="dgets(3f).3m_kracken.html">dgets(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="dissect(3f).3m_kracken.html">dissect(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="iget(3f).3m_kracken.html">iget(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="igets(3f).3m_kracken.html">igets(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="kracken(3f).3m_kracken.html">kracken(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="lget(3f).3m_kracken.html">lget(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="parse(3f).3m_kracken.html">parse(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="RETREV(3f).3m_kracken.html">RETREV(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="rget(3f).3m_kracken.html">rget(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="rgets(3f).3m_kracken.html">rgets(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="setprompts(3f).3m_kracken.html">setprompts(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="sget(3f).3m_kracken.html">sget(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="sgets(3f).3m_kracken.html">sgets(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="show(3f).3m_kracken.html">show(3f)</a></td><td>- (unknown subject)</td></tr>
-<tr><td style="background:#e9eedf;">&nbsp;</td><td><a href="store(3f).3m_kracken.html">store(3f)</a></td><td>- (unknown subject)</td></tr>
+<tr><td style="background:#c0f1c6;">ARGUMENTS::INTRO</td><td><a href="ARGUMENTS.3.html">ARGUMENTS</a></td><td> collection of command line argument parsers</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="M_kracken.3m_kracken.html">M_kracken</a></td><td> parse command line options of Fortran programs using Unix-like syntax (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="dget.3m_kracken.html">dget</a></td><td> given keyword fetch doubleprecision value from command argument (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="dgets.3m_kracken.html">dgets</a></td><td> given keyword fetch doubleprecision array from command arguments (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="dissect.3m_kracken.html">dissect</a></td><td> convenient call to parse() - define defaults, then process (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="iget.3m_kracken.html">iget</a></td><td> given keyword fetch integer value from command argument (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="igets.3m_kracken.html">igets</a></td><td> given keyword fetch integer array from command arguments (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="kracken.3m_kracken.html">kracken</a></td><td> crack command line options on Fortran programs, using "-KEYWORD VALUE" syntax (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="lget.3m_kracken.html">lget</a></td><td> given keyword fetch logical value from command arguments (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="lgets.3m_kracken.html">lgets</a></td><td> given keyword fetch logical array from command argument (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="parse.3m_kracken.html">parse</a></td><td> parse user command and store tokens into Language Dictionary (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="retrev.3m_kracken.html">retrev</a></td><td> get keyword value as a string from a command's argument list processed by kracken(3f) (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="rget.3m_kracken.html">rget</a></td><td> given keyword fetch real value from command argument (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="rgets.3m_kracken.html">rgets</a></td><td> given keyword fetch real array from command arguments (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="setprompts.3m_kracken.html">setprompts</a></td><td> set explicit prompts for keywords in interactive mode (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="sget.3m_kracken.html">sget</a></td><td> given keyword fetch string value and length from command arguments (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="sgets.3m_kracken.html">sgets</a></td><td> given keyword fetch string value parsed on whitespace into an array (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="show.3m_kracken.html">show</a></td><td> dump dictionary entries (LICENSE:PD)</td></tr>
+<tr><td style="background:#cde4f5;">ARGUMENTS:M_kracken</td><td><a href="store.3m_kracken.html">store</a></td><td> add or replace value for specified name in dictionary(if allow='add' add name if needed) (LICENSE:PD)</td></tr>
 </table>
 </div>
 </div>

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['dict_5fcalls_68',['dict_calls',['../namespacem__kracken.html#aa54cbaf20ecc568db94f43fba9cbd238',1,'m_kracken']]],
-  ['dict_5flens_69',['dict_lens',['../namespacem__kracken.html#a3a34e9a6c36e60bbe3d0c82f6d2e5d2e',1,'m_kracken']]],
-  ['dict_5fvals_70',['dict_vals',['../namespacem__kracken.html#a5292e711f2d4ee404402447025c9633f',1,'m_kracken']]],
-  ['dict_5fverbs_71',['dict_verbs',['../namespacem__kracken.html#a0c65bab57a8036135c17834c1b3b8a7e',1,'m_kracken']]],
-  ['dp_72',['dp',['../namespacem__kracken.html#a1de91e5ca55bf4fab118936bf4fad36a',1,'m_kracken']]]
+  ['clicks_535',['clicks',['../namespacem__verify.html#af97c7f92394811bec5fed506fdfab67d',1,'m_verify']]],
+  ['count_536',['count',['../structm__list_1_1dictionary.html#af8dbd37f43073371328c97749763e8a3',1,'m_list::dictionary']]],
+  ['current_5fcommand_5flength_537',['current_command_length',['../namespacem__kracken.html#a400a5afc56bb75dd89370820758007c1',1,'m_kracken']]]
 ];
