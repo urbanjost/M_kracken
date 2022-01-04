@@ -1,5 +1,5 @@
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-$DOCUMENT NULL -file ARGUMENTS.3.man
+$BLOCK NULL -file ARGUMENTS.3.man
 NAME
    ARGUMENTS(3f) - [ARGUMENTS::INTRO] collection of command line argument parsers
 
@@ -61,10 +61,10 @@ M_KRACKEN
    parse        - parse user command and store tokens into Language Dictionary
    show         - dump dictionary entries
    store        - replace dictionary name's value (if allow=add add name if necessary)
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 $IFDEF F90
-$DOCUMENT NULL -file M_kracken.3m_kracken.htm
+$BLOCK NULL -file M_kracken.3m_kracken.htm
 <h1>KRACKEN(3F): The Fortran Command Line Argument Cracker<br><em>(Extended Version)</em></h1>
 
 <p class="synopsis">
@@ -567,7 +567,7 @@ Contributors:<br/>
 </blockquote>
 <div style="visibility:hidden;"> <xmp>.fi</xmp </div>
 </div>
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
@@ -643,7 +643,7 @@ contains
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file retrev.3m_kracken.man
+$BLOCK COMMENT -file retrev.3m_kracken.man
 NAME
    RETREV(3f) - [ARGUMENTS:M_kracken] get keyword value as a string from a command's argument list processed by kracken(3f)
    (LICENSE:PD)
@@ -705,7 +705,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine retrev(name,val,len,ier)
 
@@ -735,7 +735,7 @@ end subroutine retrev
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file dget.3m_kracken.man
+$BLOCK COMMENT -file dget.3m_kracken.man
 NAME
    dget(3f) - [ARGUMENTS:M_kracken] given keyword fetch doubleprecision value from command argument
    (LICENSE:PD)
@@ -795,7 +795,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function dget(keyword)
 
@@ -812,7 +812,7 @@ end function dget
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file rget.3m_kracken.man
+$BLOCK COMMENT -file rget.3m_kracken.man
 NAME
    rget(3f) - [ARGUMENTS:M_kracken] given keyword fetch real value from command argument
    (LICENSE:PD)
@@ -873,7 +873,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function rget(keyword)
 
@@ -889,7 +889,7 @@ end function rget
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file iget.3m_kracken.man
+$BLOCK COMMENT -file iget.3m_kracken.man
 NAME
    iget(3f) - [ARGUMENTS:M_kracken] given keyword fetch integer value from command argument
    (LICENSE:PD)
@@ -950,7 +950,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function iget(keyword)
 
@@ -967,7 +967,7 @@ end function iget
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file lget.3m_kracken.man
+$BLOCK COMMENT -file lget.3m_kracken.man
 NAME
    lget(3f) - [ARGUMENTS:M_kracken] given keyword fetch logical value from command arguments
    (LICENSE:PD)
@@ -1032,7 +1032,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function lget(keyword)
 
@@ -1073,7 +1073,7 @@ end function lget
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file sget.3m_kracken.man
+$BLOCK COMMENT -file sget.3m_kracken.man
 NAME
    sget(3f) - [ARGUMENTS:M_kracken] given keyword fetch string value and length from command arguments
    (LICENSE:PD)
@@ -1143,7 +1143,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function sget(name,ilen) result(string)
 
@@ -1173,7 +1173,7 @@ end function sget
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file dgets.3m_kracken.man
+$BLOCK COMMENT -file dgets.3m_kracken.man
 NAME
    dgets(3f) - [ARGUMENTS:M_kracken] given keyword fetch doubleprecision array from command arguments
    (LICENSE:PD)
@@ -1239,7 +1239,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function dgets(keyword,ier) result(darray)
 
@@ -1280,7 +1280,7 @@ end function dgets
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file igets.3m_kracken.man
+$BLOCK COMMENT -file igets.3m_kracken.man
 NAME
    igets(3f) - [ARGUMENTS:M_kracken] given keyword fetch integer array from command arguments
    (LICENSE:PD)
@@ -1346,7 +1346,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function igets(keyword,ier) result(iarray)
 
@@ -1370,7 +1370,7 @@ end function igets
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file rgets.3m_kracken.man
+$BLOCK COMMENT -file rgets.3m_kracken.man
 NAME
    rgets(3f) - [ARGUMENTS:M_kracken] given keyword fetch real array from command arguments
    (LICENSE:PD)
@@ -1460,7 +1460,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function rgets(keyword,ier) result(rarray)
 
@@ -1484,7 +1484,7 @@ end function rgets
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file lgets.3m_kracken.man
+$BLOCK COMMENT -file lgets.3m_kracken.man
 NAME
    lget(3f) - [ARGUMENTS:M_kracken] given keyword fetch logical array from command argument
    (LICENSE:PD)
@@ -1548,7 +1548,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function lgets(keyword) result(larray)
 
@@ -1596,7 +1596,7 @@ end function lgets
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file sgets.3m_kracken.man
+$BLOCK COMMENT -file sgets.3m_kracken.man
 NAME
    sgets(3f) - [ARGUMENTS:M_kracken] given keyword fetch string value parsed on whitespace into an array
    (LICENSE:PD)
@@ -1664,7 +1664,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function sgets(name,delim) result(strings)
 
@@ -1694,7 +1694,7 @@ end function sgets
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file kracken.3m_kracken.man
+$BLOCK COMMENT -file kracken.3m_kracken.man
 NAME
    kracken(3f) - [ARGUMENTS:M_kracken] crack command line options on Fortran programs, using "-KEYWORD VALUE" syntax
    (LICENSE:PD)
@@ -1810,7 +1810,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine kracken(verb,string,error_return,style)
 
@@ -1881,7 +1881,7 @@ end subroutine kracken
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file setprompts.3m_kracken.man
+$BLOCK COMMENT -file setprompts.3m_kracken.man
 NAME
    setprompts(3f) - [ARGUMENTS:M_kracken] set explicit prompts for keywords in interactive mode
    (LICENSE:PD)
@@ -1940,7 +1940,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine setprompts(verb,init)
 
@@ -1953,7 +1953,7 @@ end subroutine setprompts
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file dissect.3m_kracken.man
+$BLOCK COMMENT -file dissect.3m_kracken.man
 NAME
    dissect(3f) - [ARGUMENTS:M_kracken] convenient call to parse() -- define defaults, then process
    (LICENSE:PD)
@@ -2009,7 +2009,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine dissect(verb,init,pars,error_return)
 
@@ -2039,7 +2039,7 @@ end subroutine dissect
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file parse.3m_kracken.man
+$BLOCK COMMENT -file parse.3m_kracken.man
 NAME
    parse(3f) - [ARGUMENTS:M_kracken] parse user command and store tokens into Language Dictionary
    (LICENSE:PD)
@@ -2173,7 +2173,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 recursive subroutine parse(verb,string,allow,error_return)
 
@@ -2397,7 +2397,7 @@ end subroutine parse
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file store.3m_kracken.man
+$BLOCK COMMENT -file store.3m_kracken.man
 NAME
    store(3f) - [ARGUMENTS:M_kracken] add or replace value for specified name in dictionary(if allow='add' add name if needed)
    (LICENSE:PD)
@@ -2533,7 +2533,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine store(name1,value1,allow1,ier)
 
@@ -2691,7 +2691,7 @@ end subroutine store
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file PRIVATE/subscript_.3m_kracken.man
+$BLOCK COMMENT -file PRIVATE/subscript_.3m_kracken.man
 NAME
    subscript_(3fp) - [ARGUMENTS:M_kracken] return the subscript value of a string when given its name
    (LICENSE:PD)
@@ -2722,7 +2722,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function subscript_(chars0)
 
@@ -2754,7 +2754,7 @@ end function subscript_
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file PRIVATE/menu.3m_kracken.man
+$BLOCK COMMENT -file PRIVATE/menu.3m_kracken.man
 NAME
    menu(3fp) - [ARGUMENTS:M_kracken] prompt for values using a menu interface
    (LICENSE:PD)
@@ -2785,7 +2785,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine menu(verb)
 
@@ -3013,7 +3013,7 @@ end subroutine menu
 !===================================================================================================================================
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
-$DOCUMENT COMMENT -file show.3m_kracken.man
+$BLOCK COMMENT -file show.3m_kracken.man
 NAME
    show(3f) - [ARGUMENTS:M_kracken] dump dictionary entries
    (LICENSE:PD)
@@ -3067,7 +3067,7 @@ AUTHOR
 
 LICENSE
    Public Domain
-$DOCUMENT END
+$BLOCK
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 subroutine show(VERB_NAME0,VERBS_ONLY,IWIDE)
 
@@ -3361,11 +3361,11 @@ end module M_kracken
 !-----------------------------------------------------------------------------------------------------------------------------------
 $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 $ENDIF
-$IFDEF UFPP_TEST
+$IFDEF PREP_TEST
    Automated cursory tests
 
-   This begins the section that will be processed by ufpp. Typically it is called by
-   ufpp UFPP_TEST -system -i FILENAME
+   This begins the section that will be processed by prep. Typically it is called by
+   prep PREP_TEST -system -i FILENAME
    if $SYSTEM commands are trusted
 
    make a scratch working directory

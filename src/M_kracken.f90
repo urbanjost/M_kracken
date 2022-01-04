@@ -1442,7 +1442,7 @@ end subroutine setprompts
 !!    Public Domain
 subroutine dissect(verb,init,pars,error_return)
 
-! ident_15="@(#)M_kracken::dissect(3f): convenient call to parse() define defaults, then process"
+! ident_15="@(#)M_kracken::dissect(3f): convenient call to parse()"
 
 character(len=*),intent(in)  :: verb                     ! the name of the command to be reset/defined  and then set
 character(len=*),intent(in)  :: init                     ! used to define or reset command options; usually hard-set in the program.
