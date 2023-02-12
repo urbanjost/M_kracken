@@ -25,4 +25,4 @@ to build.
 ```
 ## DOCUMENTATION
   - Procedure [Documentation](https://urbanjost.github.io/M_kracken)
-  - [Index](man3.html)
+  - [Index](https://urbanjost.github.io/M_kracken/man3.html)
