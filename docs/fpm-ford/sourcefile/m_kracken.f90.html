@@ -216,7 +216,7 @@
 <a id="ln-9" name="ln-9" href="#ln-9"></a><span class="k">use </span><span class="n">M_args</span><span class="p">,</span><span class="w">    </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">get_command_arguments_string</span><span class="p">,</span><span class="w"> </span><span class="n">longest_command_argument</span><span class="w"></span>
 <a id="ln-10" name="ln-10" href="#ln-10"></a><span class="k">implicit none</span><span class="w"></span>
 <a id="ln-11" name="ln-11" href="#ln-11"></a>
-<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="c">! ident_1=&quot;@(#)M_kracken(3fm): parse command line options of Fortran programs using Unix-like syntax&quot;</span>
+<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="c">! ident_1=&quot;@(#) M_kracken(3fm) parse command line options of Fortran programs using Unix-like syntax&quot;</span>
 <a id="ln-13" name="ln-13" href="#ln-13"></a>
 <a id="ln-14" name="ln-14" href="#ln-14"></a><span class="c">!===================================================================================================================================</span>
 <a id="ln-15" name="ln-15" href="#ln-15"></a><span class="w">   </span><span class="k">private</span><span class="w"></span>
@@ -345,7 +345,7 @@
 <a id="ln-138" name="ln-138" href="#ln-138"></a><span class="c">!!    Public Domain</span>
 <a id="ln-139" name="ln-139" href="#ln-139"></a><span class="k">subroutine </span><span class="n">retrev</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">val</span><span class="p">,</span><span class="nb">len</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"></span>
 <a id="ln-140" name="ln-140" href="#ln-140"></a>
-<a id="ln-141" name="ln-141" href="#ln-141"></a><span class="c">! ident_2=&quot;@(#)M_kracken::retrev(3f): retrieve token value from Language Dictionary when given NAME&quot;</span>
+<a id="ln-141" name="ln-141" href="#ln-141"></a><span class="c">! ident_2=&quot;@(#) M_kracken retrev(3f) retrieve token value from Language Dictionary when given NAME&quot;</span>
 <a id="ln-142" name="ln-142" href="#ln-142"></a>
 <a id="ln-143" name="ln-143" href="#ln-143"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-144" name="ln-144" href="#ln-144"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">     </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">        </span><span class="c">! name of variable to retrieve value for in form VERB_NAME</span>
@@ -435,7 +435,7 @@
 <a id="ln-228" name="ln-228" href="#ln-228"></a><span class="c">!!    Public Domain</span>
 <a id="ln-229" name="ln-229" href="#ln-229"></a><span class="k">function </span><span class="n">dget</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span><span class="w"></span>
 <a id="ln-230" name="ln-230" href="#ln-230"></a>
-<a id="ln-231" name="ln-231" href="#ln-231"></a><span class="c">! ident_3=&quot;@(#)M_kracken::dget(3f): given keyword fetch dble value from Language Dictionary (zero on err)&quot;</span>
+<a id="ln-231" name="ln-231" href="#ln-231"></a><span class="c">! ident_3=&quot;@(#) M_kracken dget(3f) given keyword fetch dble value from Language Dictionary (zero on err)&quot;</span>
 <a id="ln-232" name="ln-232" href="#ln-232"></a>
 <a id="ln-233" name="ln-233" href="#ln-233"></a><span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">dp</span><span class="p">)</span><span class="w">                </span><span class="kd">::</span><span class="w"> </span><span class="n">dget</span><span class="w">              </span><span class="c">! function type</span>
 <a id="ln-234" name="ln-234" href="#ln-234"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">keyword</span><span class="w">           </span><span class="c">! keyword to retrieve value for from dictionary</span>
@@ -513,7 +513,7 @@
 <a id="ln-306" name="ln-306" href="#ln-306"></a><span class="c">!!    Public Domain</span>
 <a id="ln-307" name="ln-307" href="#ln-307"></a><span class="k">function </span><span class="n">rget</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span><span class="w"></span>
 <a id="ln-308" name="ln-308" href="#ln-308"></a>
-<a id="ln-309" name="ln-309" href="#ln-309"></a><span class="c">! ident_4=&quot;@(#)M_kracken::rget(3f): given keyword fetch real value from language dictionary (zero on err)&quot;</span>
+<a id="ln-309" name="ln-309" href="#ln-309"></a><span class="c">! ident_4=&quot;@(#) M_kracken rget(3f) given keyword fetch real value from language dictionary (zero on err)&quot;</span>
 <a id="ln-310" name="ln-310" href="#ln-310"></a>
 <a id="ln-311" name="ln-311" href="#ln-311"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-312" name="ln-312" href="#ln-312"></a><span class="w">   </span><span class="kt">real</span><span class="w">                        </span><span class="kd">::</span><span class="w"> </span><span class="n">rget</span><span class="w">             </span><span class="c">! function type</span>
@@ -590,7 +590,7 @@
 <a id="ln-383" name="ln-383" href="#ln-383"></a><span class="c">!!    Public Domain</span>
 <a id="ln-384" name="ln-384" href="#ln-384"></a><span class="k">function </span><span class="n">iget</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span><span class="w"></span>
 <a id="ln-385" name="ln-385" href="#ln-385"></a>
-<a id="ln-386" name="ln-386" href="#ln-386"></a><span class="c">! ident_5=&quot;@(#)M_kracken::iget(3f): given keyword fetch integer value from Language Dictionary (0 on err)&quot;</span>
+<a id="ln-386" name="ln-386" href="#ln-386"></a><span class="c">! ident_5=&quot;@(#) M_kracken iget(3f) given keyword fetch integer value from Language Dictionary (0 on err)&quot;</span>
 <a id="ln-387" name="ln-387" href="#ln-387"></a>
 <a id="ln-388" name="ln-388" href="#ln-388"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-389" name="ln-389" href="#ln-389"></a><span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">iget</span><span class="w">            </span><span class="c">! function type</span>
@@ -672,7 +672,7 @@
 <a id="ln-465" name="ln-465" href="#ln-465"></a><span class="c">!!    Public Domain</span>
 <a id="ln-466" name="ln-466" href="#ln-466"></a><span class="k">function </span><span class="n">lget</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span><span class="w"></span>
 <a id="ln-467" name="ln-467" href="#ln-467"></a>
-<a id="ln-468" name="ln-468" href="#ln-468"></a><span class="c">! ident_6=&quot;@(#)M_kracken::lget(3f): given keyword fetch logical value from lang. dictionary (.f. on err)&quot;</span>
+<a id="ln-468" name="ln-468" href="#ln-468"></a><span class="c">! ident_6=&quot;@(#) M_kracken lget(3f) given keyword fetch logical value from lang. dictionary (.f. on err)&quot;</span>
 <a id="ln-469" name="ln-469" href="#ln-469"></a>
 <a id="ln-470" name="ln-470" href="#ln-470"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-471" name="ln-471" href="#ln-471"></a><span class="kt">logical</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">lget</span><span class="w">                  </span><span class="c">! procedure type</span>
@@ -783,7 +783,7 @@
 <a id="ln-576" name="ln-576" href="#ln-576"></a><span class="c">!!    Public Domain</span>
 <a id="ln-577" name="ln-577" href="#ln-577"></a><span class="k">function </span><span class="n">sget</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">ilen</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="w"></span>
 <a id="ln-578" name="ln-578" href="#ln-578"></a>
-<a id="ln-579" name="ln-579" href="#ln-579"></a><span class="c">! ident_7=&quot;@(#)M_kracken::sget(3f): Fetch string value and length of specified NAME from lang. dictionary&quot;</span>
+<a id="ln-579" name="ln-579" href="#ln-579"></a><span class="c">! ident_7=&quot;@(#) M_kracken sget(3f) Fetch string value and length of specified NAME from lang. dictionary&quot;</span>
 <a id="ln-580" name="ln-580" href="#ln-580"></a>
 <a id="ln-581" name="ln-581" href="#ln-581"></a><span class="c">!  This routine trusts that the desired name exists. A blank is returned if the name is not in the dictionary</span>
 <a id="ln-582" name="ln-582" href="#ln-582"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="k">allocatable</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">string</span><span class="w">      </span><span class="c">! returned value</span>
@@ -879,7 +879,7 @@
 <a id="ln-672" name="ln-672" href="#ln-672"></a><span class="c">!!    Public Domain</span>
 <a id="ln-673" name="ln-673" href="#ln-673"></a><span class="k">function </span><span class="n">dgets</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">darray</span><span class="p">)</span><span class="w"></span>
 <a id="ln-674" name="ln-674" href="#ln-674"></a>
-<a id="ln-675" name="ln-675" href="#ln-675"></a><span class="c">! ident_8=&quot;@(#)M_kracken::dgets(3f): given keyword fetch dble value from Language Dictionary (0 on err)&quot;</span>
+<a id="ln-675" name="ln-675" href="#ln-675"></a><span class="c">! ident_8=&quot;@(#) M_kracken dgets(3f) given keyword fetch dble value from Language Dictionary (0 on err)&quot;</span>
 <a id="ln-676" name="ln-676" href="#ln-676"></a>
 <a id="ln-677" name="ln-677" href="#ln-677"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">keyword</span><span class="w">                      </span><span class="c">! keyword to retrieve value for from dictionary</span>
 <a id="ln-678" name="ln-678" href="#ln-678"></a><span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">dp</span><span class="p">),</span><span class="k">allocatable</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">darray</span><span class="p">(:)</span><span class="w">                    </span><span class="c">! function type</span>
@@ -986,7 +986,7 @@
 <a id="ln-779" name="ln-779" href="#ln-779"></a><span class="c">!!    Public Domain</span>
 <a id="ln-780" name="ln-780" href="#ln-780"></a><span class="k">function </span><span class="n">igets</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">iarray</span><span class="p">)</span><span class="w"></span>
 <a id="ln-781" name="ln-781" href="#ln-781"></a>
-<a id="ln-782" name="ln-782" href="#ln-782"></a><span class="c">! ident_9=&quot;@(#)M_kracken::igets(3f): given keyword fetch integer array from string in dictionary(0 on err)&quot;</span>
+<a id="ln-782" name="ln-782" href="#ln-782"></a><span class="c">! ident_9=&quot;@(#) M_kracken igets(3f) given keyword fetch integer array from string in dictionary(0 on err)&quot;</span>
 <a id="ln-783" name="ln-783" href="#ln-783"></a>
 <a id="ln-784" name="ln-784" href="#ln-784"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">keyword</span><span class="w">             </span><span class="c">! keyword to retrieve value for from dictionary</span>
 <a id="ln-785" name="ln-785" href="#ln-785"></a><span class="kt">integer</span><span class="p">,</span><span class="k">allocatable</span><span class="w">         </span><span class="kd">::</span><span class="w"> </span><span class="n">iarray</span><span class="p">(:)</span><span class="w">           </span><span class="c">! convert value to an array</span>
@@ -1100,7 +1100,7 @@
 <a id="ln-893" name="ln-893" href="#ln-893"></a><span class="c">!!    Public Domain</span>
 <a id="ln-894" name="ln-894" href="#ln-894"></a><span class="k">function </span><span class="n">rgets</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">rarray</span><span class="p">)</span><span class="w"></span>
 <a id="ln-895" name="ln-895" href="#ln-895"></a>
-<a id="ln-896" name="ln-896" href="#ln-896"></a><span class="c">! ident_10=&quot;@(#)M_kracken::rgets(3f): given keyword fetch real array from string in dictionary (0 on err)&quot;</span>
+<a id="ln-896" name="ln-896" href="#ln-896"></a><span class="c">! ident_10=&quot;@(#) M_kracken rgets(3f) given keyword fetch real array from string in dictionary (0 on err)&quot;</span>
 <a id="ln-897" name="ln-897" href="#ln-897"></a>
 <a id="ln-898" name="ln-898" href="#ln-898"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">keyword</span><span class="w">             </span><span class="c">! keyword to retrieve value for from dictionary</span>
 <a id="ln-899" name="ln-899" href="#ln-899"></a><span class="kt">real</span><span class="p">,</span><span class="k">allocatable</span><span class="w">            </span><span class="kd">::</span><span class="w"> </span><span class="n">rarray</span><span class="p">(:)</span><span class="w">           </span><span class="c">! convert value to an array</span>
@@ -1188,7 +1188,7 @@
 <a id="ln-981" name="ln-981" href="#ln-981"></a><span class="c">!!    Public Domain</span>
 <a id="ln-982" name="ln-982" href="#ln-982"></a><span class="k">function </span><span class="n">lgets</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">larray</span><span class="p">)</span><span class="w"></span>
 <a id="ln-983" name="ln-983" href="#ln-983"></a>
-<a id="ln-984" name="ln-984" href="#ln-984"></a><span class="c">! ident_11=&quot;@(#)M_kracken::lgets(3f): given keyword fetch logical array from string in dictionary(F on err)&quot;</span>
+<a id="ln-984" name="ln-984" href="#ln-984"></a><span class="c">! ident_11=&quot;@(#) M_kracken lgets(3f) given keyword fetch logical array from string in dictionary(F on err)&quot;</span>
 <a id="ln-985" name="ln-985" href="#ln-985"></a>
 <a id="ln-986" name="ln-986" href="#ln-986"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">keyword</span><span class="w">                    </span><span class="c">! the dictionary keyword (in form VERB_KEYWORD) to retrieve</span>
 <a id="ln-987" name="ln-987" href="#ln-987"></a><span class="kt">logical</span><span class="p">,</span><span class="k">allocatable</span><span class="w">          </span><span class="kd">::</span><span class="w"> </span><span class="n">larray</span><span class="p">(:)</span><span class="w">                  </span><span class="c">! convert value to an array</span>
@@ -1304,7 +1304,7 @@
 <a id="ln-1097" name="ln-1097" href="#ln-1097"></a><span class="c">!!    Public Domain</span>
 <a id="ln-1098" name="ln-1098" href="#ln-1098"></a><span class="k">function </span><span class="n">sgets</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">delim</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span><span class="w"></span>
 <a id="ln-1099" name="ln-1099" href="#ln-1099"></a>
-<a id="ln-1100" name="ln-1100" href="#ln-1100"></a><span class="c">! ident_12=&quot;@(#)M_kracken::sgets(3f): Fetch strings value for specified NAME from the lang. dictionary&quot;</span>
+<a id="ln-1100" name="ln-1100" href="#ln-1100"></a><span class="c">! ident_12=&quot;@(#) M_kracken sgets(3f) Fetch strings value for specified NAME from the lang. dictionary&quot;</span>
 <a id="ln-1101" name="ln-1101" href="#ln-1101"></a>
 <a id="ln-1102" name="ln-1102" href="#ln-1102"></a><span class="c">! This routine trusts that the desired name exists. A blank is returned if the name is not in the dictionary</span>
 <a id="ln-1103" name="ln-1103" href="#ln-1103"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="k">allocatable</span><span class="w">         </span><span class="kd">::</span><span class="w"> </span><span class="n">strings</span><span class="p">(:)</span><span class="w"></span>
@@ -1450,7 +1450,7 @@
 <a id="ln-1243" name="ln-1243" href="#ln-1243"></a><span class="c">!!    Public Domain</span>
 <a id="ln-1244" name="ln-1244" href="#ln-1244"></a><span class="k">subroutine </span><span class="n">kracken</span><span class="p">(</span><span class="n">verb</span><span class="p">,</span><span class="n">string</span><span class="p">,</span><span class="n">error_return</span><span class="p">,</span><span class="n">style</span><span class="p">)</span><span class="w"></span>
 <a id="ln-1245" name="ln-1245" href="#ln-1245"></a>
-<a id="ln-1246" name="ln-1246" href="#ln-1246"></a><span class="c">! ident_13=&quot;@(#)M_kracken::kracken(3f): define and parse command line options&quot;</span>
+<a id="ln-1246" name="ln-1246" href="#ln-1246"></a><span class="c">! ident_13=&quot;@(#) M_kracken kracken(3f) define and parse command line options&quot;</span>
 <a id="ln-1247" name="ln-1247" href="#ln-1247"></a>
 <a id="ln-1248" name="ln-1248" href="#ln-1248"></a><span class="c">!  get the entire command line argument list and pass it and the prototype to dissect()</span>
 <a id="ln-1249" name="ln-1249" href="#ln-1249"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
@@ -1580,7 +1580,7 @@
 <a id="ln-1373" name="ln-1373" href="#ln-1373"></a><span class="c">!!    Public Domain</span>
 <a id="ln-1374" name="ln-1374" href="#ln-1374"></a><span class="k">subroutine </span><span class="n">setprompts</span><span class="p">(</span><span class="n">verb</span><span class="p">,</span><span class="n">init</span><span class="p">)</span><span class="w"></span>
 <a id="ln-1375" name="ln-1375" href="#ln-1375"></a>
-<a id="ln-1376" name="ln-1376" href="#ln-1376"></a><span class="c">! ident_14=&quot;@(#)M_kracken::setprompts(3f): set explicit prompts for keywords in interactive mode&quot;</span>
+<a id="ln-1376" name="ln-1376" href="#ln-1376"></a><span class="c">! ident_14=&quot;@(#) M_kracken setprompts(3f) set explicit prompts for keywords in interactive mode&quot;</span>
 <a id="ln-1377" name="ln-1377" href="#ln-1377"></a>
 <a id="ln-1378" name="ln-1378" href="#ln-1378"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="kd">::</span><span class="w"> </span><span class="n">verb</span><span class="w">   </span><span class="c">! verb name to define prompts for</span>
 <a id="ln-1379" name="ln-1379" href="#ln-1379"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="kd">::</span><span class="w"> </span><span class="n">init</span><span class="w">   </span><span class="c">! string to define prompts instead of values</span>
@@ -1649,7 +1649,7 @@
 <a id="ln-1442" name="ln-1442" href="#ln-1442"></a><span class="c">!!    Public Domain</span>
 <a id="ln-1443" name="ln-1443" href="#ln-1443"></a><span class="k">subroutine </span><span class="n">dissect</span><span class="p">(</span><span class="n">verb</span><span class="p">,</span><span class="n">init</span><span class="p">,</span><span class="n">pars</span><span class="p">,</span><span class="n">error_return</span><span class="p">)</span><span class="w"></span>
 <a id="ln-1444" name="ln-1444" href="#ln-1444"></a>
-<a id="ln-1445" name="ln-1445" href="#ln-1445"></a><span class="c">! ident_15=&quot;@(#)M_kracken::dissect(3f): convenient call to parse()&quot;</span>
+<a id="ln-1445" name="ln-1445" href="#ln-1445"></a><span class="c">! ident_15=&quot;@(#) M_kracken dissect(3f) convenient call to parse() will define defaults then process&quot;</span>
 <a id="ln-1446" name="ln-1446" href="#ln-1446"></a>
 <a id="ln-1447" name="ln-1447" href="#ln-1447"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">verb</span><span class="w">                     </span><span class="c">! the name of the command to be reset/defined  and then set</span>
 <a id="ln-1448" name="ln-1448" href="#ln-1448"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">init</span><span class="w">                     </span><span class="c">! used to define or reset command options; usually hard-set in the program.</span>
@@ -1813,7 +1813,7 @@
 <a id="ln-1606" name="ln-1606" href="#ln-1606"></a><span class="c">!!    Public Domain</span>
 <a id="ln-1607" name="ln-1607" href="#ln-1607"></a><span class="k">recursive subroutine </span><span class="n">parse</span><span class="p">(</span><span class="n">verb</span><span class="p">,</span><span class="n">string</span><span class="p">,</span><span class="n">allow</span><span class="p">,</span><span class="n">error_return</span><span class="p">)</span><span class="w"></span>
 <a id="ln-1608" name="ln-1608" href="#ln-1608"></a>
-<a id="ln-1609" name="ln-1609" href="#ln-1609"></a><span class="c">! ident_16=&quot;@(#)M_kracken::parse(3f): parse user command and store tokens into Language Dictionary&quot;</span>
+<a id="ln-1609" name="ln-1609" href="#ln-1609"></a><span class="c">! ident_16=&quot;@(#) M_kracken parse(3f) parse user command and store tokens into Language Dictionary&quot;</span>
 <a id="ln-1610" name="ln-1610" href="#ln-1610"></a>
 <a id="ln-1611" name="ln-1611" href="#ln-1611"></a><span class="c">!!!   set up odd for future expansion</span>
 <a id="ln-1612" name="ln-1612" href="#ln-1612"></a><span class="c">!!!   need to handle a minus followed by a blank character</span>
@@ -2173,7 +2173,7 @@
 <a id="ln-1966" name="ln-1966" href="#ln-1966"></a><span class="c">!!    Public Domain</span>
 <a id="ln-1967" name="ln-1967" href="#ln-1967"></a><span class="k">subroutine </span><span class="n">store</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span><span class="n">value1</span><span class="p">,</span><span class="n">allow1</span><span class="p">,</span><span class="n">ier</span><span class="p">)</span><span class="w"></span>
 <a id="ln-1968" name="ln-1968" href="#ln-1968"></a>
-<a id="ln-1969" name="ln-1969" href="#ln-1969"></a><span class="c">! ident_17=&quot;@(#)M_kracken::store(3f): replace or add dictionary entry name  and value (if allow=&#39;add&#39; add name if necessary)&quot;</span>
+<a id="ln-1969" name="ln-1969" href="#ln-1969"></a><span class="c">! ident_17=&quot;@(#) M_kracken store(3f) replace or add dictionary entry name and value (if allow=&#39;add&#39; add name if necessary)&quot;</span>
 <a id="ln-1970" name="ln-1970" href="#ln-1970"></a>
 <a id="ln-1971" name="ln-1971" href="#ln-1971"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-1972" name="ln-1972" href="#ln-1972"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">        </span><span class="kd">::</span><span class="w"> </span><span class="n">name1</span><span class="w">       </span><span class="c">! name in dictionary of form VERB_KEYWORD</span>
@@ -2230,8 +2230,8 @@
 <a id="ln-2023" name="ln-2023" href="#ln-2023"></a><span class="w">   </span><span class="k">if</span><span class="p">(.</span><span class="nb">not</span><span class="p">.</span><span class="nb">allocated</span><span class="p">(</span><span class="n">dict_verbs</span><span class="p">))</span><span class="w"> </span><span class="k">call </span><span class="n">initd</span><span class="p">()</span><span class="w"></span>
 <a id="ln-2024" name="ln-2024" href="#ln-2024"></a><span class="w">   </span><span class="k">call </span><span class="n">locate</span><span class="p">(</span><span class="n">dict_verbs</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">indx</span><span class="p">,</span><span class="n">ier</span><span class="p">,</span><span class="n">mssge</span><span class="p">)</span><span class="w">       </span><span class="c">! determine storage placement of the variable and whether it is new</span>
 <a id="ln-2025" name="ln-2025" href="#ln-2025"></a><span class="w">   </span><span class="k">if</span><span class="p">(</span><span class="n">ier</span><span class="w">  </span><span class="o">==</span><span class="w">  </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="k">then</span><span class="w">                               </span><span class="c">! an error occurred in determining the storage location</span>
-<a id="ln-2026" name="ln-2026" href="#ln-2026"></a><span class="w">      </span><span class="k">call </span><span class="n">journal</span><span class="p">(</span><span class="s2">&quot;error occurred in *store*&quot;</span><span class="p">)</span><span class="w"></span>
-<a id="ln-2027" name="ln-2027" href="#ln-2027"></a><span class="w">      </span><span class="k">call </span><span class="n">journal</span><span class="p">(</span><span class="n">mssge</span><span class="p">)</span><span class="w"></span>
+<a id="ln-2026" name="ln-2026" href="#ln-2026"></a><span class="w">      </span><span class="k">call </span><span class="n">journal</span><span class="p">(</span><span class="s1">&#39;sc&#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;error occurred in *store* name=&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;indx=&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">indx</span><span class="p">)</span><span class="w"></span>
+<a id="ln-2027" name="ln-2027" href="#ln-2027"></a><span class="w">      </span><span class="k">call </span><span class="n">journal</span><span class="p">(</span><span class="s1">&#39;sc&#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ier=&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ier</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;message=&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mssge</span><span class="p">)</span><span class="w"></span>
 <a id="ln-2028" name="ln-2028" href="#ln-2028"></a><span class="w">      </span><span class="k">return</span>
 <a id="ln-2029" name="ln-2029" href="#ln-2029"></a><span class="k">   endif</span><span class="w"></span>
 <a id="ln-2030" name="ln-2030" href="#ln-2030"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
@@ -2362,7 +2362,7 @@
 <a id="ln-2155" name="ln-2155" href="#ln-2155"></a><span class="c">!!    Public Domain</span>
 <a id="ln-2156" name="ln-2156" href="#ln-2156"></a><span class="k">function </span><span class="n">subscript_</span><span class="p">(</span><span class="n">chars0</span><span class="p">)</span><span class="w"></span>
 <a id="ln-2157" name="ln-2157" href="#ln-2157"></a>
-<a id="ln-2158" name="ln-2158" href="#ln-2158"></a><span class="c">! ident_18=&quot;@(#)M_kracken::subscript_(3fp): return the subscript value of a string when given its name&quot;</span>
+<a id="ln-2158" name="ln-2158" href="#ln-2158"></a><span class="c">! ident_18=&quot;@(#) M_kracken subscript_(3fp) return the subscript value of a string when given its name&quot;</span>
 <a id="ln-2159" name="ln-2159" href="#ln-2159"></a>
 <a id="ln-2160" name="ln-2160" href="#ln-2160"></a><span class="c">!  WARNING: only request value of names known to exist</span>
 <a id="ln-2161" name="ln-2161" href="#ln-2161"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
@@ -2425,7 +2425,7 @@
 <a id="ln-2218" name="ln-2218" href="#ln-2218"></a><span class="c">!!    Public Domain</span>
 <a id="ln-2219" name="ln-2219" href="#ln-2219"></a><span class="k">subroutine </span><span class="n">menu</span><span class="p">(</span><span class="n">verb</span><span class="p">)</span><span class="w"></span>
 <a id="ln-2220" name="ln-2220" href="#ln-2220"></a>
-<a id="ln-2221" name="ln-2221" href="#ln-2221"></a><span class="c">! ident_19=&quot;@(#)M_kracken::menu(3fp): prompt for values using a menu interface&quot;</span>
+<a id="ln-2221" name="ln-2221" href="#ln-2221"></a><span class="c">! ident_19=&quot;@(#) M_kracken menu(3fp) prompt for values using a menu interface&quot;</span>
 <a id="ln-2222" name="ln-2222" href="#ln-2222"></a>
 <a id="ln-2223" name="ln-2223" href="#ln-2223"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-2224" name="ln-2224" href="#ln-2224"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">verb</span><span class="w"></span>
@@ -2707,7 +2707,7 @@
 <a id="ln-2500" name="ln-2500" href="#ln-2500"></a><span class="c">!!    Public Domain</span>
 <a id="ln-2501" name="ln-2501" href="#ln-2501"></a><span class="k">subroutine </span><span class="n">show</span><span class="p">(</span><span class="n">VERB_NAME0</span><span class="p">,</span><span class="n">VERBS_ONLY</span><span class="p">,</span><span class="n">IWIDE</span><span class="p">)</span><span class="w"></span>
 <a id="ln-2502" name="ln-2502" href="#ln-2502"></a>
-<a id="ln-2503" name="ln-2503" href="#ln-2503"></a><span class="c">! ident_20=&quot;@(#)M_kracken::show(3f): dump dictionary entries&quot;</span>
+<a id="ln-2503" name="ln-2503" href="#ln-2503"></a><span class="c">! ident_20=&quot;@(#) M_kracken show(3f) dump dictionary entries&quot;</span>
 <a id="ln-2504" name="ln-2504" href="#ln-2504"></a>
 <a id="ln-2505" name="ln-2505" href="#ln-2505"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">VERB_NAME0</span><span class="w">     </span><span class="c">! verb prefix to display. Default is all</span>
 <a id="ln-2506" name="ln-2506" href="#ln-2506"></a><span class="kt">logical</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">            </span><span class="kd">::</span><span class="w"> </span><span class="n">VERBS_ONLY</span><span class="w">     </span><span class="c">! flag to show verbs only</span>
@@ -2798,7 +2798,7 @@
 <a id="ln-2591" name="ln-2591" href="#ln-2591"></a><span class="c">!===================================================================================================================================</span>
 <a id="ln-2592" name="ln-2592" href="#ln-2592"></a><span class="k">subroutine </span><span class="n">cmd_args_to_dictionary</span><span class="p">(</span><span class="n">verb</span><span class="p">)</span><span class="w"></span>
 <a id="ln-2593" name="ln-2593" href="#ln-2593"></a>
-<a id="ln-2594" name="ln-2594" href="#ln-2594"></a><span class="c">! ident_21=&quot;@(#)M_kracken::cmd_args_to_dictionary(3f): convert command line arguments to dictionary entries using alternate style&quot;</span>
+<a id="ln-2594" name="ln-2594" href="#ln-2594"></a><span class="c">! ident_21=&quot;@(#) M_kracken cmd_args_to_dictionary(3f) convert command line arguments to dictionary entries using alternate style&quot;</span>
 <a id="ln-2595" name="ln-2595" href="#ln-2595"></a>
 <a id="ln-2596" name="ln-2596" href="#ln-2596"></a><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">verb</span><span class="w"></span>
 <a id="ln-2597" name="ln-2597" href="#ln-2597"></a><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="k">pointer</span>
@@ -3006,14 +3006,14 @@
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>easy was developed by John Doe<br>&copy; 2022 
+        <div class="col-xs-6 col-md-6"><p>easy was developed by John Doe<br>&copy; 2023 
 </p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
- on 2022-12-31 17:01            </p>
+ on 2023-02-12 08:21            </p>
         </div>
       </div>
       <br>
