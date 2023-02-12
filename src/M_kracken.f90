@@ -9,7 +9,7 @@ use M_list,    only: locate, insert, replace
 use M_args,    only: get_command_arguments_string, longest_command_argument
 implicit none
 
-! ident_1="@(#)M_kracken(3fm): parse command line options of Fortran programs using Unix-like syntax"
+! ident_1="@(#) M_kracken(3fm) parse command line options of Fortran programs using Unix-like syntax"
 
 !===================================================================================================================================
    private
@@ -138,7 +138,7 @@ contains
 !!    Public Domain
 subroutine retrev(name,val,len,ier)
 
-! ident_2="@(#)M_kracken::retrev(3f): retrieve token value from Language Dictionary when given NAME"
+! ident_2="@(#) M_kracken retrev(3f) retrieve token value from Language Dictionary when given NAME"
 
 !-----------------------------------------------------------------------------------------------------------------------------------
 character(len=*),intent(in)     :: name        ! name of variable to retrieve value for in form VERB_NAME
@@ -228,7 +228,7 @@ end subroutine retrev
 !!    Public Domain
 function dget(keyword)
 
-! ident_3="@(#)M_kracken::dget(3f): given keyword fetch dble value from Language Dictionary (zero on err)"
+! ident_3="@(#) M_kracken dget(3f) given keyword fetch dble value from Language Dictionary (zero on err)"
 
 real(kind=dp)                :: dget              ! function type
 character(len=*),intent(in)  :: keyword           ! keyword to retrieve value for from dictionary
@@ -306,7 +306,7 @@ end function dget
 !!    Public Domain
 function rget(keyword)
 
-! ident_4="@(#)M_kracken::rget(3f): given keyword fetch real value from language dictionary (zero on err)"
+! ident_4="@(#) M_kracken rget(3f) given keyword fetch real value from language dictionary (zero on err)"
 
 !-----------------------------------------------------------------------------------------------------------------------------------
    real                        :: rget             ! function type
@@ -383,7 +383,7 @@ end function rget
 !!    Public Domain
 function iget(keyword)
 
-! ident_5="@(#)M_kracken::iget(3f): given keyword fetch integer value from Language Dictionary (0 on err)"
+! ident_5="@(#) M_kracken iget(3f) given keyword fetch integer value from Language Dictionary (0 on err)"
 
 !-----------------------------------------------------------------------------------------------------------------------------------
    integer                      :: iget            ! function type
@@ -465,7 +465,7 @@ end function iget
 !!    Public Domain
 function lget(keyword)
 
-! ident_6="@(#)M_kracken::lget(3f): given keyword fetch logical value from lang. dictionary (.f. on err)"
+! ident_6="@(#) M_kracken lget(3f) given keyword fetch logical value from lang. dictionary (.f. on err)"
 
 !-----------------------------------------------------------------------------------------------------------------------------------
 logical                      :: lget                  ! procedure type
@@ -576,7 +576,7 @@ end function lget
 !!    Public Domain
 function sget(name,ilen) result(string)
 
-! ident_7="@(#)M_kracken::sget(3f): Fetch string value and length of specified NAME from lang. dictionary"
+! ident_7="@(#) M_kracken sget(3f) Fetch string value and length of specified NAME from lang. dictionary"
 
 !  This routine trusts that the desired name exists. A blank is returned if the name is not in the dictionary
 character(len=:),allocatable  :: string      ! returned value
@@ -672,7 +672,7 @@ end function sget
 !!    Public Domain
 function dgets(keyword,ier) result(darray)
 
-! ident_8="@(#)M_kracken::dgets(3f): given keyword fetch dble value from Language Dictionary (0 on err)"
+! ident_8="@(#) M_kracken dgets(3f) given keyword fetch dble value from Language Dictionary (0 on err)"
 
 character(len=*),intent(in) :: keyword                      ! keyword to retrieve value for from dictionary
 real(kind=dp),allocatable   :: darray(:)                    ! function type
@@ -779,7 +779,7 @@ end function dgets
 !!    Public Domain
 function igets(keyword,ier) result(iarray)
 
-! ident_9="@(#)M_kracken::igets(3f): given keyword fetch integer array from string in dictionary(0 on err)"
+! ident_9="@(#) M_kracken igets(3f) given keyword fetch integer array from string in dictionary(0 on err)"
 
 character(len=*),intent(in) :: keyword             ! keyword to retrieve value for from dictionary
 integer,allocatable         :: iarray(:)           ! convert value to an array
@@ -893,7 +893,7 @@ end function igets
 !!    Public Domain
 function rgets(keyword,ier) result(rarray)
 
-! ident_10="@(#)M_kracken::rgets(3f): given keyword fetch real array from string in dictionary (0 on err)"
+! ident_10="@(#) M_kracken rgets(3f) given keyword fetch real array from string in dictionary (0 on err)"
 
 character(len=*),intent(in) :: keyword             ! keyword to retrieve value for from dictionary
 real,allocatable            :: rarray(:)           ! convert value to an array
@@ -981,7 +981,7 @@ end function rgets
 !!    Public Domain
 function lgets(keyword) result(larray)
 
-! ident_11="@(#)M_kracken::lgets(3f): given keyword fetch logical array from string in dictionary(F on err)"
+! ident_11="@(#) M_kracken lgets(3f) given keyword fetch logical array from string in dictionary(F on err)"
 
 character(len=*),intent(in)  :: keyword                    ! the dictionary keyword (in form VERB_KEYWORD) to retrieve
 logical,allocatable          :: larray(:)                  ! convert value to an array
@@ -1097,7 +1097,7 @@ end function lgets
 !!    Public Domain
 function sgets(name,delim) result(strings)
 
-! ident_12="@(#)M_kracken::sgets(3f): Fetch strings value for specified NAME from the lang. dictionary"
+! ident_12="@(#) M_kracken sgets(3f) Fetch strings value for specified NAME from the lang. dictionary"
 
 ! This routine trusts that the desired name exists. A blank is returned if the name is not in the dictionary
 character(len=:),allocatable         :: strings(:)
@@ -1243,7 +1243,7 @@ end function sgets
 !!    Public Domain
 subroutine kracken(verb,string,error_return,style)
 
-! ident_13="@(#)M_kracken::kracken(3f): define and parse command line options"
+! ident_13="@(#) M_kracken kracken(3f) define and parse command line options"
 
 !  get the entire command line argument list and pass it and the prototype to dissect()
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -1373,7 +1373,7 @@ end subroutine kracken
 !!    Public Domain
 subroutine setprompts(verb,init)
 
-! ident_14="@(#)M_kracken::setprompts(3f): set explicit prompts for keywords in interactive mode"
+! ident_14="@(#) M_kracken setprompts(3f) set explicit prompts for keywords in interactive mode"
 
 character(len=*),intent(in):: verb   ! verb name to define prompts for
 character(len=*),intent(in):: init   ! string to define prompts instead of values
@@ -1442,7 +1442,7 @@ end subroutine setprompts
 !!    Public Domain
 subroutine dissect(verb,init,pars,error_return)
 
-! ident_15="@(#)M_kracken::dissect(3f): convenient call to parse()"
+! ident_15="@(#) M_kracken dissect(3f) convenient call to parse() will define defaults then process"
 
 character(len=*),intent(in)  :: verb                     ! the name of the command to be reset/defined  and then set
 character(len=*),intent(in)  :: init                     ! used to define or reset command options; usually hard-set in the program.
@@ -1606,7 +1606,7 @@ end subroutine dissect
 !!    Public Domain
 recursive subroutine parse(verb,string,allow,error_return)
 
-! ident_16="@(#)M_kracken::parse(3f): parse user command and store tokens into Language Dictionary"
+! ident_16="@(#) M_kracken parse(3f) parse user command and store tokens into Language Dictionary"
 
 !!!   set up odd for future expansion
 !!!   need to handle a minus followed by a blank character
@@ -1966,7 +1966,7 @@ end subroutine parse
 !!    Public Domain
 subroutine store(name1,value1,allow1,ier)
 
-! ident_17="@(#)M_kracken::store(3f): replace or add dictionary entry name  and value (if allow='add' add name if necessary)"
+! ident_17="@(#) M_kracken store(3f) replace or add dictionary entry name and value (if allow='add' add name if necessary)"
 
 !-----------------------------------------------------------------------------------------------------------------------------------
 character(len=*),intent(in)        :: name1       ! name in dictionary of form VERB_KEYWORD
@@ -2023,8 +2023,8 @@ integer                            :: inew
    if(.not.allocated(dict_verbs)) call initd()
    call locate(dict_verbs,name,indx,ier,mssge)       ! determine storage placement of the variable and whether it is new
    if(ier  ==  -1)then                               ! an error occurred in determining the storage location
-      call journal("error occurred in *store*")
-      call journal(mssge)
+      call journal('sc', "error occurred in *store* name=", name, "indx=", indx)
+      call journal('sc', "ier=", ier, "message=", mssge)
       return
    endif
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -2155,7 +2155,7 @@ end subroutine store
 !!    Public Domain
 function subscript_(chars0)
 
-! ident_18="@(#)M_kracken::subscript_(3fp): return the subscript value of a string when given its name"
+! ident_18="@(#) M_kracken subscript_(3fp) return the subscript value of a string when given its name"
 
 !  WARNING: only request value of names known to exist
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -2218,7 +2218,7 @@ end function subscript_
 !!    Public Domain
 subroutine menu(verb)
 
-! ident_19="@(#)M_kracken::menu(3fp): prompt for values using a menu interface"
+! ident_19="@(#) M_kracken menu(3fp) prompt for values using a menu interface"
 
 !-----------------------------------------------------------------------------------------------------------------------------------
 character(len=*),intent(in)  :: verb
@@ -2500,7 +2500,7 @@ end subroutine menu
 !!    Public Domain
 subroutine show(VERB_NAME0,VERBS_ONLY,IWIDE)
 
-! ident_20="@(#)M_kracken::show(3f): dump dictionary entries"
+! ident_20="@(#) M_kracken show(3f) dump dictionary entries"
 
 character(len=*),intent(in)   :: VERB_NAME0     ! verb prefix to display. Default is all
 logical,intent(in)            :: VERBS_ONLY     ! flag to show verbs only
@@ -2591,7 +2591,7 @@ end subroutine initd
 !===================================================================================================================================
 subroutine cmd_args_to_dictionary(verb)
 
-! ident_21="@(#)M_kracken::cmd_args_to_dictionary(3f): convert command line arguments to dictionary entries using alternate style"
+! ident_21="@(#) M_kracken cmd_args_to_dictionary(3f) convert command line arguments to dictionary entries using alternate style"
 
 character(len=*),intent(in)  :: verb
 integer                      :: pointer
