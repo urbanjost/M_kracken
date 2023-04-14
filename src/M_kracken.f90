@@ -640,7 +640,7 @@ end function sget
 !!    use M_kracken, only: kracken, dgets
 !!    implicit none
 !!    doubleprecision,allocatable  :: vals(:)
-!!    integer              :: i
+!!    integer :: i
 !!    ! define command arguments and parse user command
 !!    call kracken('demo','-nums 1 2 3 1000 100,000 11.11111 77.77777 -77.7777' )
 !!    vals=dgets('demo_nums') ! get any values specified for -nums
@@ -749,7 +749,7 @@ end function dgets
 !!    use M_kracken, only: kracken, igets
 !!    implicit none
 !!    doubleprecision,allocatable  :: vals(:)
-!!    integer              :: i
+!!    integer :: i
 !!    ! define command arguments and parse user command
 !!    call kracken('demo','-nums 1 2 3 100 1000 10000 100,000 11.11111 77.77777 -77.7777' )
 !!    vals=igets('demo_nums') ! get any values specified for -nums
@@ -839,7 +839,7 @@ end function igets
 !!    use M_kracken, only: kracken, rgets
 !!    implicit none
 !!    real,allocatable  :: val(:)
-!!    integer           :: i
+!!    integer :: i
 !!      ! define command arguments and parse user command
 !!      call kracken('fc','-F -C' )
 !!
@@ -1062,7 +1062,9 @@ end function lgets
 !!
 !!    program demo_sgets
 !!    use M_kracken, only : kracken, sgets
+!!    implicit none
 !!    character(len=:),allocatable :: strings(:)
+!!    integer :: i
 !!       call kracken('cmd',' -string    This   is  a sentence ')
 !!       strings= sgets("cmd_string")            ! get -strings words
 !!       print *, "string=",('['//trim(strings(i))//']',i=1,size(strings))
@@ -1170,6 +1172,7 @@ end function sgets
 !!       program demo_kracken
 !!
 !!       use M_kracken
+!!       implicit none
 !!       ! define command arguments, default values and crack command line
 !!       call kracken('cmd',              &
 !!          &   '-int 20                  &
@@ -1998,9 +2001,12 @@ integer                            :: inew
       write(l_value1,'(g0.8)')value1
    type is(doubleprecision)
       allocate(character(len=30):: l_value1)
-      write(l_value1,'(g0)')value1
+      !does not work in ifort/ifx!write(l_value1,'(g0)')value1
+      write(l_value1,'(es24.17)')value1
    type is(character(len=*))
       l_value1=value1
+   class default
+      error stop 'unknown type'
    end select
 !-----------------------------------------------------------------------------------------------------------------------------------
    if(debug) write(*,*)'STORE ',trim(name1)//'::'//trim(l_value1)//'::'//trim(allow1)
@@ -2028,11 +2034,11 @@ integer                            :: inew
       return
    endif
 !-----------------------------------------------------------------------------------------------------------------------------------
-   if(indx > 0)then                                  ! found the variable name
+   if(indx > 0)then                                       ! found the variable name
       new=1
-   elseif(indx <= 0.and.(allow  ==  'add'.or. allow == 'define'))then        ! check if the name needs added and allow to add
-      inew=iabs(indx)                                ! adding the new variable name in the variable name array
-      call insert(dict_verbs,name,inew)              ! pull down the dictionary arrays to make room for new value
+   elseif( allow  ==  'add'.or. allow == 'define' )then   ! check if the name needs added and allow to add
+      inew=iabs(indx)                                     ! adding the new variable name in the variable name array
+      call insert(dict_verbs,name,inew)                   ! pull down the dictionary arrays to make room for new value
       call insert(dict_vals," ",inew)
       call insert(dict_calls,0,inew)
       call insert(dict_lens,0,inew)
@@ -2516,6 +2522,7 @@ integer                       :: istart
 integer                       :: istep
 integer                       :: iwide_local
 integer                       :: verb_length
+integer,parameter             :: bug=0  ! for gfortran-11 bug
 !-----------------------------------------------------------------------------------------------------------------------------------
    if(.not.allocated(dict_verbs)) call initd()
 !-----------------------------------------------------------------------------------------------------------------------------------
@@ -2560,7 +2567,9 @@ integer                       :: verb_length
             call journal('sc',' ',atleast(DICT_VERBS(i),20)//'=',dict_vals(i))
          endif
       enddo
-      call journal('sc',' dictionary size=',size(DICT_VERBS),'verb length=',len(DICT_VERBS),'value length=',len(DICT_VALS))
+      call journal('sc',' dictionary size=',size(DICT_VERBS)+bug,&
+              &'verb length=',len(DICT_VERBS)+bug,&
+              &'value length=',len(DICT_VALS)+bug)
 !-----------------------------------------------------------------------------------------------------------------------------------
    else                                                        ! show only verb_ variables
       ich=index(VERB_NAME,' ')                                 ! VERB_NAME assumed longer than any verb name, so at least one space

@@ -543,6 +543,7 @@ I\+E\+R\+R\+OR If an error occurs such as an unknown keyword the calling program
 Sample program\+: \begin{DoxyVerb}program demo_kracken
 
 use M_kracken
+implicit none
 ! define command arguments, default values and crack command line
 call kracken('cmd',              &
    &   '-int 20                  &
@@ -1493,7 +1494,7 @@ name the dictionary keyword (in form V\+E\+R\+B\+\_\+\+K\+E\+Y\+W\+O\+RD) to ret
 strings returned string array\hypertarget{namespacem__kracken_autotoc_md94}{}\doxysubsubsection{E\+X\+A\+M\+P\+LE}\label{namespacem__kracken_autotoc_md94}
 Sample program\+:
 
-program demo\+\_\+sgets use M\+\_\+kracken, only \+: kracken, sgets character(len=\+:),allocatable \+:: strings(\+:) call kracken(\textquotesingle{}cmd\textquotesingle{},\textquotesingle{} -\/string This is a sentence \textquotesingle{}) strings= sgets(\char`\"{}cmd\+\_\+string\char`\"{}) ! get -\/strings words print $\ast$, \char`\"{}string=\char`\"{},(\textquotesingle{}\mbox{[}\textquotesingle{}//trim(strings(i))//\textquotesingle{}\mbox{]}\textquotesingle{},i=1,size(strings)) print $\ast$, \char`\"{}len= \char`\"{},len(strings) print $\ast$, \char`\"{}size=\char`\"{},size(strings) end program demo\+\_\+sgets
+program demo\+\_\+sgets use M\+\_\+kracken, only \+: kracken, sgets implicit none character(len=\+:),allocatable \+:: strings(\+:) integer \+:: i call kracken(\textquotesingle{}cmd\textquotesingle{},\textquotesingle{} -\/string This is a sentence \textquotesingle{}) strings= sgets(\char`\"{}cmd\+\_\+string\char`\"{}) ! get -\/strings words print $\ast$, \char`\"{}string=\char`\"{},(\textquotesingle{}\mbox{[}\textquotesingle{}//trim(strings(i))//\textquotesingle{}\mbox{]}\textquotesingle{},i=1,size(strings)) print $\ast$, \char`\"{}len= \char`\"{},len(strings) print $\ast$, \char`\"{}size=\char`\"{},size(strings) end program demo\+\_\+sgets
 
 Example program execution\+:
 

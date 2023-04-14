@@ -940,6 +940,7 @@ EXAMPLE</h2>
 <p>Sample program: </p><pre class="fragment">program demo_kracken
 
 use M_kracken
+implicit none
 ! define command arguments, default values and crack command line
 call kracken('cmd',              &amp;
    &amp;   '-int 20                  &amp;
@@ -2424,7 +2425,7 @@ RETURNS</h2>
 <h2><a class="anchor" id="autotoc_md94"></a>
 EXAMPLE</h2>
 <p>Sample program:</p>
-<p>program demo_sgets use M_kracken, only : kracken, sgets character(len=:),allocatable :: strings(:) call kracken('cmd',' -string This is a sentence ') strings= sgets("cmd_string") ! get -strings words print *, "string=",('['//trim(strings(i))//']',i=1,size(strings)) print *, "len= ",len(strings) print *, "size=",size(strings) end program demo_sgets</p>
+<p>program demo_sgets use M_kracken, only : kracken, sgets implicit none character(len=:),allocatable :: strings(:) integer :: i call kracken('cmd',' -string This is a sentence ') strings= sgets("cmd_string") ! get -strings words print *, "string=",('['//trim(strings(i))//']',i=1,size(strings)) print *, "len= ",len(strings) print *, "size=",size(strings) end program demo_sgets</p>
 <p>Example program execution:</p>
 <p>$ demo_sgets string=[This][is][a][sentence] len= 8 size= 4</p>
 <p>$ demo_sgets -string a b c d e f g string=[a][b][c][d][e][f][g] len= 1 size= 7</p>

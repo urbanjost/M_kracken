@@ -10,6 +10,12 @@ categories = ["command line argument parsing"]
 keywords = ["fortran", "command line", "arguments"]
 homepage = "https://github.com/urbanjost/M_kracken.git"
 
+[build]
+#auto-executables = true
+#auto-examples = false
+#auto-tests = false
+#NO#module-naming = true          # Use default naming convention
+
 [install]
 library=true
 
