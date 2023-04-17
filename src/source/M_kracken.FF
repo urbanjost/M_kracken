@@ -575,8 +575,8 @@ $!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 !()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!
 !===================================================================================================================================
 module M_kracken
-use M_verify,   only: debug, io_debug
-use M_journal, only: journal
+use M_framework__verify,   only: debug, io_debug
+use M_framework__journal, only: journal
 use M_strings, only: upper, string_to_value, split, s2v, atleast
 use M_list,    only: locate, insert, replace
 use M_args,    only: get_command_arguments_string, longest_command_argument
