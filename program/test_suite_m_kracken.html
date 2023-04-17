@@ -202,9 +202,9 @@
       <ul class="list-group">
           <li class="list-group-item">
             <ul class="list-inline">
-                <li><a href='../module/m_kracken.html'>M_kracken</a></li>
-                <li>M_verify</li>
                 <li><a href='<a href="https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fFORTRAN_005fENV.html">iso_fortran_env</a>'>iso_fortran_env</a></li>
+                <li>M_framework__verify</li>
+                <li><a href='../module/m_kracken.html'>M_kracken</a></li>
                 <li><a href='<a href="http://fortranwiki.org/fortran/show/ieee_arithmetic">ieee_arithmetic</a>'>ieee_arithmetic</a></li>
             </ul>
           </li>
@@ -576,10 +576,10 @@ parameter
 <span class="k">use</span><span class="p">,</span><span class="w"> </span><span class="k">intrinsic</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iso_fortran_env</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ERROR_UNIT</span><span class="w"></span>
 <span class="k">use</span><span class="p">,</span><span class="k">intrinsic</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">IEEE_ARITHMETIC</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IEEE_IS_NAN</span><span class="w">       </span><span class="c">! Determine if value is IEEE Not-a-Number.</span>
 <span class="c">!!use,intrinsic :: iso_fortran_env, only : int8, int16, int32, int64, real32, real64, real128</span>
-<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_verify</span><span class="p">,</span><span class="w">   </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">unit_check</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_good</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_bad</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_done</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_start</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_level</span><span class="w"></span>
-<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_verify</span><span class="p">,</span><span class="w">   </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">unit_check_command</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_keep_going</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_level</span><span class="w"></span>
-<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_verify</span><span class="p">,</span><span class="w">   </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">almost</span><span class="w"></span>
-<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_verify</span><span class="p">,</span><span class="w">   </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">unit_check_stop</span><span class="w"></span>
+<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_framework__verify</span><span class="p">,</span><span class="w">  </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">unit_check</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_good</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_bad</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_done</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_start</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_level</span><span class="w"></span>
+<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_framework__verify</span><span class="p">,</span><span class="w">  </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">unit_check_command</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_keep_going</span><span class="p">,</span><span class="w"> </span><span class="n">unit_check_level</span><span class="w"></span>
+<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_framework__verify</span><span class="p">,</span><span class="w">  </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">almost</span><span class="w"></span>
+<span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_framework__verify</span><span class="p">,</span><span class="w">  </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">unit_check_stop</span><span class="w"></span>
 <span class="k">use</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">M_kracken</span><span class="w"></span>
 <span class="k">implicit none</span>
 <span class="kt">integer</span><span class="p">,</span><span class="k">parameter</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">HT</span><span class="o">=</span><span class="mi">9</span><span class="w"></span>
@@ -897,7 +897,7 @@ parameter
             <p class="text-right">
               Documentation generated by
               <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
- on 2023-04-14 05:22              </p>
+ on 2023-04-17 00:15              </p>
           </div>
         </div>
         <br>
