@@ -3502,7 +3502,7 @@ $OUTPUT
    create a stand-alone test program
 
 $OUTPUT ../tmp/_tmp.f90           ! create combined stand-alone source file
-$SYSTEM arget GPF.a M_msg.f90 M_verify.f90 M_journal.f90 M_strings.f90 M_time.f90 M_list.f90 M_kracken.f90 >../tmp/_M.f90
+$SYSTEM arget GPF.a M_framework.f90 M_verify.f90 M_journal.f90 M_strings.f90 M_time.f90 M_list.f90 M_kracken.f90 >../tmp/_M.f90
 $INCLUDE ../tmp/_M.f90            ! the modules
 $SYSTEM  rm ../tmp/_M.f90
 $INCLUDE ../tmp/krackentest2.f90  ! the test program

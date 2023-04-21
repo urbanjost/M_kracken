@@ -1,0 +1,30 @@
+NAME
+   menu(3fp) - [ARGUMENTS:M_kracken] prompt for values using a menu interface
+   (LICENSE:PD)
+
+SYNOPSIS
+  subroutine menu(verb)
+
+   character(len=*),intent(in)  :: verb
+
+DESCRIPTION
+
+OPTIONS
+
+RETURNS
+
+EXAMPLE
+
+SEE ALSO
+   M_kracken(3f),  kracken(3f)
+
+   dget(3f), dgets(3f), iget(3f), igets(3f), lget(3f), lgets(3f),
+   rget(3f), rgets(3f), sget(3f), sgets(3f), retrev(3f)
+
+   parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)
+
+AUTHOR
+   John S. Urban
+
+LICENSE
+   Public Domain

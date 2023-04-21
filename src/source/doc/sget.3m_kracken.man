@@ -1,0 +1,69 @@
+NAME
+   sget(3f) - [ARGUMENTS:M_kracken] given keyword fetch string value and length from command arguments
+   (LICENSE:PD)
+
+SYNOPSIS
+  function sget(name,ilen) result(string)
+
+   character(len=*),intent(in)   :: name        ! name to look up in dictionary
+   integer,intent(out),optional  :: ilen        ! length of returned output string
+   character(len=:),allocatable  :: string      ! returned value
+
+DESCRIPTION
+    The sget(3f) function returns a scalar character value from a command line
+    argument using the M_kracken(3fm) module.
+
+OPTIONS
+    name    the dictionary keyword (in form VERB_KEYWORD) to retrieve.
+            The VERB name comes from the first argument of the
+            KRACKEN(3f) call. The KEYWORD is a keyword from the second
+            argument to the KRACKEN(3f) call.
+            This routine trusts that the desired name exists.
+
+RETURNS
+    string  returned string. If LEN(STRING).EQ.0 an error occurred, such
+            as NAME not being in the dictionary.
+    ilen    optional length of returned output string
+
+EXAMPLE
+  Sample program:
+
+   program demo_sget
+   use M_kracken, only: kracken, sget
+   implicit none
+   character(len=:),allocatable :: string, a, b
+     ! define command arguments and parse user command
+     call kracken('demo','-string This is the default -a A default -b B default' )
+     ! get any values specified on command line for -truth
+     string=sget('demo_string')
+     a=sget('demo_a')
+     b=sget('demo_b')
+     write(*,'("string is ",a)')trim(string)
+     write(*,'("a is ",a)')trim(a)
+     write(*,'("b is ",a)')trim(b)
+   end program demo_sget
+
+  Example program runs:
+
+   $demo_sget
+   string is This is the default
+   a is A default
+   b is B default
+
+   $ demo_sget -a A value for A -string new value for string -b BBBBBBB
+   string is new value for string
+   a is A value for A
+   b is BBBBBBB
+SEE ALSO
+   M_kracken(3f),  kracken(3f)
+
+   dget(3f), dgets(3f), iget(3f), igets(3f), lget(3f), lgets(3f),
+   rget(3f), rgets(3f), sget(3f), sgets(3f), retrev(3f)
+
+   parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)
+
+AUTHOR
+   John S. Urban
+
+LICENSE
+   Public Domain

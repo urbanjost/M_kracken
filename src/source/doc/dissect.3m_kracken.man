@@ -1,0 +1,55 @@
+NAME
+   dissect(3f) - [ARGUMENTS:M_kracken] convenient call to parse() -- define defaults, then process
+   (LICENSE:PD)
+
+SYNOPSIS
+  subroutine dissect(verb,init,pars,error_return)
+
+   character(len=*),intent(in)  :: verb
+   character(len=*),intent(in)  :: init
+   character(len=*),intent(in)  :: pars
+   integer,intent(out),optional :: error_return
+DESCRIPTION
+
+OPTIONS
+   VERB          the name of the command to be reset/defined
+   INIT          used to define command options; usually hard-set in the program.
+   PARS          defines the command options to be set, usually from user input
+
+RETURNS
+   ERROR_RETURN  error code. If zero no error occurred.
+
+EXAMPLE
+  Sample program:
+
+    program demo_dissect
+    use M_kracken, only : kracken,iget,rget,sget,dissect
+    implicit none
+    integer :: ierr
+
+    call dissect('demo',' -int 1000 -float 1234.567 -str CHARACTER value','-int 456 -float 50.00 ',ierr)
+    write(*,'(a,i0)')'INTEGER IS ',iget('demo_int')
+    write(*,'(a,g0)')'REAL IS ',rget('demo_float')
+    write(*,'(a,a)')'STRING IS '//trim(sget('demo_str'))
+
+    end program demo_dissect
+
+  Results:
+
+   INTEGER IS 456
+   REAL IS 50.0000000
+   STRING IS CHARACTER value
+
+SEE ALSO
+   M_kracken(3f),  kracken(3f)
+
+   dget(3f), dgets(3f), iget(3f), igets(3f), lget(3f), lgets(3f),
+   rget(3f), rgets(3f), sget(3f), sgets(3f), retrev(3f)
+
+   parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)
+
+AUTHOR
+   John S. Urban
+
+LICENSE
+   Public Domain

@@ -1,0 +1,61 @@
+NAME
+   ARGUMENTS(3f) - [ARGUMENTS::INTRO] collection of command line argument parsers
+
+SYNOPSIS
+<h3>SPECIAL-PURPOSE PUBLIC ROUTINES:</h3>
+
+   use M_kracken
+   use M_kracken,  only : kracken
+   use M_kracken,  only : rget,dget,iget,lget,sget,retrev
+   use M_krackens, only : rgets,dgets,igets,lgets,sgets
+   use M_kracken,  only : print_kracken_dictionary
+   use M_kracken,  only : cmd_args_to_dictionary, unnamed
+   use M_getopt
+   use M_getopt_long
+
+DESCRIPTION
+
+   The following command line argument parser modules are available:
+   o M_kracken      parse command line options of Fortran programs using Unix-like syntax
+                    (LICENSE:PD)
+   o M_getopt       parse command line arguments. Similar to those in standard C library.
+                    (LICENSE:GPL)
+   o M_getopt_long  parse command line options like Sun getopt_long, including the Sun CLIP specification
+                    (LICENSE:PD)
+   o M_args         parse commands using NAMELIST format or Unix-like syntax and produce a NAMELIST string
+                    to allow argument parsing without having to convert strings to various variable types
+                    (LICENSE:PD)
+
+M_KRACKEN
+
+   M_kracken(3f) is a module to parse command line options of Fortran programs using Unix-like syntax.
+   The main differences in syntax are that negative values and multi-word values rarely need quotes
+   around them, and that the "unnamed" parameter is first on the command line. It contains:
+
+   BASE ROUTINES
+   kracken      - crack command line options on Fortran programs, using "-KEYWORD VALUE" syntax
+   retrev       - get keyword value as a string from a command's argument list
+
+   CONVENIENCE ROUTINES FOR FETCHING VALUES
+   dget         - given keyword fetch doubleprecision value from command argument
+   iget         - given keyword fetch integer value from command argument
+   lget         - given keyword fetch logical value from command arguments
+   rget         - given keyword fetch real value from command argument
+   sget         - given keyword fetch string value and length from command arguments
+   dgets        - given keyword fetch doubleprecision array from command arguments
+   igets        - given keyword fetch integer array from command arguments
+   lgets        - given keyword fetch logical array from command argument
+   rgets        - given keyword fetch real array from command arguments
+   sgets        - given keyword fetch string value parsed on whitespace into an array
+
+   AUXILIARY COMMAND FOR SETTING PROMPTS
+   setprompts   - set explicit prompts for keywords in interactive mode
+
+   AUXILIARY COMMANDS FOR USE IN BUILDING CLI
+   (CLI) Command Line Interface routines can be used to read shell-like input and
+   configuration files
+
+   dissect      - convenient call to parse() - define defaults, then process
+   parse        - parse user command and store tokens into Language Dictionary
+   show         - dump dictionary entries
+   store        - replace dictionary name's value (if allow=add add name if necessary)

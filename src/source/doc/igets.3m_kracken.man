@@ -1,0 +1,65 @@
+NAME
+   igets(3f) - [ARGUMENTS:M_kracken] given keyword fetch integer array from command arguments
+   (LICENSE:PD)
+
+SYNOPSIS
+   function igets(keyword,ier) result(iarray)
+
+    character(len=*),intent(in)   :: keyword
+    integer,allocatable           :: iarray(:)
+    integer,optional,intent(iout) :: ier
+
+DESCRIPTION
+    The igets(3f) function returns a dynamically allocated array of integers
+    from a string that is the value for a command line option. It is part of
+    the M_kracken(3fm) module.
+
+    Values that cannot be read as an integer value are returned as a NaN.
+
+OPTIONS
+    KEYWORD    the dictionary keyword (in form VERB_KEYWORD) to retrieve.
+               The VERB name comes from the first argument of the KRACKEN(3f)
+               call. The KEYWORD is a keyword from the KRACKEN(3f) call that
+               should be interpreted as a list of INTEGER values. Decimal values
+               are allowed but truncated. Note that comma characters are ignored.
+
+RETURNS
+    IARRAY     INTEGER array returned by function
+               The array will have zero size if the parsed dictionary
+    IER        If present and non-zero an error occurred in converting strings to a value
+
+EXAMPLE
+  Sample program
+
+   program demo_igets
+   use M_kracken, only: kracken, igets
+   implicit none
+   doubleprecision,allocatable  :: vals(:)
+   integer :: i
+   ! define command arguments and parse user command
+   call kracken('demo','-nums 1 2 3 100 1000 10000 100,000 11.11111 77.77777 -77.7777' )
+   vals=igets('demo_nums') ! get any values specified for -nums
+   write(*,'(*(g0:,","))')( vals(i),i=1,size(vals)) ! print the values
+   end program demo_igets
+
+  Example program runs:
+
+   $ demo_igets
+   1,2,3,100,1000,10000,100000,11,77,-77
+   $ demo_igets -val 89,123,456 10.9999999
+   89123456,10
+
+
+SEE ALSO
+   M_kracken(3f),  kracken(3f)
+
+   dget(3f), dgets(3f), iget(3f), igets(3f), lget(3f), lgets(3f),
+   rget(3f), rgets(3f), sget(3f), sgets(3f), retrev(3f)
+
+   parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)
+
+AUTHOR
+   John S. Urban
+
+LICENSE
+   Public Domain

@@ -1,0 +1,30 @@
+NAME
+   subscript_(3fp) - [ARGUMENTS:M_kracken] return the subscript value of a string when given its name
+   (LICENSE:PD)
+
+SYNOPSIS
+  function subscript_(chars0)
+
+   character(len=*),intent(in) :: chars0
+
+DESCRIPTION
+
+OPTIONS
+
+RETURNS
+
+EXAMPLE
+
+SEE ALSO
+   M_kracken(3f),  kracken(3f)
+
+   dget(3f), dgets(3f), iget(3f), igets(3f), lget(3f), lgets(3f),
+   rget(3f), rgets(3f), sget(3f), sgets(3f), retrev(3f)
+
+   parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)
+
+AUTHOR
+   John S. Urban
+
+LICENSE
+   Public Domain
