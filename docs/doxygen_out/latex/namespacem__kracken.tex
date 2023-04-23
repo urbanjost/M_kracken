@@ -50,6 +50,8 @@ subroutine, public \mbox{\hyperlink{namespacem__kracken_a3ec390c8e6b0edcd0f1ca33
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
+logical, save \mbox{\hyperlink{namespacem__kracken_a71e8a070649beba65676212a5c3469d2}{debug}} =.false.
+\item 
 logical, public \mbox{\hyperlink{namespacem__kracken_a80b3400471894bf1d5b6379a36b8cdaf}{stop\+\_\+command}} =.false.
 \item 
 integer, parameter, public \mbox{\hyperlink{namespacem__kracken_a8ea178b8a94bffc734d4dd6437eb6301}{ipvalue}} =4096$\ast$16
@@ -91,7 +93,7 @@ character(len=10), save, public \mbox{\hyperlink{namespacem__kracken_a92168aa111
 
 
 
-References dict\+\_\+verbs, ifnull(), print\+\_\+kracken\+\_\+dictionary(), sget(), store(), unnamed, and m\+\_\+strings\+::upper().
+References debug, dict\+\_\+verbs, ifnull(), print\+\_\+kracken\+\_\+dictionary(), sget(), store(), unnamed, and m\+\_\+strings\+::upper().
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -327,7 +329,7 @@ parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)\hypertarget{namespac
 John S. Urban\hypertarget{namespacem__kracken_autotoc_md1281}{}\doxysubsubsection{L\+I\+C\+E\+N\+SE}\label{namespacem__kracken_autotoc_md1281}
 Public Domain 
 
-References lget(), menu(), parse(), and store().
+References debug, lget(), menu(), parse(), and store().
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -695,7 +697,7 @@ parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)\hypertarget{namespac
 John S. Urban\hypertarget{namespacem__kracken_autotoc_md1264}{}\doxysubsubsection{L\+I\+C\+E\+N\+SE}\label{namespacem__kracken_autotoc_md1264}
 Public Domain 
 
-References cmd\+\_\+args\+\_\+to\+\_\+dictionary(), dissect(), kracken\+\_\+method, lget(), menu(), parse(), store(), unnamed, and m\+\_\+strings\+::upper().
+References cmd\+\_\+args\+\_\+to\+\_\+dictionary(), debug, dissect(), kracken\+\_\+method, lget(), menu(), parse(), store(), unnamed, and m\+\_\+strings\+::upper().
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -911,7 +913,7 @@ parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)\hypertarget{namespac
 John S. Urban\hypertarget{namespacem__kracken_autotoc_md1317}{}\doxysubsubsection{L\+I\+C\+E\+N\+SE}\label{namespacem__kracken_autotoc_md1317}
 Public Domain 
 
-References dict\+\_\+lens, dict\+\_\+vals, dict\+\_\+verbs, initd(), parse(), m\+\_\+strings\+::s2v(), stop\+\_\+command, and store().
+References debug, dict\+\_\+lens, dict\+\_\+vals, dict\+\_\+verbs, initd(), parse(), m\+\_\+strings\+::s2v(), stop\+\_\+command, and store().
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -1027,7 +1029,7 @@ parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)\hypertarget{namespac
 John S. Urban\hypertarget{namespacem__kracken_autotoc_md1290}{}\doxysubsubsection{L\+I\+C\+E\+N\+SE}\label{namespacem__kracken_autotoc_md1290}
 Public Domain 
 
-References current\+\_\+command\+\_\+length, dict\+\_\+calls, dict\+\_\+verbs, initd(), kracken\+\_\+comment, leftover, lget(), menu(), store(), and subscript\+\_\+().
+References current\+\_\+command\+\_\+length, debug, dict\+\_\+calls, dict\+\_\+verbs, initd(), kracken\+\_\+comment, leftover, lget(), menu(), store(), and subscript\+\_\+().
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -1698,7 +1700,7 @@ parse(3f), dissect(3f), store(3f), setprompts(3f), show(3f)\hypertarget{namespac
 John S. Urban\hypertarget{namespacem__kracken_autotoc_md1299}{}\doxysubsubsection{L\+I\+C\+E\+N\+SE}\label{namespacem__kracken_autotoc_md1299}
 Public Domain 
 
-References dict\+\_\+calls, dict\+\_\+lens, dict\+\_\+vals, dict\+\_\+verbs, initd(), and ipverb.
+References debug, dict\+\_\+calls, dict\+\_\+lens, dict\+\_\+vals, dict\+\_\+verbs, initd(), and ipverb.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -1769,6 +1771,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{current\_command\_length@{current\_command\_length}!m\_kracken@{m\_kracken}}
 \doxysubsubsection{\texorpdfstring{current\_command\_length}{current\_command\_length}}
 {\footnotesize\ttfamily integer save public m\+\_\+kracken\+::current\+\_\+command\+\_\+length =0}
+
+\mbox{\Hypertarget{namespacem__kracken_a71e8a070649beba65676212a5c3469d2}\label{namespacem__kracken_a71e8a070649beba65676212a5c3469d2}} 
+\index{m\_kracken@{m\_kracken}!debug@{debug}}
+\index{debug@{debug}!m\_kracken@{m\_kracken}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily logical, save m\+\_\+kracken\+::debug =.false.\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{namespacem__kracken_aa54cbaf20ecc568db94f43fba9cbd238}\label{namespacem__kracken_aa54cbaf20ecc568db94f43fba9cbd238}} 
 \index{m\_kracken@{m\_kracken}!dict\_calls@{dict\_calls}}

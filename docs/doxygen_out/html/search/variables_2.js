@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['debug_538',['debug',['../namespacem__verify.html#a0f87b43bebf70897f9ec711be3f01839',1,'m_verify::debug()'],['../namespacem__journal.html#a6184fbcebdfa06f0a45ce4c699189b53',1,'m_journal::debug()'],['../namespacem__list.html#aaa3ea916cd8c669ebbc8ec9096c5bbca',1,'m_list::debug()']]],
+  ['debug_538',['debug',['../namespacem__kracken.html#a71e8a070649beba65676212a5c3469d2',1,'m_kracken::debug()'],['../namespacem__verify.html#a0f87b43bebf70897f9ec711be3f01839',1,'m_verify::debug()'],['../namespacem__journal.html#a6184fbcebdfa06f0a45ce4c699189b53',1,'m_journal::debug()'],['../namespacem__list.html#aaa3ea916cd8c669ebbc8ec9096c5bbca',1,'m_list::debug()']]],
   ['dict_5fcalls_539',['dict_calls',['../namespacem__kracken.html#aa54cbaf20ecc568db94f43fba9cbd238',1,'m_kracken']]],
   ['dict_5flens_540',['dict_lens',['../namespacem__kracken.html#a3a34e9a6c36e60bbe3d0c82f6d2e5d2e',1,'m_kracken']]],
   ['dict_5fvals_541',['dict_vals',['../namespacem__kracken.html#a5292e711f2d4ee404402447025c9633f',1,'m_kracken']]],

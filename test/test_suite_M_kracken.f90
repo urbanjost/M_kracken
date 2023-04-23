@@ -6,8 +6,8 @@ use, intrinsic :: iso_fortran_env, only : ERROR_UNIT
 use,intrinsic :: IEEE_ARITHMETIC, only : IEEE_IS_NAN       ! Determine if value is IEEE Not-a-Number.
 !!use,intrinsic :: iso_fortran_env, only : int8, int16, int32, int64, real32, real64, real128
 use :: M_framework__verify,  only : unit_check, unit_check_good, unit_check_bad, unit_check_done, unit_check_start
-use :: M_framework__verify,  only : almost
 use :: M_framework__verify,  only : unit_check_stop
+use :: M_framework__approx,  only : almost
 use :: M_kracken
 implicit none
 integer,parameter :: HT=9

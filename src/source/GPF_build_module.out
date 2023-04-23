@@ -1,6 +1,6 @@
 >>>> MODULE IS                       M_kracken
->>>> DOCUMENT DIRECTORY IS           /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source
->>>> MANPAGES PROCEDURE DIRECTORY IS /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man
+>>>> DOCUMENT DIRECTORY IS           /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source
+>>>> MANPAGES PROCEDURE DIRECTORY IS /home/urbanjs/venus/V600/github/ARGS/M_kracken/man
 >>>> MAN_EXTENSION IS                m_kracken
 + grep -q '^#' M_kracken.FF
 + SUFFIX=f90
@@ -12,21 +12,21 @@
 + set -xv
 + cat
 >>>> .man files to MAN DIRECTORY as ROFF and HTML
->>>> MANOUT        => /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man
+>>>> MANOUT        => /home/urbanjs/venus/V600/github/ARGS/M_kracken/man
 >>>> MAN_EXTENSION => 
->>>> DOCS          => /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs
+>>>> DOCS          => /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man1
-++ ls '*.1.man' '*.1m_kracken.man'
-++ uniq
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man1
 ++ sort
+++ uniq
+++ ls '*.1.man' '*.1m_kracken.man'
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man2
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man2
 ++ ls '*.2.man' '*.2m_kracken.man'
 ++ sort
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3
 ++ sort
 ++ ls ARGUMENTS.3.man dget.3m_kracken.man dgets.3m_kracken.man dissect.3m_kracken.man iget.3m_kracken.man igets.3m_kracken.man kracken.3m_kracken.man lget.3m_kracken.man lgets.3m_kracken.man parse.3m_kracken.man retrev.3m_kracken.man rget.3m_kracken.man rgets.3m_kracken.man setprompts.3m_kracken.man sget.3m_kracken.man sgets.3m_kracken.man show.3m_kracken.man store.3m_kracken.man
 ++ uniq
@@ -34,396 +34,396 @@
 + echo '>>>> processing manpage and HTML for ARGUMENTS.3.man'
 >>>> processing manpage and HTML for ARGUMENTS.3.man
 ++ basename ARGUMENTS.3.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/ARGUMENTS.3
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/ARGUMENTS.3
 ++ basename ARGUMENTS.3.man .3m_kracken.man
 + SHORTNAME=ARGUMENTS.3.man
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/ARGUMENTS.3 SHORTNAME ARGUMENTS.3.man
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/ARGUMENTS.3 SHORTNAME ARGUMENTS.3.man
 + txt2man -s 3m_kracken -t ARGUMENTS.3.man ARGUMENTS.3.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/ARGUMENTS.3
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/ARGUMENTS.3
 + env AUX_FILENAME=ARGUMENTS.3.man man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html c7cd0125-c447-4552-8a63-fe420b1ddeb3
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/ARGUMENTS.3
+man2html 8ed32845-f1c6-435f-a6dc-6df88e20d6c7
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/ARGUMENTS.3.man.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/ARGUMENTS.3
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for dget.3m_kracken.man'
 >>>> processing manpage and HTML for dget.3m_kracken.man
 ++ basename dget.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dget.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dget.3m_kracken
 ++ basename dget.3m_kracken.man .3m_kracken.man
 + SHORTNAME=dget
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dget.3m_kracken SHORTNAME dget
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dget.3m_kracken SHORTNAME dget
 + txt2man -s 3m_kracken -t dget dget.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dget.3m_kracken
 + env AUX_FILENAME=dget man2html
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dget.3m_kracken
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html dd53d95c-e102-41f8-b5db-cdcc07de9221
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dget.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dget.3m_kracken
+man2html 2413ebc7-8314-4f9d-9806-fa9798d268f0
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dget.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dget.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for dgets.3m_kracken.man'
 >>>> processing manpage and HTML for dgets.3m_kracken.man
 ++ basename dgets.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dgets.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dgets.3m_kracken
 ++ basename dgets.3m_kracken.man .3m_kracken.man
 + SHORTNAME=dgets
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dgets.3m_kracken SHORTNAME dgets
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dgets.3m_kracken SHORTNAME dgets
 + txt2man -s 3m_kracken -t dgets dgets.3m_kracken.man
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dgets.3m_kracken
 + env AUX_FILENAME=dgets man2html
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dgets.3m_kracken
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html ca46cacd-f6f1-4745-bc11-65f894c2f80f
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dgets.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dgets.3m_kracken
+man2html b0a0b794-bdbd-436c-9c26-a430c2112087
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dgets.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dgets.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for dissect.3m_kracken.man'
 >>>> processing manpage and HTML for dissect.3m_kracken.man
 ++ basename dissect.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dissect.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dissect.3m_kracken
 ++ basename dissect.3m_kracken.man .3m_kracken.man
 + SHORTNAME=dissect
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dissect.3m_kracken SHORTNAME dissect
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dissect.3m_kracken SHORTNAME dissect
 + txt2man -s 3m_kracken -t dissect dissect.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dissect.3m_kracken
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dissect.3m_kracken
 + env AUX_FILENAME=dissect man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 068ea7d3-2b33-47e8-99e4-f51abe250bd6
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dissect.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dissect.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dissect.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dissect.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/dissect.3m_kracken
+man2html 813e32b3-9718-40cc-85ec-d50056daf8fd
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dissect.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dissect.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dissect.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dissect.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/dissect.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for iget.3m_kracken.man'
 >>>> processing manpage and HTML for iget.3m_kracken.man
 ++ basename iget.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/iget.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/iget.3m_kracken
 ++ basename iget.3m_kracken.man .3m_kracken.man
 + SHORTNAME=iget
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/iget.3m_kracken SHORTNAME iget
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/iget.3m_kracken SHORTNAME iget
 + txt2man -s 3m_kracken -t iget iget.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/iget.3m_kracken
 + env AUX_FILENAME=iget man2html
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/iget.3m_kracken
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 22f25059-c6f5-44cc-b688-377b393bd98e
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/iget.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/iget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/iget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/iget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/iget.3m_kracken
+man2html 746758d5-e8e8-4698-867b-2c8241f48d05
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/iget.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/iget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/iget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/iget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/iget.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for igets.3m_kracken.man'
 >>>> processing manpage and HTML for igets.3m_kracken.man
 ++ basename igets.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/igets.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/igets.3m_kracken
 ++ basename igets.3m_kracken.man .3m_kracken.man
 + SHORTNAME=igets
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/igets.3m_kracken SHORTNAME igets
-+ env AUX_FILENAME=igets man2html
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/igets.3m_kracken SHORTNAME igets
 + txt2man -s 3m_kracken -t igets igets.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/igets.3m_kracken
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/igets.3m_kracken
++ env AUX_FILENAME=igets man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 29429a13-215e-438e-b0ce-793befa01129
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/igets.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/igets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/igets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/igets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/igets.3m_kracken
+man2html b5de552b-5a86-45fc-85f5-dfc1886f4a33
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/igets.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/igets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/igets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/igets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/igets.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for kracken.3m_kracken.man'
 >>>> processing manpage and HTML for kracken.3m_kracken.man
 ++ basename kracken.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/kracken.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/kracken.3m_kracken
 ++ basename kracken.3m_kracken.man .3m_kracken.man
 + SHORTNAME=kracken
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/kracken.3m_kracken SHORTNAME kracken
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/kracken.3m_kracken
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/kracken.3m_kracken SHORTNAME kracken
 + txt2man -s 3m_kracken -t kracken kracken.3m_kracken.man
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/kracken.3m_kracken
 + env AUX_FILENAME=kracken man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html b5eb0bb1-7e60-4fa1-9c94-1d050943b161
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/kracken.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/kracken.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/kracken.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/kracken.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/kracken.3m_kracken
+man2html bbc2eb4b-ae0a-4ed6-a006-ee294095de3f
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/kracken.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/kracken.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/kracken.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/kracken.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/kracken.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for lget.3m_kracken.man'
 >>>> processing manpage and HTML for lget.3m_kracken.man
 ++ basename lget.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lget.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lget.3m_kracken
 ++ basename lget.3m_kracken.man .3m_kracken.man
 + SHORTNAME=lget
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lget.3m_kracken SHORTNAME lget
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lget.3m_kracken
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lget.3m_kracken SHORTNAME lget
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lget.3m_kracken
 + env AUX_FILENAME=lget man2html
 + txt2man -s 3m_kracken -t lget lget.3m_kracken.man
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html b6e3a267-49fb-4aab-81e7-f0654b3be806
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lget.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lget.3m_kracken
+man2html 3e5bfd24-a5fc-47f0-aa02-e58ee2bb7b04
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lget.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lget.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for lgets.3m_kracken.man'
 >>>> processing manpage and HTML for lgets.3m_kracken.man
 ++ basename lgets.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lgets.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lgets.3m_kracken
 ++ basename lgets.3m_kracken.man .3m_kracken.man
 + SHORTNAME=lgets
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lgets.3m_kracken SHORTNAME lgets
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lgets.3m_kracken
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lgets.3m_kracken SHORTNAME lgets
 + txt2man -s 3m_kracken -t lgets lgets.3m_kracken.man
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lgets.3m_kracken
 + env AUX_FILENAME=lgets man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html a3e57864-30cc-42ba-a004-cad6807f8e19
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lgets.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/lgets.3m_kracken
+man2html 644fe549-f4e2-4587-8228-928e5d214a92
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lgets.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/lgets.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for parse.3m_kracken.man'
 >>>> processing manpage and HTML for parse.3m_kracken.man
 ++ basename parse.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/parse.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/parse.3m_kracken
 ++ basename parse.3m_kracken.man .3m_kracken.man
 + SHORTNAME=parse
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/parse.3m_kracken SHORTNAME parse
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/parse.3m_kracken SHORTNAME parse
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/parse.3m_kracken
 + txt2man -s 3m_kracken -t parse parse.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/parse.3m_kracken
 + env AUX_FILENAME=parse man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 65634579-514e-4480-a4b8-76578d7700fe
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/parse.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/parse.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/parse.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/parse.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/parse.3m_kracken
+man2html 87e566be-4c77-4a4c-959a-a2a7eef79a51
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/parse.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/parse.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/parse.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/parse.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/parse.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for retrev.3m_kracken.man'
 >>>> processing manpage and HTML for retrev.3m_kracken.man
 ++ basename retrev.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/retrev.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/retrev.3m_kracken
 ++ basename retrev.3m_kracken.man .3m_kracken.man
 + SHORTNAME=retrev
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/retrev.3m_kracken SHORTNAME retrev
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/retrev.3m_kracken
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/retrev.3m_kracken SHORTNAME retrev
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/retrev.3m_kracken
 + env AUX_FILENAME=retrev man2html
 + txt2man -s 3m_kracken -t retrev retrev.3m_kracken.man
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html af2fffb5-a38d-4644-86be-89df4b5d3ff9
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/retrev.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/retrev.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/retrev.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/retrev.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/retrev.3m_kracken
+man2html 21f2d49a-2a03-4789-b929-2ff21f13392c
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/retrev.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/retrev.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/retrev.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/retrev.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/retrev.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for rget.3m_kracken.man'
 >>>> processing manpage and HTML for rget.3m_kracken.man
 ++ basename rget.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rget.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rget.3m_kracken
 ++ basename rget.3m_kracken.man .3m_kracken.man
 + SHORTNAME=rget
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rget.3m_kracken SHORTNAME rget
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rget.3m_kracken SHORTNAME rget
 + txt2man -s 3m_kracken -t rget rget.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rget.3m_kracken
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rget.3m_kracken
 + env AUX_FILENAME=rget man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html ba9d6b2e-af58-4606-8e76-34de3af4aacf
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rget.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rget.3m_kracken
+man2html 43d97af6-7e28-4e7f-b94e-1d430f44ebd9
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rget.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rget.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for rgets.3m_kracken.man'
 >>>> processing manpage and HTML for rgets.3m_kracken.man
 ++ basename rgets.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rgets.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rgets.3m_kracken
 ++ basename rgets.3m_kracken.man .3m_kracken.man
 + SHORTNAME=rgets
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rgets.3m_kracken SHORTNAME rgets
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rgets.3m_kracken SHORTNAME rgets
 + txt2man -s 3m_kracken -t rgets rgets.3m_kracken.man
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rgets.3m_kracken
 + env AUX_FILENAME=rgets man2html
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rgets.3m_kracken
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 6fedf6cf-3f1c-4a15-a3bc-a840c2be28ec
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rgets.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/rgets.3m_kracken
+man2html fe8dac58-e7b7-410b-b03c-ec2cbaa9b165
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rgets.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/rgets.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for setprompts.3m_kracken.man'
 >>>> processing manpage and HTML for setprompts.3m_kracken.man
 ++ basename setprompts.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/setprompts.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/setprompts.3m_kracken
 ++ basename setprompts.3m_kracken.man .3m_kracken.man
 + SHORTNAME=setprompts
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/setprompts.3m_kracken SHORTNAME setprompts
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/setprompts.3m_kracken SHORTNAME setprompts
 + txt2man -s 3m_kracken -t setprompts setprompts.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/setprompts.3m_kracken
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/setprompts.3m_kracken
 + env AUX_FILENAME=setprompts man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 35793349-7a72-4fe6-861f-a4240298ec92
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/setprompts.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/setprompts.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/setprompts.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/setprompts.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/setprompts.3m_kracken
+man2html 9a63efff-39df-4473-8966-40db99ac1e62
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/setprompts.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/setprompts.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/setprompts.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/setprompts.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/setprompts.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for sget.3m_kracken.man'
 >>>> processing manpage and HTML for sget.3m_kracken.man
 ++ basename sget.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sget.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sget.3m_kracken
 ++ basename sget.3m_kracken.man .3m_kracken.man
 + SHORTNAME=sget
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sget.3m_kracken SHORTNAME sget
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sget.3m_kracken SHORTNAME sget
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sget.3m_kracken
 + txt2man -s 3m_kracken -t sget sget.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sget.3m_kracken
 + env AUX_FILENAME=sget man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 5a5aeeca-79d8-4006-8d38-536ef985e77a
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sget.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sget.3m_kracken
+man2html 9ef52e17-0688-418b-90a7-62e0e3a47b35
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sget.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sget.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sget.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sget.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sget.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for sgets.3m_kracken.man'
 >>>> processing manpage and HTML for sgets.3m_kracken.man
 ++ basename sgets.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sgets.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sgets.3m_kracken
 ++ basename sgets.3m_kracken.man .3m_kracken.man
 + SHORTNAME=sgets
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sgets.3m_kracken SHORTNAME sgets
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sgets.3m_kracken SHORTNAME sgets
 + txt2man -s 3m_kracken -t sgets sgets.3m_kracken.man
 + env AUX_FILENAME=sgets man2html
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sgets.3m_kracken
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sgets.3m_kracken
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html 13e60f72-56a2-4248-a139-258395c50dc8
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sgets.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/sgets.3m_kracken
+man2html 9a2cf581-b327-4f00-a100-60029a279df7
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sgets.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sgets.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sgets.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sgets.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/sgets.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for show.3m_kracken.man'
 >>>> processing manpage and HTML for show.3m_kracken.man
 ++ basename show.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/show.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/show.3m_kracken
 ++ basename show.3m_kracken.man .3m_kracken.man
 + SHORTNAME=show
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/show.3m_kracken SHORTNAME show
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/show.3m_kracken SHORTNAME show
 + txt2man -s 3m_kracken -t show show.3m_kracken.man
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/show.3m_kracken
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/show.3m_kracken
 + env AUX_FILENAME=show man2html
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html a30c31a8-9e46-4c59-b290-307063fa5057
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/show.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/show.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/show.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/show.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/show.3m_kracken
+man2html df84f2b5-a1dd-42f9-974e-13c1e2ef7fb0
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/show.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/show.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/show.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/show.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/show.3m_kracken
 + for NAME in $(ls *.$NUM.man *.${NUM}${MAN_EXTENSION}.man 2>/dev/null|sort|uniq)
 + echo '>>>> processing manpage and HTML for store.3m_kracken.man'
 >>>> processing manpage and HTML for store.3m_kracken.man
 ++ basename store.3m_kracken.man .man
-+ SHORTNAME_MAN=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/store.3m_kracken
++ SHORTNAME_MAN=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/store.3m_kracken
 ++ basename store.3m_kracken.man .3m_kracken.man
 + SHORTNAME=store
-+ : SHORTNAME_MAN /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/store.3m_kracken SHORTNAME store
++ : SHORTNAME_MAN /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/store.3m_kracken SHORTNAME store
 + txt2man -s 3m_kracken -t store store.3m_kracken.man
++ tee /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/store.3m_kracken
 + env AUX_FILENAME=store man2html
-+ tee /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/store.3m_kracken
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
-man2html ff63823e-7645-4130-af75-6ecf3ae58d7c
-+ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.html
-CHANGING FILE /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
-BEFORE: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
-AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/store.3m_kracken
+man2html bcadd8f9-c760-4299-ab04-75c0a6ff478e
++ replace index.html https://github.com/urbanjost/M_kracken -- /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/store.3m_kracken.html
+CHANGING FILE /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/store.3m_kracken.html  [index.html][https://github.com/urbanjost/M_kracken]
+BEFORE: /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/store.3m_kracken.html:45:<h5><a href="index.html">[UP]</a></h5>
+AFTER:  /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/store.3m_kracken.html:45:<h5><a href="https://github.com/urbanjost/M_kracken">[UP]</a></h5>
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/store.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man4
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man4
 ++ sort
 ++ ls '*.4.man' '*.4m_kracken.man'
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man5
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man5
 ++ ls '*.5.man' '*.5m_kracken.man'
 ++ sort
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man6
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man6
 ++ ls '*.6.man' '*.6m_kracken.man'
-++ sort
 ++ uniq
-+ for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man7
 ++ sort
++ for NUM in 1 2 3 4 5 6 7 8
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man7
 ++ ls '*.7.man' '*.7m_kracken.man'
+++ sort
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man8
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man8
 ++ ls '*.8.man' '*.8m_kracken.man'
 ++ sort
 ++ uniq
 + cat
 >>>> .txt files to MAN DIRECTORY
->>>> MANOUT        => /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man
+>>>> MANOUT        => /home/urbanjs/venus/V600/github/ARGS/M_kracken/man
 >>>> MAN_EXTENSION => 
 + cd doc
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man1
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man1
 ++ ls '*.1.txt' '*.1m_kracken.txt'
 ++ sort
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man2
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man2
 ++ ls '*.2.txt' '*.2m_kracken.txt'
-++ sort
 ++ uniq
-+ for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3
 ++ sort
++ for NUM in 1 2 3 4 5 6 7 8
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3
 ++ ls '*.3.txt' '*.3m_kracken.txt'
 ++ uniq
+++ sort
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man4
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man4
+++ sort
 ++ ls '*.4.txt' '*.4m_kracken.txt'
-++ sort
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man5
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man5
 ++ ls '*.5.txt' '*.5m_kracken.txt'
+++ uniq
+++ sort
++ for NUM in 1 2 3 4 5 6 7 8
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man6
 ++ sort
 ++ uniq
-+ for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man6
-++ sort
 ++ ls '*.6.txt' '*.6m_kracken.txt'
-++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man7
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man7
+++ sort
 ++ ls '*.7.txt' '*.7m_kracken.txt'
-++ sort
 ++ uniq
 + for NUM in 1 2 3 4 5 6 7 8
-+ mkdir -p /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man8
++ mkdir -p /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man8
+++ ls '*.8.txt' '*.8m_kracken.txt'
 ++ sort
 ++ uniq
-++ ls '*.8.txt' '*.8m_kracken.txt'
 + echo '>>>> *.htm files to HTML and ROFF'
 >>>> *.htm files to HTML and ROFF
 + cd doc
@@ -438,12 +438,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.1m_kracken.html
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.1m_kracken.html
 + txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man1/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man1/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -455,12 +455,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.2m_kracken.html
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.2m_kracken.html
 + txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man2/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man2/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -472,12 +472,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html
 + txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man3/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man3/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -489,12 +489,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.4m_kracken.html
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.4m_kracken.html
 + txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man4/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man4/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -506,12 +506,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.5m_kracken.html
 + txt2man
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.5m_kracken.html
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man5/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man5/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -523,12 +523,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.6m_kracken.html
 + txt2man
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.6m_kracken.html
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man6/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man6/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -540,12 +540,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.7m_kracken.html
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.7m_kracken.html
 + txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man7/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man7/M_kracken.3m_kracken
 + for NUM in 1 2 3 4 5 6 7 8
 ++ ls M_kracken.3m_kracken.htm
 + for NAME in $(ls *.htm 2>/dev/null)
@@ -557,12 +557,12 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + echo '>>>> processing HTML to manpage for M_kracken.3m_kracken.htm'
 >>>> processing HTML to manpage for M_kracken.3m_kracken.htm
 + set -xv
-+ html2txt /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.8m_kracken.html
++ html2txt /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.htm.8m_kracken.html
 + txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
 /home/urbanjs/venus/V600/github/index/github_scripts/bash/txt2man
 ++ basename M_kracken.3m_kracken.htm .htm
-+ gzip -f /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/man8/M_kracken.3m_kracken
++ gzip -f /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/man8/M_kracken.3m_kracken
 + echo '>>>> *.html files to DOC DIRECTORY'
 >>>> *.html files to DOC DIRECTORY
 + cd doc
@@ -587,37 +587,37 @@ AFTER:  /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3m_kracken.ht
 + cd ../../man
 + mandb -c .
 mandb: warning: $MANPATH set, inserting /etc/manpath.config
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man1'. Wait...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/....
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man1/M_kracken.3m_kracken.gz: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man3'. Wait...
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man2'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man2/M_kracken.3m_kracken.gz: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man4'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man4/M_kracken.3m_kracken.gz: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man6'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man6/M_kracken.3m_kracken.gz: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man7'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man7/M_kracken.3m_kracken.gz: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man8'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man8/M_kracken.3m_kracken.gz: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man5'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./man5/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man1'. Wait...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/....
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man1/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man3'. Wait...
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man2'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man2/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man4'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man4/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man6'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man6/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man7'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man7/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man8'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man8/M_kracken.3m_kracken.gz: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man5'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./man5/M_kracken.3m_kracken.gz: ignoring bogus filename
 done.
-Checking for stray cats under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/....
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat8...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat1...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat3...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat4...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat6...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat2...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat5...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man/./cat7...
+Checking for stray cats under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/....
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat8...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat1...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat3...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat4...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat6...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat2...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat5...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/man/./cat7...
 8 man subdirectories contained newer manual pages.
 19 manual pages were added.
 0 stray cats were added.
 ++ pwd
-+ env MANPATH=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man man -k .
++ env MANPATH=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man man -k .
 ARGUMENTS (3)        - [ARGUMENTS::INTRO] collection of command line argument...
 dget (3m_kracken)    - [ARGUMENTS:M_kracken] given keyword fetch doubleprecis...
 dgets (3m_kracken)   - [ARGUMENTS:M_kracken] given keyword fetch doubleprecis...
@@ -724,14 +724,14 @@ man8/M_kracken.3m_kracken.gz
 + gunzip man1/M_kracken.3m_kracken.gz man2/M_kracken.3m_kracken.gz man3/dget.3m_kracken.gz man3/dgets.3m_kracken.gz man3/dissect.3m_kracken.gz man3/iget.3m_kracken.gz man3/igets.3m_kracken.gz man3/kracken.3m_kracken.gz man3/lget.3m_kracken.gz man3/lgets.3m_kracken.gz man3/M_kracken.3m_kracken.gz man3/parse.3m_kracken.gz man3/retrev.3m_kracken.gz man3/rget.3m_kracken.gz man3/rgets.3m_kracken.gz man3/setprompts.3m_kracken.gz man3/sget.3m_kracken.gz man3/sgets.3m_kracken.gz man3/show.3m_kracken.gz man3/store.3m_kracken.gz man4/M_kracken.3m_kracken.gz man5/M_kracken.3m_kracken.gz man6/M_kracken.3m_kracken.gz man7/M_kracken.3m_kracken.gz man8/M_kracken.3m_kracken.gz
 + echo '>>>> extract demo pages from manpages'
 >>>> extract demo pages from manpages
-+ cd /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man
++ cd /home/urbanjs/venus/V600/github/ARGS/M_kracken/man
 ++ pwd
-+ MANPATH=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man
++ MANPATH=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man
 + SECTION=3m_kracken
 + DEMO_OUTDIR=../../example
-+ GPF_extract_manpage_demos /home/urbanjs/venus/V600/github7/ARGS/M_kracken/man 3m_kracken ../../example
++ GPF_extract_manpage_demos /home/urbanjs/venus/V600/github/ARGS/M_kracken/man 3m_kracken ../../example
 >>>> Extract demo program from manpages with
-     MANPATH=/home/urbanjs/venus/V600/github7/ARGS/M_kracken/man
+     MANPATH=/home/urbanjs/venus/V600/github/ARGS/M_kracken/man
      SECTION=3m_kracken
      DEMO_OUTDIR=../../example
      DEMO_SUBDIR=FALSE
@@ -903,7 +903,7 @@ M_KRACKEN
 
 
 
-				April 16, 2023	   ARGUMENTS.3.man(3m_kracken)
+				April 23, 2023	   ARGUMENTS.3.man(3m_kracken)
 dget(3m_kracken)					      dget(3m_kracken)
 
 
@@ -976,7 +976,7 @@ LICENSE
 
 
 
-				April 16, 2023		      dget(3m_kracken)
+				April 23, 2023		      dget(3m_kracken)
 dissect(3m_kracken)					   dissect(3m_kracken)
 
 
@@ -1048,7 +1048,7 @@ LICENSE
 
 
 
-				April 16, 2023		   dissect(3m_kracken)
+				April 23, 2023		   dissect(3m_kracken)
 iget(3m_kracken)					      iget(3m_kracken)
 
 
@@ -1121,7 +1121,7 @@ LICENSE
 
 
 
-				April 16, 2023		      iget(3m_kracken)
+				April 23, 2023		      iget(3m_kracken)
 lgets(3m_kracken)					     lgets(3m_kracken)
 
 
@@ -1196,7 +1196,7 @@ LICENSE
 
 
 
-				April 16, 2023		     lgets(3m_kracken)
+				April 23, 2023		     lgets(3m_kracken)
 untitled()							    untitled()
 
 
@@ -1305,11 +1305,11 @@ lts and parse command
   numeric values using procedures from the M_strings(3fm) module such as
   STRING_TO_VALUE(3F), which converts strings to a numeric value, and
   SPLIT(3F), which can break a string into a list of words. But more commonly,
-  the following cotroff: <standard input>:581: warning [p 8, 0.3i]: can't break line
-nvenience routines are used ...
+  the following convenience routines are used ...
 
     There are scalar convenience functions for getting simple values that are
-    used in most cases as an alternative to RETREV(3f) that convert the values
+ troff: <standard input>:581: warning [p 8, 0.3i]: can't break line
+   used in most cases as an alternative to RETREV(3f) that convert the values
     directly to common scalar types: lval=[12]lget(VERB_ARGNAME) !gets a
     "logical" value.  rval=[13]rget(VERB_ARGNAME) !gets a "real" value.
     dval=[14]dget(VERB_ARGNAME) !gets a "doubleprecision" value.
@@ -1387,11 +1387,11 @@ nvenience routines are used ...
 
      where the special prompt string "#N#" means to not allow prompting for
      this parameter. For example:
-       ! set prompts for interactive troff: <standard input>:583: warning [p 8, 0.7i]: can't break line
-mode ...
+       ! set prompts for interactive mode ...
        call setprompts('copy',' 			  &
        & -oo "#N#"					  &
-       & -i Enter input file name			  &
+       & -i Enter inptroff: <standard input>:583: warning [p 8, 0.7i]: can't break line
+ut file name			  &
        & -o Enter output file name			  &
        & -version "#N#" 				  &
        & -help "#N#"					  &
@@ -1645,57 +1645,57 @@ eyword is specified multiple times the values are concatenated
 
     1.	http://www.urbanjost.altervista.org/LIBRARY/libGPF/GPF.html
 
-    2.	file:///home/urbanjs/venus/V600/github7/arguments/src2015/krackenhelp.html
+    2.	file:///home/urbanjs/venus/V600/github/arguments/src2015/krackenhelp.html
 
-    3.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ABSTRACT
+    3.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ABSTRACT
 
-    4.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#EX1
+    4.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#EX1
 
-    5.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#DESCRIPTION
+    5.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#DESCRIPTION
 
-    6.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#MENU
+    6.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#MENU
 
-    7.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#USAGE
+    7.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#USAGE
 
-    8.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ARGS
+    8.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ARGS
 
-    9.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/download.html
+    9.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/download.html
 
-  10. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/kracken.3.html
+  10. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/kracken.3.html
 
-      11. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/retrev.3.html
+      11. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/retrev.3.html
 
-      12. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lget.3.html
+      12. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lget.3.html
 
-      13. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rget.3.html
+      13. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rget.3.html
 
-      14. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dget.3.html
+      14. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dget.3.html
 
-      15. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/iget.3.html
+      15. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/iget.3.html
 
-      16. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sget.3.html
+      16. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sget.3.html
 
-      17. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lgets.3.html
+      17. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lgets.3.html
 
-      18. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rgets.3.html
+      18. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rgets.3.html
 
-      19. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dgets.3.html
+      19. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dgets.3.html
 
-      20. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/igets.3.html
+      20. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/igets.3.html
 
-      21. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sgets.3.html
+      21. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sgets.3.html
 
-      22. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dissect.3.html
+      22. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dissect.3.html
 
-      23. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/parse.3.html
+      23. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/parse.3.html
 
-      24. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3.html
+      24. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/store.3.html
 
-      25. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/show.3.html
+      25. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/show.3.html
 
 
 
-				April 16, 2023			    untitled()
+				April 23, 2023			    untitled()
 parse(3m_kracken)					     parse(3m_kracken)
 
 
@@ -1857,7 +1857,7 @@ LICENSE
 
 
 
-				April 16, 2023		     parse(3m_kracken)
+				April 23, 2023		     parse(3m_kracken)
 retrev(3m_kracken)					    retrev(3m_kracken)
 
 
@@ -1936,7 +1936,7 @@ LICENSE
 
 
 
-				April 16, 2023		    retrev(3m_kracken)
+				April 23, 2023		    retrev(3m_kracken)
 rget(3m_kracken)					      rget(3m_kracken)
 
 
@@ -2009,7 +2009,7 @@ LICENSE
 
 
 
-				April 16, 2023		      rget(3m_kracken)
+				April 23, 2023		      rget(3m_kracken)
 rgets(3m_kracken)					     rgets(3m_kracken)
 
 
@@ -2113,7 +2113,7 @@ LICENSE
 
 
 
-				April 16, 2023		     rgets(3m_kracken)
+				April 23, 2023		     rgets(3m_kracken)
 setprompts(3m_kracken)					setprompts(3m_kracken)
 
 
@@ -2185,7 +2185,7 @@ LICENSE
 
 
 
-				April 16, 2023		setprompts(3m_kracken)
+				April 23, 2023		setprompts(3m_kracken)
 sget(3m_kracken)					      sget(3m_kracken)
 
 
@@ -2269,7 +2269,7 @@ LICENSE
 
 
 
-				April 16, 2023		      sget(3m_kracken)
+				April 23, 2023		      sget(3m_kracken)
 sgets(3m_kracken)					     sgets(3m_kracken)
 
 
@@ -2353,7 +2353,7 @@ LICENSE
 
 
 
-				April 16, 2023		     sgets(3m_kracken)
+				April 23, 2023		     sgets(3m_kracken)
 show(3m_kracken)					      show(3m_kracken)
 
 
@@ -2422,7 +2422,7 @@ LICENSE
 
 
 
-				April 16, 2023		      show(3m_kracken)
+				April 23, 2023		      show(3m_kracken)
 store(3m_kracken)					     store(3m_kracken)
 
 
@@ -2582,7 +2582,7 @@ LICENSE
 
 
 
-				April 16, 2023		     store(3m_kracken)
+				April 23, 2023		     store(3m_kracken)
 igets(3m_kracken)					     igets(3m_kracken)
 
 
@@ -2663,7 +2663,7 @@ LICENSE
 
 
 
-				April 16, 2023		     igets(3m_kracken)
+				April 23, 2023		     igets(3m_kracken)
 kracken(3m_kracken)					   kracken(3m_kracken)
 
 
@@ -2791,7 +2791,7 @@ LICENSE
 
 
 
-				April 16, 2023		   kracken(3m_kracken)
+				April 23, 2023		   kracken(3m_kracken)
 lget(3m_kracken)					      lget(3m_kracken)
 
 
@@ -2867,7 +2867,7 @@ LICENSE
 
 
 
-				April 16, 2023		      lget(3m_kracken)
+				April 23, 2023		      lget(3m_kracken)
 dgets(3m_kracken)					     dgets(3m_kracken)
 
 
@@ -2947,7 +2947,7 @@ LICENSE
 
 
 
-				April 16, 2023		     dgets(3m_kracken)
+				April 23, 2023		     dgets(3m_kracken)
 + echo '>>>> run make'
 >>>> run make
 + cd ..
@@ -2957,9 +2957,9 @@ rm -f ../example/demo_M_kracken  M_kracken.o  *.mod ../test/test_suite_M_kracken
 gfortran -g -O -Wall -std=f2018 -Wextra -Wno-maybe-uninitialized -Wno-uninitialized -finit-local-zero -c M_kracken.f90
 M_kracken.f90:5:5:
 
-    5 | use M_framework__verify,   only: debug, io_debug
+    5 | use M_framework__journal, only: journal
       |     1
-Fatal Error: Cannot open module file ‘m_framework__verify.mod’ for reading at (1): No such file or directory
+Fatal Error: Cannot open module file ‘m_framework__journal.mod’ for reading at (1): No such file or directory
 compilation terminated.
 make: *** [Makefile:120: M_kracken.o] Error 1
 + make doxygen
@@ -2969,45 +2969,45 @@ warning: Tag 'PERL_PATH' at line 2140 of file 'dox.in' has become obsolete.
 warning: Tag 'MSCGEN_PATH' at line 2162 of file 'dox.in' has become obsolete.
          To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
 warning: source html/images is not a readable file or directory... skipping.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18033: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18034: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18035: warning: documented symbol 'm_kracken::integer' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18036: warning: documented symbol 'm_kracken::integer' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18038: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18039: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18046: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18047: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18206: warning: documented symbol 'm_kracken::real' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18554: warning: documented symbol 'm_kracken::character' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18650: warning: documented symbol 'm_kracken::real' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18757: warning: documented symbol 'integer function m_kracken::dimension' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18871: warning: documented symbol 'real function m_kracken::dimension' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:18959: warning: documented symbol 'logical function m_kracken::dimension' was not declared or defined.
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:19075: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18033: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18034: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18035: warning: documented symbol 'm_kracken::integer' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18036: warning: documented symbol 'm_kracken::integer' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18038: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18039: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18046: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18047: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18206: warning: documented symbol 'm_kracken::real' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18554: warning: documented symbol 'm_kracken::character' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18650: warning: documented symbol 'm_kracken::real' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18757: warning: documented symbol 'integer function m_kracken::dimension' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18871: warning: documented symbol 'real function m_kracken::dimension' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:18959: warning: documented symbol 'logical function m_kracken::dimension' was not declared or defined.
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:19075: warning: documented symbol 'm_kracken::character' was not declared or defined.
 Searching for include files...
 Searching for example files...
 Searching for images...
-Searching for files in directory /home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/images
+Searching for files in directory /home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/images
 Searching for dot files...
 Searching for msc files...
 Searching for dia files...
 Searching for files to exclude
 Searching INPUT for files to process...
-Searching for files in directory /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src
-Searching for files in directory /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source
-Searching for files in directory /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/doc
-Searching for files in directory /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/doc/PRIVATE
-Searching for files in directory /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp
+Searching for files in directory /home/urbanjs/venus/V600/github/ARGS/M_kracken/src
+Searching for files in directory /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source
+Searching for files in directory /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/doc
+Searching for files in directory /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/doc/PRIVATE
+Searching for files in directory /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp
 Reading and parsing tag files
 Parsing files
-Reading /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/M_kracken.f90...
-Parsing file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/M_kracken.f90...
-Preprocessing /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/mainpage.txt...
-Parsing file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/mainpage.txt...
-Reading /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90...
-Parsing file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90...
-Reading /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/krackentest2.f90...
-Parsing file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/krackentest2.f90...
+Reading /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/M_kracken.f90...
+Parsing file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/M_kracken.f90...
+Preprocessing /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/mainpage.txt...
+Parsing file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/mainpage.txt...
+Reading /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90...
+Parsing file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90...
+Reading /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/krackentest2.f90...
+Parsing file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/krackentest2.f90...
 Building group list...
 Building directory list...
 Building namespace list...
@@ -3062,20 +3062,20 @@ Generating style sheet...
 Generating search indices...
 Generating example documentation...
 Generating file sources...
-Parsing code for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/M_kracken.f90...
-Parsing code for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/mainpage.txt...
-Parsing code for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90...
-Parsing code for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/krackentest2.f90...
+Parsing code for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/M_kracken.f90...
+Parsing code for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/mainpage.txt...
+Parsing code for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90...
+Parsing code for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/krackentest2.f90...
 Generating file documentation...
-Generating docs for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/M_kracken.f90...
+Generating docs for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/M_kracken.f90...
 Generating call graph for function ifnull
 Generating caller graph for function ifnull
-Generating docs for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/mainpage.txt...
-Generating docs for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90...
+Generating docs for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/mainpage.txt...
+Generating docs for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90...
 Generating call graph for function help_version
-Generating caller graph for /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:20462: warning: explicit link request to 'N' could not be resolved
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:20518: warning: explicit link request to 'N' could not be resolved
-function help_version
+Generating caller graph for function help_version/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:20462: warning: explicit link request to 'N' could not be resolved
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:20518: warning: explicit link request to 'N' could not be resolved
+
 Generating call graph for function ifnull
 Generating call graph for function krackentest2
 Generating call graph for function next
@@ -3084,7 +3084,7 @@ Generating call graph for function now_ex
 Generating caller graph for function print_generic
 Generating call graph for function uncorrected_week_of_year
 Generating caller graph for function uncorrected_week_of_year
-Generating docs for file /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/krackentest2.f90...
+Generating docs for file /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/krackentest2.f90...
 Generating call graph for function help_version
 Generating call graph for function krackentest2
 Generating page documentation...
@@ -3154,17 +3154,17 @@ Generating caller graph for function m_msg::stderr
 Generating call graph for function m_msg::wrt
 Generating docs for compound m_msg::str...
 Generating docs for namespace m_strings
-Generating call graph for fun/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:7384: warning: The following parameter of m_strings::adjustc(character(len= *), intent(in) string, integer, intent(in), optional length) is not documented:
+Generating call graph for function m_strings::a2d
+G/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:7384: warning: The following parameter of m_strings::adjustc(character(len= *), intent(in) string, integer, intent(in), optional length) is not documented:
   parameter 'length'
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:4534: warning: explicit link request to 'N' could not be resolved
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:4578: warning: explicit link request to 'N' could not be resolved
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:4595: warning: explicit link request to 'N' could not be resolved
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:10345: warning: Found unknown command '\ABCDEFG'
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:10283: warning: Found unknown command '\ABCDEF'
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:8044: warning: Found unknown command '\ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:8055: warning: Found unknown command '\ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-ction m_strings::a2d
-Generating caller graph for function m_strings::a2d
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:4534: warning: explicit link request to 'N' could not be resolved
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:4578: warning: explicit link request to 'N' could not be resolved
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:4595: warning: explicit link request to 'N' could not be resolved
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:10345: warning: Found unknown command '\ABCDEFG'
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:10283: warning: Found unknown command '\ABCDEF'
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:8044: warning: Found unknown command '\ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:8055: warning: Found unknown command '\ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+enerating caller graph for function m_strings::a2d
 Generating call graph for function m_strings::a2i
 Generating call graph for function m_strings::a2r
 Generating caller graph for function m_strings::atleast
@@ -3238,10 +3238,10 @@ Generating call graph for function m_strings::unquote
 Generating caller graph for function m_strings::unquote
 Generating caller graph for function m_strings::upper
 Generating call graph for function m_strings::v2s_bug
-Generating call graph for function m_/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/tmp/_tmp.f90:12768: warning: The following parameters of m_time::date_to_julian(integer, dimension(8), intent(in) dat, real(kind=realtime), intent(out) julian, integer, intent(out) ierr) are not documented:
+Generating call graph for function m_strings::value_to_stri/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/tmp/_tmp.f90:12768: warning: The following parameters of m_time::date_to_julian(integer, dimension(8), intent(in) dat, real(kind=realtime), intent(out) julian, integer, intent(out) ierr) are not documented:
   parameter 'julian'
   parameter 'ierr'
-strings::value_to_string
+ng
 Generating caller graph for function m_strings::value_to_string
 Generating docs for compound m_strings::dble...
 Generating docs for compound m_strings::ends_with...
@@ -3341,15 +3341,15 @@ finalizing index lists...
 writing tag file...
 Running plantuml with JAVA...
 Running dot...
-lookup cache used 432/65536 hits=871 misses=451
+lookup cache used 432/65536 hits=870 misses=450
 finished...
 + make man
 mandb: warning: $MANPATH set, inserting /etc/manpath.config
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man1'. Wait...
-Purging old database entries in /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man1/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man3'. Wait...
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man1'. Wait...
+Purging old database entries in /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man1/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man3'. Wait...
 mandb: warning: failed to store entry for sgets(3m_kracken)
 mandb: warning: failed to store entry for setprompts(3m_kracken)
 mandb: warning: failed to store entry for iget(3m_kracken)
@@ -3368,28 +3368,28 @@ mandb: warning: failed to store entry for igets(3m_kracken)
 mandb: warning: failed to store entry for dgets(3m_kracken)
 mandb: warning: failed to store entry for rgets(3m_kracken)
 mandb: warning: failed to store entry for store(3m_kracken)
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man2'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man2/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man4'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man4/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man6'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man6/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man7'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man7/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man8'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man8/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man5'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/man5/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man2'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man2/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man4'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man4/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man6'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man6/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man7'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man7/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man8'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man8/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man5'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/man5/M_kracken.3m_kracken: ignoring bogus filename
 done.
-Checking for stray cats under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat8...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat1...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat3...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat4...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat6...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat2...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat5...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/../man/cat7...
+Checking for stray cats under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat8...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat1...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat3...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat4...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat6...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat2...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat5...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/../man/cat7...
 8 man subdirectories contained newer manual pages.
 18 manual pages were added.
 0 stray cats were added.
@@ -3519,7 +3519,7 @@ M_KRACKEN
   store
     - replace dictionary name's value (if allow=add add name if necessary)
 
-				April 16, 2023	   ARGUMENTS.3.man(3m_kracken)
+				April 23, 2023	   ARGUMENTS.3.man(3m_kracken)
 dget(3m_kracken)					      dget(3m_kracken)
 
 NAME
@@ -3612,7 +3612,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		      dget(3m_kracken)
+				April 23, 2023		      dget(3m_kracken)
 dissect(3m_kracken)					   dissect(3m_kracken)
 
 NAME
@@ -3678,7 +3678,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		   dissect(3m_kracken)
+				April 23, 2023		   dissect(3m_kracken)
 iget(3m_kracken)					      iget(3m_kracken)
 
 NAME
@@ -3744,7 +3744,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		      iget(3m_kracken)
+				April 23, 2023		      iget(3m_kracken)
 lgets(3m_kracken)					     lgets(3m_kracken)
 
 NAME
@@ -3760,7 +3760,9 @@ SYNOPSIS
 DESCRIPTION
   The lgets(3f) function returns a dynamically allocated array of logical
   values from a string that is the value for a command line option. It is part
-  of the M_kracken(3fm) module.
+  of the
+gzip: stdout: Permission denied
+ M_kracken(3fm) module.
 
   Values that cannot be read as a logical value are returned as a ".FALSE.".
 
@@ -3773,8 +3775,7 @@ OPTIONS
 RETURNS
   lvals
     logical array returned by function. The input value should be from the
-    case-insensitive list of the wor
-gzip: ds "true, false, t, f, yes, no, y, n,
+    case-insensitive list of the words "true, false, t, f, yes, no, y, n,
     .false., .true., .f., .t".
 
 EXAMPLE
@@ -3796,8 +3797,7 @@ EXAMPLE
      $ demo_lgets
 
    F T F F T T
-  $ demo_lgets -truths false F .f. no true .true. stdout: Permission denied
-t T Yes No
+  $ demo_lgets -truths false F .f. no true .true. t T Yes No
 
    F F F F T T T T T T F
 SEE ALSO
@@ -3815,7 +3815,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     lgets(3m_kracken)
+				April 23, 2023		     lgets(3m_kracken)
 untitled()							    untitled()
 
 	      [1][GPF Home Page]
@@ -4227,7 +4227,9 @@ e values are concatenated
        * John S. Urban -- Author (last change: Oct. 2019)
        * Felix Becker -- Enhancements to reduce limitations on parameter
 	 lengths (2013-05-28)
-       * Walid Keyrouz -- Upgrades to bring code into conformance with
+       * Walid Keyrouz -- Upgrades to b
+gzip: stdout: Permission denied
+ring code into conformance with
 	 recommended practices (2013-12-06)
 
   .fi</xmp </div> </div> </div> </div> </body> </html>
@@ -4236,55 +4238,55 @@ e values are concatenated
 
     1.	http://www.urbanjost.altervista.org/LIBRARY/libGPF/GPF.html
 
-    2.	file:///home/urbanjs/venus/V600/github7/arguments/src2015/krackenhelp.html
+    2.	file:///home/urbanjs/venus/V600/github/arguments/src2015/krackenhelp.html
 
-    3.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ABSTRACT
+    3.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ABSTRACT
 
-    4.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#EX1
+    4.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#EX1
 
-    5.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#DESCRIPTION
+    5.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#DESCRIPTION
 
-    6.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#MENU
+    6.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#MENU
 
-    7.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#USAGE
+    7.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#USAGE
 
-    8.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ARGS
+    8.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/M_kracken.3m_kracken.html#ARGS
 
-    9.	file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/download.html
+    9.	file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/download.html
 
-  10. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/kracken.3.html
+  10. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/kracken.3.html
 
-      11. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/retrev.3.html
+      11. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/retrev.3.html
 
-      12. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lget.3.html
+      12. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lget.3.html
 
-      13. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rget.3.html
+      13. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rget.3.html
 
-      14. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dget.3.html
+      14. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dget.3.html
 
-      15. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/iget.3.html
+      15. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/iget.3.html
 
-      16. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sget.3.html
+      16. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sget.3.html
 
-      17. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/lgets.3.html
+      17. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/lgets.3.html
 
-      18. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/rgets.3.html
+      18. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/rgets.3.html
 
-      19. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dgets.3.html
+      19. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dgets.3.html
 
-      20. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/igets.3.html
+      20. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/igets.3.html
 
-      21. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/sgets.3.html
+      21. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/sgets.3.html
 
-      22. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/dissect.3.html
+      22. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/dissect.3.html
 
-      23. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/parse.3.html
+      23. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/parse.3.html
 
-      24. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/store.3.html
+      24. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/store.3.html
 
-      25. file:///home/urbanjs/venus/V600/github7/ARGS/M_kracken/docs/show.3.html
+      25. file:///home/urbanjs/venus/V600/github/ARGS/M_kracken/docs/show.3.html
 
-				April 16, 2023			    untitled()
+				April 23, 2023			    untitled()
 parse(3m_kracken)					     parse(3m_kracken)
 
 NAME
@@ -4361,14 +4363,12 @@ EXAMPLE
      program demo_parse
      use M_kracken, only : parse, sget, iget, rget
      use M_strings, only : chomp
-gzip: stdout: Permission denied
-
-gzip: stdout: Permission denied
-
-gzip: stdout: Permission denied
-
      implicit none
-     character(len=:),allocatable  :: verb
+    
+gzip: stdout: Permission denied
+
+gzip: stdout: Permission denied
+ character(len=:),allocatable  :: verb
      character(len=*),parameter    :: delimiters=' ;,'
      integer	 :: i
      integer	 :: ierr
@@ -4445,7 +4445,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     parse(3m_kracken)
+				April 23, 2023		     parse(3m_kracken)
 retrev(3m_kracken)					    retrev(3m_kracken)
 
 NAME
@@ -4517,7 +4517,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		    retrev(3m_kracken)
+				April 23, 2023		    retrev(3m_kracken)
 rget(3m_kracken)					      rget(3m_kracken)
 
 NAME
@@ -4536,13 +4536,13 @@ DESCRIPTION
 
 OPTIONS
   KEYWORD
-    the dictionar
+    the dictionary keyword (in form VERB_
 gzip: stdout: Permission denied
 
 gzip: stdout: Permission denied
 
 gzip: stdout: Permission denied
-y keyword (in form VERB_KEYWORD) to retrieve.	The VERB name
+KEYWORD) to retrieve.	The VERB name
     comes from the first argument of the KRACKEN(3f) call. The KEYWORD is a
     keyword from the KRACKEN(3f) call that should be interpreted as a REAL
     value.
@@ -4589,7 +4589,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		      rget(3m_kracken)
+				April 23, 2023		      rget(3m_kracken)
 rgets(3m_kracken)					     rgets(3m_kracken)
 
 NAME
@@ -4686,7 +4686,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     rgets(3m_kracken)
+				April 23, 2023		     rgets(3m_kracken)
 setprompts(3m_kracken)					setprompts(3m_kracken)
 
 NAME
@@ -4700,11 +4700,11 @@ SYNOPSIS
      character(len=*),intent(in):: init
 
 DESCRIPTION
-  Optionally set prompts for interactive pr
+  Optionally set prompts for interactive prompting mode.  The synta
 gzip: stdout: Permission denied
 
 gzip: stdout: Permission denied
-ompting mode.  The syntax of the
+x of the
   call is the same as for KRACKEN(3f)/DISSECT(3f) except that prompt strings
   are given instead of default values. It is called before a call to
   KRACKEN(3f) or DISSECT(3f).
@@ -4755,7 +4755,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		setprompts(3m_kracken)
+				April 23, 2023		setprompts(3m_kracken)
 sget(3m_kracken)					      sget(3m_kracken)
 
 NAME
@@ -4833,7 +4833,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		      sget(3m_kracken)
+				April 23, 2023		      sget(3m_kracken)
 sgets(3m_kracken)					     sgets(3m_kracken)
 
 NAME
@@ -4849,7 +4849,9 @@ SYNOPSIS
 
 DESCRIPTION
   The sgets(3f) function returns a dynamically allocated array of character
-  values from a string that is the value for a command line option. It is part
+  values from a string that is the value for a command line option
+gzip: stdout: Permission denied
+. It is part
   of the M_kracken(3fm) module.
 
 OPTIONS
@@ -4910,7 +4912,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     sgets(3m_kracken)
+				April 23, 2023		     sgets(3m_kracken)
 show(3m_kracken)					      show(3m_kracken)
 
 NAME
@@ -4972,7 +4974,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		      show(3m_kracken)
+				April 23, 2023		      show(3m_kracken)
 store(3m_kracken)					     store(3m_kracken)
 
 NAME
@@ -5004,11 +5006,7 @@ OPTIONS
     DOUBLEPRECISION, LOGICAL or CHARACTER.
 
   ALLOW1
-    flag to allow new VERB_KEYWORD name being added. Sho
-gzip: stdout: Permission denied
-
-gzip: stdout: Permission denied
-uld be
+    flag to allow new VERB_KEYWORD name being added. Should be
 
     'define'
       add or replace a new VERB_KEYWORD entry and value
@@ -5129,7 +5127,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     store(3m_kracken)
+				April 23, 2023		     store(3m_kracken)
 igets(3m_kracken)					     igets(3m_kracken)
 
 NAME
@@ -5144,11 +5142,13 @@ SYNOPSIS
       integer,optional,intent(iout) :: ier
 
 DESCRIPTION
-  The igets(3f) function returns a dyn
+  The igets(3f) function returns a dynamically allocated array
 gzip: stdout: Permission denied
 
 gzip: stdout: Permission denied
-amically allocated array of integers
+
+gzip: stdout: Permission denied
+ of integers
   from a string that is the value for a command line option. It is part of the
   M_kracken(3fm) module.
 
@@ -5206,7 +5206,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     igets(3m_kracken)
+				April 23, 2023		     igets(3m_kracken)
 kracken(3m_kracken)					   kracken(3m_kracken)
 
 NAME
@@ -5327,7 +5327,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		   kracken(3m_kracken)
+				April 23, 2023		   kracken(3m_kracken)
 lget(3m_kracken)					      lget(3m_kracken)
 
 NAME
@@ -5398,7 +5398,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		      lget(3m_kracken)
+				April 23, 2023		      lget(3m_kracken)
 dgets(3m_kracken)					     dgets(3m_kracken)
 
 NAME
@@ -5471,7 +5471,7 @@ AUTHOR
 LICENSE
   Public Domain
 
-				April 16, 2023		     dgets(3m_kracken)
+				April 23, 2023		     dgets(3m_kracken)
 + make ship
 : make easily distributed archive files of manpages
 mkdir -p ../docs
@@ -5532,38 +5532,113 @@ rm -f ../example/demo_M_kracken  M_kracken.o  *.mod ../test/test_suite_M_kracken
 >>>> fpm test
 + cd ../..
 + fpm test
-<ERROR>*cmd_run* Targets error: Unable to find source for module dependency: "m_journal" used by "build/dependencies/M_args/src/M_args.f90"
+ + mkdir -p build/dependencies
+Initialized empty Git repository in /home/urbanjs/venus/V600/github/ARGS/M_kracken/build/dependencies/M_strings/.git/
+From https://github.com/urbanjost/M_strings
+ * branch            HEAD       -> FETCH_HEAD
+Initialized empty Git repository in /home/urbanjs/venus/V600/github/ARGS/M_kracken/build/dependencies/M_list/.git/
+From https://github.com/urbanjost/M_list
+ * branch            HEAD       -> FETCH_HEAD
+Initialized empty Git repository in /home/urbanjs/venus/V600/github/ARGS/M_kracken/build/dependencies/M_args/.git/
+From https://github.com/urbanjost/M_args
+ * branch            HEAD       -> FETCH_HEAD
+Initialized empty Git repository in /home/urbanjs/venus/V600/github/ARGS/M_kracken/build/dependencies/M_framework/.git/
+From https://github.com/urbanjost/M_framework
+ * branch            HEAD       -> FETCH_HEAD
+[  0%]                  M_strings.F90
+[  2%]                  M_strings.F90  done.
+[  2%]                     M_list.f90
+[  4%]                     M_list.f90  done.
+[  4%]           M_framework__msg.F90
+[  6%]           M_framework__msg.F90  done.
+[  6%]        M_framework__verify.F90
+[  8%]        M_framework__verify.F90  done.
+[  8%]       M_framework__journal.f90
+[ 10%]       M_framework__journal.f90  done.
+[ 10%]                     M_args.f90
+[ 13%]                     M_args.f90  done.
+[ 13%]                  M_kracken.f90
+[ 15%]                  M_kracken.f90  done.
+[ 15%]                 libM_kracken.a
+[ 17%]                 libM_kracken.a  done.
+[ 17%]                  demo_show.f90
+[ 19%]                  demo_show.f90  done.
+[ 19%]                  demo_lget.f90
+[ 21%]                  demo_lget.f90  done.
+[ 21%]                  demo_dget.f90
+[ 23%]                  demo_dget.f90  done.
+[ 23%]            demo_setprompts.f90
+[ 26%]            demo_setprompts.f90  done.
+[ 26%]               demo_kracken.f90
+[ 28%]               demo_kracken.f90  done.
+[ 28%]                  demo_rget.f90
+[ 30%]                  demo_rget.f90  done.
+[ 30%]                 demo_store.f90
+[ 32%]                 demo_store.f90  done.
+[ 32%]                 demo_parse.f90
+[ 34%]                 demo_parse.f90  done.
+[ 34%]                demo_retrev.f90
+[ 36%]                demo_retrev.f90  done.
+[ 36%]                 demo_lgets.f90
+[ 39%]                 demo_lgets.f90  done.
+[ 39%]                  demo_sget.f90
+[ 41%]                  demo_sget.f90  done.
+[ 41%]                 demo_dgets.f90
+[ 43%]                 demo_dgets.f90  done.
+[ 43%]               demo_dissect.f90
+[ 45%]               demo_dissect.f90  done.
+[ 45%]                 demo_igets.f90
+[ 47%]                 demo_igets.f90  done.
+[ 47%]                 demo_sgets.f90
+[ 50%]                 demo_sgets.f90  done.
+[ 50%]             demo_M_kracken.f90
+[ 52%]             demo_M_kracken.f90  done.
+[ 52%]                  demo_iget.f90
+[ 54%]                  demo_iget.f90  done.
+[ 54%]                 demo_rgets.f90
+[ 56%]                 demo_rgets.f90  done.
+[ 56%]       test_suite_M_kracken.f90
+[ 58%]       test_suite_M_kracken.f90  done.
+
+test/test_suite_M_kracken.f90:9:35:
+
+    9 | use :: M_framework__verify,  only : almost
+      |                                   1
+Error: Symbol ‘almost’ referenced at (1) not found in module ‘m_framework__verify’
+compilation terminated due to -fmax-errors=1.
+<ERROR> Compilation failed for object " test_test_suite_M_kracken.f90.o "
+<ERROR>stopping due to failed compilation
 STOP 1
 + echo '>>>> make BOOK html document'
 >>>> make BOOK html document
 + env MANPATH=../../man mandb -c
 mandb: warning: $MANPATH set, ignoring /etc/manpath.config
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man1'. Wait...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man1/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man3'. Wait...
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man2'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man2/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man4'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man4/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man6'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man6/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man7'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man7/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man8'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man8/M_kracken.3m_kracken: ignoring bogus filename
-Updating index cache for path `/home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man5'. Wait...
-mandb: warning: /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/man5/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man1'. Wait...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man1/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man3'. Wait...
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man2'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man2/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man4'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man4/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man6'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man6/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man7'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man7/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man8'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man8/M_kracken.3m_kracken: ignoring bogus filename
+Updating index cache for path `/home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man5'. Wait...
+mandb: warning: /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/man5/M_kracken.3m_kracken: ignoring bogus filename
 done.
-Checking for stray cats under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat8...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat1...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat3...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat4...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat6...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat2...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat5...
-Processing manual pages under /home/urbanjs/venus/V600/github7/ARGS/M_kracken/src/source/../../man/cat7...
+Checking for stray cats under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat8...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat1...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat3...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat4...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat6...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat2...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat5...
+Processing manual pages under /home/urbanjs/venus/V600/github/ARGS/M_kracken/src/source/../../man/cat7...
 8 man subdirectories contained newer manual pages.
 19 manual pages were added.
 0 stray cats were added.
@@ -5601,12 +5676,12 @@ ________________________________________________________________________________
 + '[' M_kracken = INDEX ']'
 + uniq
 + read NAME
-+ awk '{printf "%s.%s.html\n",$1,$2}'
 + echo M_kracken.3m_kracken.html
 + tr -d '()'
 + uniq
-+ env LC_ALL=C /usr/bin/sort -k 2r,2r -k 1,1
 + man -k '\[M_kracken\>'
++ env LC_ALL=C /usr/bin/sort -k 2r,2r -k 1,1
++ awk '{printf "%s.%s.html\n",$1,$2}'
 + grep -i '(3M_kracken)'
 \[M_kracken\>: nothing appropriate.
 + man --section 3m_kracken -k .
@@ -5729,31 +5804,31 @@ libGPF  toml     urbanjost  www
 >>>> update GPF project and documents
 + unset GITHUB
 + make.one libGPF
-1294616 (process ID) old priority 0, new priority 19
+2659083 (process ID) old priority 0, new priority 19
 W-A-R-N-I-N-G: no ccheck.c file (required for configured versions)
 + echo '>>>> run test'
 >>>> run test
 + cd ../../test
 + ccall test_suite_M_kracken.f90
-*ccall*: MAKING TEMPORARY DIRECTORY /tmp/CCALL_Linux_gfortran_1295008
-+ mkdir -m 755 -p /tmp/CCALL_Linux_gfortran_1295008
-+ chmod u=xrw,g-xrw,o-xrw /tmp/CCALL_Linux_gfortran_1295008
+*ccall*: MAKING TEMPORARY DIRECTORY /tmp/CCALL_Linux_gfortran_2659589
++ mkdir -m 755 -p /tmp/CCALL_Linux_gfortran_2659589
++ chmod u=xrw,g-xrw,o-xrw /tmp/CCALL_Linux_gfortran_2659589
 + CCALL_DELETE_DIR=TRUE
-+ FULLNAME=/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
++ FULLNAME=/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
 + SPLIT
 + sed -e 's/ -/@ -/g'
 + tr @ '\012'
-+ cp test_suite_M_kracken.f90 /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
++ cp test_suite_M_kracken.f90 /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
 + echo NAME test_suite_M_kracken.f90
 NAME test_suite_M_kracken.f90
 + echo /home/urbanjs/venus/V600/bin/Linux_gfortran/test_suite_M_kracken
 /home/urbanjs/venus/V600/bin/Linux_gfortran/test_suite_M_kracken
-+ ADDOPTIONS /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
-+ INPUTFILENAME=/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
++ ADDOPTIONS /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
++ INPUTFILENAME=/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
 + grep
- -qi '\<use\>  *\<M_readline\>' /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
+ -qi '\<use\>  *\<M_readline\>' /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
 + grep
- -qi '\<use\>  *\<M_curl\>' /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
+ -qi '\<use\>  *\<M_curl\>' /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
 + set
  -x
 + set
@@ -5764,7 +5839,7 @@ NAME test_suite_M_kracken.f90
  -frecord-marker=4
  -I.
  -DTESTPRG
- -DTESTPRG90 /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
+ -DTESTPRG90 /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
  -o /home/urbanjs/venus/V600/bin/Linux_gfortran/test_suite_M_kracken
  -Wall
  -Wextra
@@ -5796,122 +5871,116 @@ NAME test_suite_M_kracken.f90
  -Bdynamic
  -L/usr/lib/x86_64-linux-gnu
  -lX11
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:299:25:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:9:35:
 
-  299 |  call unit_check('store',rget('MY_REAL')    == 1234.5677,            'MY_REAL',rget('MY_REAL')+bug,1234.5677)
+    9 | use :: M_framework__verify,  only : almost
+      |                                   1
+Error: Symbol ‘almost’ referenced at (1) not found in module ‘m_framework__verify’
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:295:25:
+
+  295 |  call unit_check('store',rget('MY_REAL')    == 1234.5677,            'MY_REAL',rget('MY_REAL')+bug,1234.5677)
       |                         1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:302:25:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:298:25:
 
-  302 |  call unit_check('store',dget('MY_DOUBLE')  == 12345670000.000000d0, 'MY_DOUBLE',dget('MY_DOUBLE')+0,12345670000.000000d0)
+  298 |  call unit_check('store',dget('MY_DOUBLE')  == 12345670000.000000d0, 'MY_DOUBLE',dget('MY_DOUBLE')+0,12345670000.000000d0)
       |                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:273:62:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:269:62:
 
-  273 |    call unit_check('sgets', size(sgets('BLANK')).eq.0.and.len(sgets('BLANK')).eq.0,   'BLANK')
+  269 |    call unit_check('sgets', size(sgets('BLANK')).eq.0.and.len(sgets('BLANK')).eq.0,   'BLANK')
       |                                                              1
 Warning: Impure function ‘sgets’ at (1) might not be evaluated [-Wfunction-elimination]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:260:55:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:256:55:
 
-  260 |    call unit_check('sget', len(sget('BLANK')).ne.0.and.sget('BLANK').eq.' ', 'BLANK')
+  256 |    call unit_check('sget', len(sget('BLANK')).ne.0.and.sget('BLANK').eq.' ', 'BLANK')
       |                                                       1
 Warning: Impure function ‘sget’ at (1) might not be evaluated [-Wfunction-elimination]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:232:32:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:228:32:
 
-  232 |    call unit_check('rgets', all(rgets('MY_REAL1').eq.[100.0e0,0.0e0,300.33333e2]),'MY_REAL1')
+  228 |    call unit_check('rgets', all(rgets('MY_REAL1').eq.[100.0e0,0.0e0,300.33333e2]),'MY_REAL1')
       |                                1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:233:32:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:229:32:
 
-  233 |    call unit_check('rgets', all(rgets('MY_REAL2').eq.[-1234.0e-20]),              'MY_REAL2')
+  229 |    call unit_check('rgets', all(rgets('MY_REAL2').eq.[-1234.0e-20]),              'MY_REAL2')
       |                                1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:216:27:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:212:27:
 
-  216 |    call unit_check('rget', rget('MY_REAL1').eq.1234.567,    'MY_REAL1',rget('MY_REAL1')+bug)
+  212 |    call unit_check('rget', rget('MY_REAL1').eq.1234.567,    'MY_REAL1',rget('MY_REAL1')+bug)
       |                           1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:217:27:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:213:27:
 
-  217 |    call unit_check('rget', rget('MY_REAL2').eq.-1234.567e3, 'MY_REAL2',rget('MY_REAL2')+bug)
+  213 |    call unit_check('rget', rget('MY_REAL2').eq.-1234.567e3, 'MY_REAL2',rget('MY_REAL2')+bug)
       |                           1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:218:27:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:214:27:
 
-  218 |    call unit_check('rget', rget('NOTTHERE').eq.0,           'NOTTHERE',rget('NOTTHERE')+bug)
+  214 |    call unit_check('rget', rget('NOTTHERE').eq.0,           'NOTTHERE',rget('NOTTHERE')+bug)
       |                           1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:220:27:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:216:27:
 
-  220 |    call unit_check('rget', rget('BLANK').eq.0,              'BLANK',rget('BLANK')+bug)
+  216 |    call unit_check('rget', rget('BLANK').eq.0,              'BLANK',rget('BLANK')+bug)
       |                           1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:186:33:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:182:33:
 
-  186 |          call unit_check('parse',rget('end_k').eq.55.55,'end_k')
+  182 |          call unit_check('parse',rget('end_k').eq.55.55,'end_k')
       |                                 1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:120:53:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:116:53:
 
-  120 |    call unit_check('igets', size(i).eq.1.and.i(1).eq.-huge(0),         'BAD')
+  116 |    call unit_check('igets', size(i).eq.1.and.i(1).eq.-huge(0),         'BAD')
       |                                                     1
 Warning: Change of value in conversion from ‘INTEGER(4)’ to ‘REAL(4)’ at (1) [-Wconversion]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:120:45:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:116:45:
 
-  120 |    call unit_check('igets', size(i).eq.1.and.i(1).eq.-huge(0),         'BAD')
+  116 |    call unit_check('igets', size(i).eq.1.and.i(1).eq.-huge(0),         'BAD')
       |                                             1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:89:30:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:85:30:
 
-   89 |    call unit_check('dissect', rget('demo_float').eq.50.0, 'demo_float',rget('demo_float')+bug)
+   85 |    call unit_check('dissect', rget('demo_float').eq.50.0, 'demo_float',rget('demo_float')+bug)
       |                              1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:70:32:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:66:32:
 
-   70 |    call unit_check('dgets', all(dgets('MY_DOUBLE1').eq.[100.0d0,0.0d0,300.33333d2]),'MY_DOUBLE1=',dget('MY_DOUBLE1')+bug)
+   66 |    call unit_check('dgets', all(dgets('MY_DOUBLE1').eq.[100.0d0,0.0d0,300.33333d2]),'MY_DOUBLE1=',dget('MY_DOUBLE1')+bug)
       |                                1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:71:32:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:67:32:
 
-   71 |    call unit_check('dgets', all(dgets('MY_DOUBLE2').eq.[-1234.0d-20]),&
+   67 |    call unit_check('dgets', all(dgets('MY_DOUBLE2').eq.[-1234.0d-20]),&
       |                                1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:53:26:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:47:27:
 
-   53 |    call unit_check('dget',dget('MY_DOUBLE2').eq.-1234.0d-20,&
+   47 |    call unit_check('dget',(almost(dget('MY_DOUBLE1')+bug,dd,15)), 'MY_DOUBLE1=','versus',dd)
+      |                           1
+Error: Function ‘almost’ at (1) has no IMPLICIT type
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:49:26:
+
+   49 |    call unit_check('dget',dget('MY_DOUBLE2').eq.-1234.0d-20,&
       |                          1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:55:26:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:51:26:
 
-   55 |    call unit_check('dget',dget('NOTTHERE').eq.0,             'NOTTHERE',dget('NOTTHERE')+bug)
+   51 |    call unit_check('dget',dget('NOTTHERE').eq.0,             'NOTTHERE',dget('NOTTHERE')+bug)
       |                          1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:57:26:
+/tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90:53:26:
 
-   57 |    call unit_check('dget',dget('BLANK').eq.0,                'BLANK',dget('BLANK'))
+   53 |    call unit_check('dget',dget('BLANK').eq.0,                'BLANK',dget('BLANK'))
       |                          1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90:14:23:
-
-   14 | integer,parameter :: HT=9
-      |                       1
-Warning: Unused parameter ‘ht’ declared at (1) [-Wunused-parameter]
-/usr/bin/ld: /home/urbanjs/venus/V600/lib/Linux_gfortran/libGPF.a(M_args.o): in function `splitit.0':
-/tmp/USH.1956197/M_args.f90:1737: undefined reference to `__m_strings_MOD_upper'
-/usr/bin/ld: /home/urbanjs/venus/V600/lib/Linux_gfortran/libGPF.a(M_args.o): in function `ifnull.1':
-/tmp/USH.1956197/M_args.f90:1389: undefined reference to `__m_strings_MOD_upper'
-/usr/bin/ld: /tmp/USH.1956197/M_args.f90:1389: undefined reference to `__m_strings_MOD_upper'
-/usr/bin/ld: /home/urbanjs/venus/V600/lib/Linux_gfortran/libGPF.a(M_args.o): in function `__m_args_MOD_namelist_to_dictionary':
-/tmp/USH.1956197/M_args.f90:1668: undefined reference to `__m_strings_MOD_upper'
-/usr/bin/ld: /home/urbanjs/venus/V600/lib/Linux_gfortran/libGPF.a(M_args.o): in function `__m_args_MOD_prototype_and_cmd_args_to_nlist':
-/tmp/USH.1956197/M_args.f90:1372: undefined reference to `__m_strings_MOD_upper'
-/usr/bin/ld: /home/urbanjs/venus/V600/lib/Linux_gfortran/libGPF.a(M_args.o):/tmp/USH.1956197/M_args.f90:1372: more undefined references to `__m_strings_MOD_upper' follow
-collect2: error: ld returned 1 exit status
-+ ar rv /home/urbanjs/venus/V600/lib/Linux_gfortran/PROGRAM.a /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
-a - /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
++ ar rv /home/urbanjs/venus/V600/lib/Linux_gfortran/PROGRAM.a /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
+a - /tmp/CCALL_Linux_gfortran_2659589/test_suite_M_kracken.2659589.f90
 + set +x
 /home/urbanjs/venus/V600/LIBRARY/CYGWIN/scripts_regression/goodbad: test_suite_M_kracken.1 0 test_suite_M_kracken start --section 1
-*ccall*: REMOVING /tmp/CCALL_Linux_gfortran_1295008
+*ccall*: REMOVING /tmp/CCALL_Linux_gfortran_2659589
 + test_suite_M_kracken
 /home/urbanjs/venus/V600/github/github_scripts/bash/GPF_build_module: line 198: test_suite_M_kracken: command not found
 + echo '>>>> GPF_fman'
@@ -5932,8 +6001,215 @@ a - /tmp/CCALL_Linux_gfortran_1295008/test_suite_M_kracken.1295008.f90
 + TEXTDIR=doc
 + export NAME
 + cd doc
-/home/urbanjs/venus/V600/github/github_scripts/bash/GPF_fman: line 400: /home/urbanjs/venus/V600/github/PLUGINS/fpm-docs/src/m_kracken_docs.f90: No such file or directory
-+ ls -ld /home/urbanjs/venus/V600/github/PLUGINS/fpm-docs/src/m_kracken_docs.f90
-ls: cannot access '/home/urbanjs/venus/V600/github/PLUGINS/fpm-docs/src/m_kracken_docs.f90': No such file or directory
++ WRITE_MODULE
 + cat
-/home/urbanjs/venus/V600/github/github_scripts/bash/GPF_fman: line 406: /home/urbanjs/venus/V600/github/PLUGINS/fpm-docs/app/fpm-m_kracken.f90: No such file or directory
++ cat
++ cat
++ cat
++ COUNT=0
++ ls ARGUMENTS.3.man dget.3m_kracken.man dgets.3m_kracken.man dissect.3m_kracken.man iget.3m_kracken.man igets.3m_kracken.man kracken.3m_kracken.man lget.3m_kracken.man lgets.3m_kracken.man parse.3m_kracken.man retrev.3m_kracken.man rget.3m_kracken.man rgets.3m_kracken.man setprompts.3m_kracken.man sget.3m_kracken.man sgets.3m_kracken.man show.3m_kracken.man store.3m_kracken.man
++ read NAME
++ SHORTNAME=ARGUMENTS
++ COUNT=1
++ cat
+++ TOCHARACTER
+++ :
+++ cat ARGUMENTS.3.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ sed -e 's/^/'\''/'
+++ cat
+++ sed -e 's/$/'\'', \&/'
++ read NAME
++ SHORTNAME=dget
++ COUNT=2
++ cat
+++ TOCHARACTER
+++ :
+++ cat dget.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/^/'\''/'
++ read NAME
++ SHORTNAME=dgets
++ COUNT=3
++ cat
+++ TOCHARACTER
+++ :
+++ cat dgets.3m_kracken.man
+++ sed -e 's/^/'\''/'
+++ cat
+++ sed -e 's/'\''/'\'''\''/g'
+++ sed -e 's/$/'\'', \&/'
++ read NAME
++ SHORTNAME=dissect
++ COUNT=4
++ cat
+++ TOCHARACTER
+++ :
+++ cat dissect.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/^/'\''/'
+++ sed -e 's/$/'\'', \&/'
++ read NAME
++ SHORTNAME=iget
++ COUNT=5
++ cat
+++ TOCHARACTER
+++ :
+++ cat iget.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/^/'\''/'
+++ cat
++ read NAME
++ SHORTNAME=igets
++ COUNT=6
++ cat
+++ TOCHARACTER
+++ :
+++ cat igets.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/^/'\''/'
++ read NAME
++ SHORTNAME=kracken
++ COUNT=7
++ cat
+++ TOCHARACTER
+++ :
+++ cat kracken.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/^/'\''/'
++ read NAME
++ SHORTNAME=lget
++ COUNT=8
++ cat
+++ TOCHARACTER
+++ :
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/^/'\''/'
+++ sed -e 's/$/'\'', \&/'
+++ cat lget.3m_kracken.man
++ read NAME
++ SHORTNAME=lgets
++ COUNT=9
++ cat
+++ TOCHARACTER
+++ :
+++ cat lgets.3m_kracken.man
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/^/'\''/'
++ read NAME
++ SHORTNAME=parse
++ COUNT=10
++ cat
+++ TOCHARACTER
+++ :
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/^/'\''/'
+++ cat parse.3m_kracken.man
+++ sed -e 's/$/'\'', \&/'
++ read NAME
++ SHORTNAME=retrev
++ COUNT=11
++ cat
+++ TOCHARACTER
+++ :
+++ sed -e 's/^/'\''/'
+++ sed -e 's/$/'\'', \&/'
+++ cat
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat retrev.3m_kracken.man
++ read NAME
++ SHORTNAME=rget
++ COUNT=12
++ cat
+++ TOCHARACTER
+++ :
+++ cat rget.3m_kracken.man
+++ sed -e 's/^/'\''/'
+++ cat
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/'\''/'\'''\''/g'
++ read NAME
++ SHORTNAME=rgets
++ COUNT=13
++ cat
+++ TOCHARACTER
+++ :
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat rgets.3m_kracken.man
+++ sed -e 's/$/'\'', \&/'
+++ cat
+++ sed -e 's/^/'\''/'
++ read NAME
++ SHORTNAME=setprompts
++ COUNT=14
++ cat
+++ TOCHARACTER
+++ :
+++ cat setprompts.3m_kracken.man
+++ sed -e 's/^/'\''/'
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
++ read NAME
++ SHORTNAME=sget
++ COUNT=15
++ cat
+++ TOCHARACTER
+++ :
+++ cat sget.3m_kracken.man
+++ sed -e 's/^/'\''/'
+++ sed -e 's/'\''/'\'''\''/g'
+++ cat
+++ sed -e 's/$/'\'', \&/'
++ read NAME
++ SHORTNAME=sgets
++ COUNT=16
++ cat
+++ TOCHARACTER
+++ :
+++ cat sgets.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ sed -e 's/$/'\'', \&/'
+++ sed -e 's/^/'\''/'
+++ cat
++ read NAME
++ SHORTNAME=show
++ COUNT=17
++ cat
+++ TOCHARACTER
+++ :
+++ cat show.3m_kracken.man
+++ sed -e 's/^/'\''/'
+++ sed -e 's/$/'\'', \&/'
+++ cat
+++ sed -e 's/'\''/'\'''\''/g'
++ read NAME
++ SHORTNAME=store
++ COUNT=18
++ cat
+++ TOCHARACTER
+++ :
+++ cat store.3m_kracken.man
+++ sed -e 's/'\''/'\'''\''/g'
+++ sed -e 's/^/'\''/'
+++ sed -e 's/$/'\'', \&/'
+++ cat
++ read NAME
++ END_MODULE
++ cat
++ cat
++ ls -ld /home/urbanjs/venus/V600/github/PLUGINS/fpm-docs/src/m_kracken_docs.f90
+-rw-rw-r-- 1 urbanjs urbanjs 62629 Apr 23 18:16 /home/urbanjs/venus/V600/github/PLUGINS/fpm-docs/src/m_kracken_docs.f90
++ cat
