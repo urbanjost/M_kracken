@@ -217,17 +217,17 @@
 <a id="ln-2" name="ln-2" href="#ln-2"></a><span class="c">!()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()!</span>
 <a id="ln-3" name="ln-3" href="#ln-3"></a><span class="c">!===================================================================================================================================</span>
 <a id="ln-4" name="ln-4" href="#ln-4"></a><span class="k">module </span><span class="n">M_kracken</span><span class="w"></span>
-<a id="ln-5" name="ln-5" href="#ln-5"></a><span class="k">use </span><span class="n">M_framework__verify</span><span class="p">,</span><span class="w">   </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">debug</span><span class="p">,</span><span class="w"> </span><span class="n">io_debug</span><span class="w"></span>
-<a id="ln-6" name="ln-6" href="#ln-6"></a><span class="k">use </span><span class="n">M_framework__journal</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">journal</span><span class="w"></span>
-<a id="ln-7" name="ln-7" href="#ln-7"></a><span class="k">use </span><span class="n">M_strings</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">upper</span><span class="p">,</span><span class="w"> </span><span class="n">string_to_value</span><span class="p">,</span><span class="w"> </span><span class="n">split</span><span class="p">,</span><span class="w"> </span><span class="n">s2v</span><span class="p">,</span><span class="w"> </span><span class="n">atleast</span><span class="w"></span>
-<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="k">use </span><span class="n">M_list</span><span class="p">,</span><span class="w">    </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">locate</span><span class="p">,</span><span class="w"> </span><span class="n">insert</span><span class="p">,</span><span class="w"> </span><span class="n">replace</span><span class="w"></span>
-<a id="ln-9" name="ln-9" href="#ln-9"></a><span class="k">use </span><span class="n">M_args</span><span class="p">,</span><span class="w">    </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">get_command_arguments_string</span><span class="p">,</span><span class="w"> </span><span class="n">longest_command_argument</span><span class="w"></span>
-<a id="ln-10" name="ln-10" href="#ln-10"></a><span class="k">implicit none</span><span class="w"></span>
-<a id="ln-11" name="ln-11" href="#ln-11"></a>
-<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="c">! ident_1=&quot;@(#) M_kracken(3fm) parse command line options of Fortran programs using Unix-like syntax&quot;</span>
-<a id="ln-13" name="ln-13" href="#ln-13"></a>
-<a id="ln-14" name="ln-14" href="#ln-14"></a><span class="c">!===================================================================================================================================</span>
-<a id="ln-15" name="ln-15" href="#ln-15"></a><span class="w">   </span><span class="k">private</span><span class="w"></span>
+<a id="ln-5" name="ln-5" href="#ln-5"></a><span class="k">use </span><span class="n">M_framework__journal</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">journal</span><span class="w"></span>
+<a id="ln-6" name="ln-6" href="#ln-6"></a><span class="k">use </span><span class="n">M_strings</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">upper</span><span class="p">,</span><span class="w"> </span><span class="n">string_to_value</span><span class="p">,</span><span class="w"> </span><span class="n">split</span><span class="p">,</span><span class="w"> </span><span class="n">s2v</span><span class="p">,</span><span class="w"> </span><span class="n">atleast</span><span class="w"></span>
+<a id="ln-7" name="ln-7" href="#ln-7"></a><span class="k">use </span><span class="n">M_list</span><span class="p">,</span><span class="w">    </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">locate</span><span class="p">,</span><span class="w"> </span><span class="n">insert</span><span class="p">,</span><span class="w"> </span><span class="n">replace</span><span class="w"></span>
+<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="k">use </span><span class="n">M_args</span><span class="p">,</span><span class="w">    </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="n">get_command_arguments_string</span><span class="p">,</span><span class="w"> </span><span class="n">longest_command_argument</span><span class="w"></span>
+<a id="ln-9" name="ln-9" href="#ln-9"></a><span class="k">implicit none</span><span class="w"></span>
+<a id="ln-10" name="ln-10" href="#ln-10"></a>
+<a id="ln-11" name="ln-11" href="#ln-11"></a><span class="c">! ident_1=&quot;@(#) M_kracken(3fm) parse command line options of Fortran programs using Unix-like syntax&quot;</span>
+<a id="ln-12" name="ln-12" href="#ln-12"></a>
+<a id="ln-13" name="ln-13" href="#ln-13"></a><span class="c">!===================================================================================================================================</span>
+<a id="ln-14" name="ln-14" href="#ln-14"></a><span class="w">   </span><span class="k">private</span>
+<a id="ln-15" name="ln-15" href="#ln-15"></a><span class="k">   </span><span class="kt">logical</span><span class="p">,</span><span class="k">save</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">debug</span><span class="o">=</span><span class="p">.</span><span class="n">false</span><span class="p">.</span><span class="w"></span>
 <a id="ln-16" name="ln-16" href="#ln-16"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
 <a id="ln-17" name="ln-17" href="#ln-17"></a><span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">kracken</span><span class="w">                </span><span class="c">! define command and default parameter values from command arguments</span>
 <a id="ln-18" name="ln-18" href="#ln-18"></a><span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
@@ -3030,7 +3030,7 @@
             <p class="text-right">
               Documentation generated by
               <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
- on 2023-04-23 22:18              </p>
+ on 2023-04-23 22:24              </p>
           </div>
         </div>
         <br>
