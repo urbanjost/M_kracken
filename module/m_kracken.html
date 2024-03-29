@@ -1,3 +1,5 @@
+<!-- -*- mode: jinja2 -*- -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,77 +12,53 @@
 
     <title>M_kracken &ndash; easy</title>
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
       <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-         <script src="../js/jquery-2.1.3.min.js"></script>
-         <script src="../js/svg-pan-zoom.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
           <a class="navbar-brand" href="../index.html">easy </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
-              <a href="#" class="dropdown-toggle"
-                 data-toggle="dropdown" role="button"
-                 aria-haspopup="true"
-                 aria-expanded="false">
-                 Contents <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                    <li><a href="../lists/files.html">Source Files</a></li>
-                  <li><a href="../lists/modules.html">Modules</a></li>
-                  <li><a href="../lists/procedures.html">Procedures</a></li>
-                  <li><a href="../lists/programs.html">Programs</a></li>
-              </ul>
-            </li>
-                <li class="visible-xs hidden-sm visible-lg">
-                  <a href="../lists/files.html">Source Files</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
                 </li>
-              <li class="visible-xs hidden-sm visible-lg">
-                <a href="../lists/modules.html">Modules</a>
-              </li>
-              <li class="visible-xs hidden-sm visible-lg">
-                <a href="../lists/procedures.html">Procedures</a>
-              </li>
-              <li class="visible-xs hidden-sm visible-lg">
-                <a href="../lists/programs.html">Programs</a>
-              </li>
-          </ul>
-            <form action="../search.html" class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/programs.html">Programs</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
               </div>
-              <!--
-                  <button type="submit" class="btn btn-default">Submit</button>
-                  -->
-            </form>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
 
     <div class="container">
   <div class="row">
@@ -88,50 +66,53 @@
       <small>Module</small>
       
     </h1>
-      <div class="row" id="info-bar">
-    <div class="col-lg-12">
-      <div class="well well-sm">
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
         <ul class="list-inline" style="margin-bottom:0px;display:inline">
 
-          <li id="statements"><i class="fa fa-list-ol"></i>
-            <a data-toggle="tooltip"
-               data-placement="bottom" data-html="true"
-               title="100.0% of total for modules and submodules.">1003 statements</a>
-          </li>
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="100.0% of total for modules and submodules.">1003 statements</a>
+            </li>
 
-            <li id="source-file">
+            <li class="list-inline-item" id="source-file">
               <i class="fa fa-code"></i>
               <a href="../src/M_kracken.f90"> Source File</a>
             </li>
         </ul>
-        <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/m_kracken.f90.html'>M_kracken.f90</a></li>
-          <li class="active">M_kracken</li>
-        </ol>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/m_kracken.f90.html'>M_kracken.f90</a></li>
+            <li class="breadcrumb-item active" aria-current="page">M_kracken</li>
+          </ol>
+        </nav>
       </div>
     </div>
   </div>
   <script>
     $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-bs-toggle="tooltip"]').tooltip()
     })
   </script>
 
   </div>
 
   <div class="row">
-    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div class="col-md-3">
         <div id="sidebar">
       <h3>Contents</h3>
   
-      <div class="panel panel-primary">
-      <div class="panel-heading text-left">
-        <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-0">Variables</a>
-        </h3>
-      </div>
-      <div id="vars-0" class="panel-collapse collapse">
-        <div class="list-group">
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
             <a class="list-group-item" href="../module/m_kracken.html#variable-ipvalue">IPvalue</a>
             <a class="list-group-item" href="../module/m_kracken.html#variable-ipverb">IPverb</a>
             <a class="list-group-item" href="../module/m_kracken.html#variable-current_command_length">current_command_length</a>
@@ -153,14 +134,13 @@
   
   
   
-      <div class="panel panel-primary">
-      <div class="panel-heading text-left">
-        <h3 class="panel-title">
-          <a data-toggle="collapse" href="#funcs-0">Functions</a>
-        </h3>
-      </div>
-      <div id="funcs-0" class="panel-collapse collapse">
-        <div class="list-group">
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#funcs-0"
+         aria-expanded="false" aria-controls="funcs-0">
+         <h4 class="card-header bg-primary text-white">Functions</h4>
+      </a>
+      <div id="funcs-0" class="collapse">
+        <div class="list-group list-group-flush">
             <a class="list-group-item" href="../module/m_kracken.html#proc-dget">dget</a>
             <a class="list-group-item" href="../module/m_kracken.html#proc-dgets">dgets</a>
             <a class="list-group-item" href="../module/m_kracken.html#proc-iget">iget</a>
@@ -175,14 +155,13 @@
       </div>
     </div>
 
-      <div class="panel panel-primary">
-      <div class="panel-heading text-left">
-        <h3 class="panel-title">
-          <a data-toggle="collapse" href="#subs-0">Subroutines</a>
-        </h3>
-      </div>
-      <div id="subs-0" class="panel-collapse collapse">
-        <div class="list-group">
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#subs-0"
+         aria-expanded="false" aria-controls="subs-0">
+         <h4 class="card-header bg-primary text-white">Subroutines</h4>
+      </a>
+      <div id="subs-0" class="collapse">
+        <div class="list-group list-group-flush">
             <a class="list-group-item" href="../module/m_kracken.html#proc-cmd_args_to_dictionary">cmd_args_to_dictionary</a>
             <a class="list-group-item" href="../module/m_kracken.html#proc-dissect">dissect</a>
             <a class="list-group-item" href="../module/m_kracken.html#proc-kracken">kracken</a>
@@ -196,6 +175,7 @@
       </div>
     </div>
 
+  
   
   
   
@@ -210,110 +190,24 @@
 
     <div class="col-md-9" id='text'>
       
-<br>          <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Uses</h3>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item">M_strings</li>
+                  <li class="list-inline-item">M_args</li>
+                  <li class="list-inline-item">M_list</li>
+                  <li class="list-inline-item">M_framework__journal</li>
+              </ul>
+            </li>
+        </ul>
       </div>
-      <ul class="list-group">
-          <li class="list-group-item">
-            <ul class="list-inline">
-                <li>M_strings</li>
-                <li>M_args</li>
-                <li>M_framework__journal</li>
-                <li>M_list</li>
-            </ul>
-          </li>
-      </ul>
     </div>
 
       
       <br>
-
-      <section class="visible-xs visible-sm hidden-md">
-          <h3>Contents</h3>
-  
-      <div class="panel panel-primary">
-      <div class="panel-heading text-left">
-        <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-1">Variables</a>
-        </h3>
-      </div>
-      <div id="vars-1" class="panel-collapse collapse">
-        <div class="list-group">
-            <a class="list-group-item" href="../module/m_kracken.html#variable-ipvalue">IPvalue</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-ipverb">IPverb</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-current_command_length">current_command_length</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-kracken_comment">kracken_comment</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-kracken_method">kracken_method</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-leftover">leftover</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-stop_command">stop_command</a>
-            <a class="list-group-item" href="../module/m_kracken.html#variable-unnamed">unnamed</a>
-        </div>
-      </div>
-    </div>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      <div class="panel panel-primary">
-      <div class="panel-heading text-left">
-        <h3 class="panel-title">
-          <a data-toggle="collapse" href="#funcs-1">Functions</a>
-        </h3>
-      </div>
-      <div id="funcs-1" class="panel-collapse collapse">
-        <div class="list-group">
-            <a class="list-group-item" href="../module/m_kracken.html#proc-dget">dget</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-dgets">dgets</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-iget">iget</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-igets">igets</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-lget">lget</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-lgets">lgets</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-rget">rget</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-rgets">rgets</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-sget">sget</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-sgets">sgets</a>
-        </div>
-      </div>
-    </div>
-
-      <div class="panel panel-primary">
-      <div class="panel-heading text-left">
-        <h3 class="panel-title">
-          <a data-toggle="collapse" href="#subs-1">Subroutines</a>
-        </h3>
-      </div>
-      <div id="subs-1" class="panel-collapse collapse">
-        <div class="list-group">
-            <a class="list-group-item" href="../module/m_kracken.html#proc-cmd_args_to_dictionary">cmd_args_to_dictionary</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-dissect">dissect</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-kracken">kracken</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-parse">parse</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-print_kracken_dictionary">print_kracken_dictionary</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-retrev">retrev</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-setprompts">setprompts</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-show">show</a>
-            <a class="list-group-item" href="../module/m_kracken.html#proc-store">store</a>
-        </div>
-      </div>
-    </div>
-
-  
-  
-  
-  
-  
-  
-
-
-      </section>
-      <br class="visible-xs visible-sm hidden-md">
 
 
         <section>
@@ -321,11 +215,11 @@
             <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Visibility</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-<th></th><th>Initial</th>        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
@@ -391,7 +285,7 @@ parameter
             <td>::</td>
             <td><strong>kracken_comment</strong></td>
 <td> =</td>
-                <td>'#'</td>
+                <td>&#39;#&#39;</td>
             <td>
                 
             </td>
@@ -408,7 +302,7 @@ parameter
             <td>::</td>
             <td><strong>kracken_method</strong></td>
 <td> =</td>
-                <td>'kracken'</td>
+                <td>&#39;kracken&#39;</td>
             <td>
                 
             </td>
@@ -476,10 +370,10 @@ parameter
 
         <section>
           <h2>Functions</h2>
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-dget"></span><h3>public  function <a href='../proc/dget.html'>dget</a>(keyword)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-dget"></span> <h3>public  function <a href='../proc/dget.html'>dget</a>(keyword)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program</p><a href="../proc/dget.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -487,16 +381,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -521,10 +415,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-dgets"></span><h3>public  function <a href='../proc/dgets.html'>dgets</a>(keyword, ier) result(darray)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-dgets"></span> <h3>public  function <a href='../proc/dgets.html'>dgets</a>(keyword, ier) result(darray)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program</p><a href="../proc/dgets.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -532,16 +426,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~5"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -556,7 +450,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-ier~3"></span>
               integer,
             </td>
 <td></td>
@@ -581,10 +475,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-iget"></span><h3>public  function <a href='../proc/iget.html'>iget</a>(keyword)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-iget"></span> <h3>public  function <a href='../proc/iget.html'>iget</a>(keyword)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program</p><a href="../proc/iget.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -592,16 +486,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~3"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -626,10 +520,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-igets"></span><h3>public  function <a href='../proc/igets.html'>igets</a>(keyword, ier) result(iarray)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-igets"></span> <h3>public  function <a href='../proc/igets.html'>igets</a>(keyword, ier) result(iarray)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program</p><a href="../proc/igets.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -637,16 +531,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~6"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -661,7 +555,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-ier~4"></span>
               integer,
             </td>
 <td></td>
@@ -686,10 +580,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-lget"></span><h3>public  function <a href='../proc/lget.html'>lget</a>(keyword)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-lget"></span> <h3>public  function <a href='../proc/lget.html'>lget</a>(keyword)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program:</p><a href="../proc/lget.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -697,16 +591,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~4"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -731,10 +625,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-lgets"></span><h3>public  function <a href='../proc/lgets.html'>lgets</a>(keyword) result(larray)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-lgets"></span> <h3>public  function <a href='../proc/lgets.html'>lgets</a>(keyword) result(larray)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program:</p><a href="../proc/lgets.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -742,16 +636,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~8"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -776,10 +670,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-rget"></span><h3>public  function <a href='../proc/rget.html'>rget</a>(keyword)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-rget"></span> <h3>public  function <a href='../proc/rget.html'>rget</a>(keyword)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program</p><a href="../proc/rget.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -787,16 +681,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~2"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -821,10 +715,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-rgets"></span><h3>public  function <a href='../proc/rgets.html'>rgets</a>(keyword, ier) result(rarray)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-rgets"></span> <h3>public  function <a href='../proc/rgets.html'>rgets</a>(keyword, ier) result(rarray)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program converts between Celcius and Fahrenheit</p><a href="../proc/rgets.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -832,16 +726,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-keyword~7"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -856,7 +750,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-ier~5"></span>
               integer,
             </td>
 <td></td>
@@ -881,10 +775,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-sget"></span><h3>public  function <a href='../proc/sget.html'>sget</a>(name, ilen) result(string)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-sget"></span> <h3>public  function <a href='../proc/sget.html'>sget</a>(name, ilen) result(string)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>function sget(name,ilen) result(string)</p><a href="../proc/sget.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -892,16 +786,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-name~2"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -916,7 +810,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-ilen"></span>
               integer,
             </td>
 <td>intent(out),</td>
@@ -941,10 +835,10 @@ parameter
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-sgets"></span><h3>public  function <a href='../proc/sgets.html'>sgets</a>(name, delim) result(strings)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-sgets"></span> <h3>public  function <a href='../proc/sgets.html'>sgets</a>(name, delim) result(strings)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>function sgets(name,delim) result(strings)</p><a href="../proc/sgets.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -952,16 +846,16 @@ parameter
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-name~3"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -976,7 +870,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-delim"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1006,10 +900,10 @@ parameter
 
         <section>
           <h2>Subroutines</h2>
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-cmd_args_to_dictionary"></span><h3>public  subroutine <a href='../proc/cmd_args_to_dictionary.html'>cmd_args_to_dictionary</a>(verb)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-cmd_args_to_dictionary"></span> <h3>public  subroutine <a href='../proc/cmd_args_to_dictionary.html'>cmd_args_to_dictionary</a>(verb)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>write(<em>,</em>)&rsquo;GOT HERE 4 UNNAMED:&rsquo;,current_argument,size(unnamed)
 write(<em>,</em>)&rsquo;GOT HERE 5&rsquo;,current_argument,size(unnamed)
@@ -1020,16 +914,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verb~6"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1049,10 +943,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-dissect"></span><h3>public  subroutine <a href='../proc/dissect.html'>dissect</a>(verb, init, pars, error_return)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-dissect"></span> <h3>public  subroutine <a href='../proc/dissect.html'>dissect</a>(verb, init, pars, error_return)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>subroutine dissect(verb,init,pars,error_return)</p><a href="../proc/dissect.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1060,16 +954,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verb~3"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1084,7 +978,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-init~2"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1099,7 +993,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-pars"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1114,7 +1008,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-error_return~2"></span>
               integer,
             </td>
 <td>intent(out),</td>
@@ -1134,10 +1028,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-kracken"></span><h3>public  subroutine <a href='../proc/kracken.html'>kracken</a>(verb, string, error_return, style)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-kracken"></span> <h3>public  subroutine <a href='../proc/kracken.html'>kracken</a>(verb, string, error_return, style)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>Sample program:</p><a href="../proc/kracken.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1145,16 +1039,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verb"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1169,7 +1063,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-string~2"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1184,7 +1078,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-error_return"></span>
               integer,
             </td>
 <td>intent(out),</td>
@@ -1199,7 +1093,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-style"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1219,10 +1113,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-parse"></span><h3>public recursive subroutine <a href='../proc/parse.html'>parse</a>(verb, string, allow, error_return)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-parse"></span> <h3>public recursive subroutine <a href='../proc/parse.html'>parse</a>(verb, string, allow, error_return)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>recursive subroutine parse(verb,string,allow,error_return)</p><a href="../proc/parse.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1230,16 +1124,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verb~4"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1254,7 +1148,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-string~3"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1269,7 +1163,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-allow"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1284,7 +1178,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-error_return~3"></span>
               integer,
             </td>
 <td>intent(out),</td>
@@ -1304,10 +1198,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-print_kracken_dictionary"></span><h3>public  subroutine <a href='../proc/print_kracken_dictionary.html'>print_kracken_dictionary</a>(header)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-print_kracken_dictionary"></span> <h3>public  subroutine <a href='../proc/print_kracken_dictionary.html'>print_kracken_dictionary</a>(header)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   
 
@@ -1315,16 +1209,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-header"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1344,10 +1238,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-retrev"></span><h3>public  subroutine <a href='../proc/retrev.html'>retrev</a>(name, val, len, ier)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-retrev"></span> <h3>public  subroutine <a href='../proc/retrev.html'>retrev</a>(name, val, len, ier)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>SUBROUTINE retrev(name, string, len, ier)</p><a href="../proc/retrev.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1355,16 +1249,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-name"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1379,7 +1273,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-val"></span>
               character(len=*),
             </td>
 <td>intent(out)</td>
@@ -1394,7 +1288,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-len"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -1409,7 +1303,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-ier"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -1429,10 +1323,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-setprompts"></span><h3>public  subroutine <a href='../proc/setprompts.html'>setprompts</a>(verb, init)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-setprompts"></span> <h3>public  subroutine <a href='../proc/setprompts.html'>setprompts</a>(verb, init)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>subroutine setprompts(verb,init)</p><a href="../proc/setprompts.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1440,16 +1334,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verb~2"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1464,7 +1358,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-init"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1484,10 +1378,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-show"></span><h3>public  subroutine <a href='../proc/show.html'>show</a>(VERB_NAME0, VERBS_ONLY, iwide)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-show"></span> <h3>public  subroutine <a href='../proc/show.html'>show</a>(VERB_NAME0, VERBS_ONLY, iwide)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>subroutine show(VERB_NAME0,VERBS_ONLY,IWIDE)</p><a href="../proc/show.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1495,16 +1389,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verb_name0"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1519,7 +1413,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-verbs_only"></span>
               logical,
             </td>
 <td>intent(in)</td>
@@ -1534,7 +1428,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-iwide"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -1554,10 +1448,10 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div>
   </div>
 
-              <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-store"></span><h3>public  subroutine <a href='../proc/store.html'>store</a>(name1, value1, allow1, ier)  
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-store"></span> <h3>public  subroutine <a href='../proc/store.html'>store</a>(name1, value1, allow1, ier)  
 </h3></div>
-    <div class="panel-body">
+    <div class="card-body">
           
   <p>subroutine store(name1,value1,allow1,ier)</p><a href="../proc/store.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
@@ -1565,16 +1459,16 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
       <table class="table table-striped varlist">
     <thead>
       <tr>
-        <th>Type</th>
-<th>Intent</th><th>Optional</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-        <th></th>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-name1"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1589,7 +1483,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-value1"></span>
               class(*),
             </td>
 <td>intent(in)</td>
@@ -1604,7 +1498,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-allow1"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1619,7 +1513,7 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
         </tr>
         <tr>
             <td>
-              <span class="anchor" ></span>
+              <span class="anchor" id="variable-ier~9"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -1651,32 +1545,27 @@ call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),
     </div> <!-- /container -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-md-6"><p>easy was developed by John Doe<br>&copy; 2023 
+        <div class="row justify-content-between">
+          <div class="col"><p>easy was developed by John Doe<br>&copy; 2024 
 </p>
           </div>
-          <div class="col-xs-6 col-md-6">
-            <p class="text-right">
+          <div class="col">
+            <p class="text-end">
               Documentation generated by
               <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
- on 2023-04-23 22:24              </p>
+ on 2024-03-29 03:51              </p>
           </div>
         </div>
         <br>
       </div> <!-- /container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript
-         ================================================== -->
-         <!-- Placed at the end of the document so the pages load faster -->
-    <!--
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        -->
-        <script src="../js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 
-        <!-- MathJax JavaScript
+    <!-- MathJax JavaScript
              ================================================== -->
              <!-- Placed at the end of the document so the pages load faster -->
         <script type="text/x-mathjax-config">
