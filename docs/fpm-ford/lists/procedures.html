@@ -1,0 +1,349 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="easy project">
+    <meta name="author" content="John Doe" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>All Procedures &ndash; easy
+</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="../css/local.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">easy </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/programs.html">Programs</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" id='text'>
+			 <h1>Procedures</h1>
+			 <table class="table table-striped">
+			 <thead><tr><th>Procedure</th><th>Location</th><th>Procedure Type</th><th>Description</th></tr></thead>
+			 <tbody>
+			   <tr>
+                 <td><a href='../proc/cmd_args_to_dictionary.html'>cmd_args_to_dictionary</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>write(<em>,</em>)&rsquo;GOT HERE 4 UNNAMED:&rsquo;,current_argument,size(unnamed)
+write(<em>,</em>)&rsquo;GOT HERE 5&rsquo;,current_argument,size(unnamed)
+call journal(&lsquo;sc&rsquo;,&rsquo;GOT HERE D KEY=&rsquo;,dict_verbs(pointer),&rsquo;VALUE=&rsquo;,current_argument,&amp;
+   &amp;&rsquo;OLDVALUE=&rsquo;,oldvalue,&rsquo;LASTKEYWORD=&rsquo;,lastkeyword)</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/dget.html'>dget</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program</p><a href="../proc/dget.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/dgets.html'>dgets</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program</p><a href="../proc/dgets.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/dissect.html'>dissect</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>subroutine dissect(verb,init,pars,error_return)</p><a href="../proc/dissect.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/iget.html'>iget</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program</p><a href="../proc/iget.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/igets.html'>igets</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program</p><a href="../proc/igets.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/kracken.html'>kracken</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Sample program:</p><a href="../proc/kracken.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/lget.html'>lget</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program:</p><a href="../proc/lget.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/lgets.html'>lgets</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program:</p><a href="../proc/lgets.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/mymain.html'>mymain</a></td>
+                 <td><a href='../program/demo_kracken.html'>demo_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/parse.html'>parse</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>recursive subroutine parse(verb,string,allow,error_return)</p><a href="../proc/parse.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/print_kracken_dictionary.html'>print_kracken_dictionary</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/retrev.html'>retrev</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>SUBROUTINE retrev(name, string, len, ier)</p><a href="../proc/retrev.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/rget.html'>rget</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program</p><a href="../proc/rget.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/rgets.html'>rgets</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>Sample program converts between Celcius and Fahrenheit</p><a href="../proc/rgets.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/setprompts.html'>setprompts</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>subroutine setprompts(verb,init)</p><a href="../proc/setprompts.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/sget.html'>sget</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>function sget(name,ilen) result(string)</p><a href="../proc/sget.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/sgets.html'>sgets</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Function</td>
+                 <td><p>function sgets(name,delim) result(strings)</p><a href="../proc/sgets.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/show.html'>show</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>subroutine show(VERB_NAME0,VERBS_ONLY,IWIDE)</p><a href="../proc/show.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/showstring.html'>showstring</a></td>
+                 <td><a href='../program/demo_m_kracken.html'>demo_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/showvalue.html'>showvalue</a></td>
+                 <td><a href='../program/demo_m_kracken.html'>demo_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/store.html'>store</a></td>
+                 <td><a href='../module/m_kracken.html'>M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>subroutine store(name1,value1,allow1,ier)</p><a href="../proc/store.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_dget.html'>test_dget</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_dgets.html'>test_dgets</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_dissect.html'>test_dissect</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_iget.html'>test_iget</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_igets.html'>test_igets</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_kracken.html'>test_kracken</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>call unit_check(&lsquo;kracken&rsquo;, 0.eq.0, &lsquo;checking&rsquo;,100)</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_lget.html'>test_lget</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_lgets.html'>test_lgets</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_parse.html'>test_parse</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_retrev.html'>test_retrev</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_rget.html'>test_rget</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_rgets.html'>test_rgets</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_setprompts.html'>test_setprompts</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>call unit_check(&lsquo;setprompts&rsquo;, 0.eq.0, &lsquo;checking&rsquo;,100)</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_sget.html'>test_sget</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_sgets.html'>test_sgets</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_show.html'>test_show</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td><p>call unit_check(&lsquo;show&rsquo;, 0.eq.0, &lsquo;checking&rsquo;,100)</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/test_store.html'>test_store</a></td>
+                 <td><a href='../program/test_suite_m_kracken.html'>test_suite_M_kracken</a></td>
+                 <td>Subroutine</td>
+                 <td></td>
+               </tr>
+			 </tbody></table>
+             
+        </div>
+      </div>
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              easy
+ was developed by John Doe<br>              &copy; 2025 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2025-07-11 00:41 +0000             </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
